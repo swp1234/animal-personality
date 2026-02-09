@@ -624,6 +624,36 @@ body {
     color: var(--text-secondary);
 }
 
+/* === Scrollbar Styling === */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+    border: 2px solid var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-light);
+}
+
+/* Selection Color */
+::selection {
+    background: var(--primary-color);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--primary-color);
+    color: white;
+}
+
 /* === Accessibility === */
 .hidden {
     display: none;
