@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "description": "What is your inner animal? 🦁 Discover your inner animal personality through 12 questions. Which of 12 animal types are you? Fun personality test shareable on social media.",
+    "keywords": "animal personality test, personality test, character assessment, viral test, inner animal, personality types",
+    "og_title": "What is Your Inner Animal? 🦁 Which of 12 Are You?",
+    "og_description": "Find which of 12 animal types you are through 12 questions! Lion, Eagle, Wolf, Dolphin... Take the test and share your results on social media!",
+    "twitter_title": "What is Your Inner Animal? 🦁 Which of 12 Are You?",
+    "twitter_description": "Discover which of 12 animal types matches your personality!"
+  },
+  "loader": {
+    "text": "Loading..."
+  },
+  "a11y": {
+    "language": "Select Language"
+  },
+  "home": {
+    "title": "What is Your Inner Animal?",
+    "subtitle": "Discover your inner animal through 12 questions",
+    "description": "Which of 12 animal types are you? Lion, Eagle, Wolf, Dolphin and more... Take the test, learn about each animal's characteristics, and share your results on social media!"
+  },
+  "btn": {
+    "start": "Start Test",
+    "prev": "Previous",
+    "next": "Next",
+    "download": "Download Image",
+    "share_kakao": "Kakao Talk",
+    "share_twitter": "Twitter",
+    "share_url": "Copy Link",
+    "retake": "Retake Test"
+  },
+  "result": {
+    "characteristics": "Characteristics",
+    "strengths": "Strengths",
+    "weaknesses": "Weaknesses",
+    "compatible": "Compatible Animals"
+  },
+  "rec": {
+    "title": "Other Fun Tests"
+  },
+  "share": {
+    "copied": "Link copied!",
+    "download_success": "Image downloaded!"
+  }
+}

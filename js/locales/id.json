@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "description": "Hewan batin apa Anda? 🦁 Temukan hewan batin Anda melalui 12 pertanyaan. Anda adalah salah satu dari 12 tipe hewan? Tes kepribadian yang menyenangkan dan dapat dibagikan di media sosial.",
+    "keywords": "tes kepribadian hewan, tes kepribadian, penilaian karakter, tes viral, hewan batin, tipe kepribadian",
+    "og_title": "Hewan batin apa Anda? 🦁 Mana dari 12?",
+    "og_description": "Temukan tipe hewan mana dari 12 yang Anda lewati melalui 12 pertanyaan! Singa, Elang, Serigala, Lumba-lumba... Ambil tes dan bagikan hasil Anda di media sosial!",
+    "twitter_title": "Hewan batin apa Anda? 🦁 Mana dari 12?",
+    "twitter_description": "Temukan tipe hewan mana yang sesuai dengan kepribadian Anda!"
+  },
+  "loader": {
+    "text": "Memuat..."
+  },
+  "a11y": {
+    "language": "Pilih bahasa"
+  },
+  "home": {
+    "title": "Hewan batin apa Anda?",
+    "subtitle": "Temukan hewan batin Anda melalui 12 pertanyaan",
+    "description": "Anda adalah salah satu dari 12 tipe hewan? Singa, Elang, Serigala, Lumba-lumba, dan lainnya... Ambil tes, pelajari tentang karakteristik setiap hewan, dan bagikan hasil Anda di media sosial!"
+  },
+  "btn": {
+    "start": "Mulai tes",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "download": "Unduh gambar",
+    "share_kakao": "Kakao Talk",
+    "share_twitter": "Twitter",
+    "share_url": "Salin tautan",
+    "retake": "Ulangi tes"
+  },
+  "result": {
+    "characteristics": "Karakteristik",
+    "strengths": "Kekuatan",
+    "weaknesses": "Kelemahan",
+    "compatible": "Hewan yang kompatibel"
+  },
+  "rec": {
+    "title": "Tes menyenangkan lainnya"
+  },
+  "share": {
+    "copied": "Tautan disalin!",
+    "download_success": "Gambar diunduh!"
+  }
+}

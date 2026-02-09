@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "description": "你的内心动物是什么? 🦁 通过12个问题发现你的内心动物。12种动物类型中你是哪一种? 有趣的性格测试,可在社交媒体上分享。",
+    "keywords": "动物性格测试, 性格测试, 个性评估, 病毒测试, 内心动物, 性格类型",
+    "og_title": "你的内心动物是什么? 🦁 12种中你是哪一种?",
+    "og_description": "通过12个问题找到你的12种动物类型之一! 狮子, 鹰, 狼, 海豚... 参加测试并在社交媒体上分享你的结果!",
+    "twitter_title": "你的内心动物是什么? 🦁 12种中你是哪一种?",
+    "twitter_description": "发现哪种动物类型符合你的个性!"
+  },
+  "loader": {
+    "text": "加载中..."
+  },
+  "a11y": {
+    "language": "选择语言"
+  },
+  "home": {
+    "title": "你的内心动物是什么?",
+    "subtitle": "通过12个问题发现你的内心动物",
+    "description": "12种动物类型中你是哪一种? 狮子、鹰、狼、海豚等... 参加测试,了解每种动物的特性,并在社交媒体上分享你的结果!"
+  },
+  "btn": {
+    "start": "开始测试",
+    "prev": "上一个",
+    "next": "下一个",
+    "download": "下载图像",
+    "share_kakao": "Kakao Talk",
+    "share_twitter": "推特",
+    "share_url": "复制链接",
+    "retake": "重新测试"
+  },
+  "result": {
+    "characteristics": "特征",
+    "strengths": "优势",
+    "weaknesses": "弱点",
+    "compatible": "兼容的动物"
+  },
+  "rec": {
+    "title": "其他有趣的测试"
+  },
+  "share": {
+    "copied": "链接已复制!",
+    "download_success": "图像已下载!"
+  }
+}

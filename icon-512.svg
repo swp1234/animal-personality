@@ -1,0 +1,58 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6c2d8a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bgGradient512)"/>
+
+  <!-- Circle background -->
+  <circle cx="256" cy="256" r="220" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="4"/>
+
+  <!-- Lion face (larger) -->
+  <g id="lion">
+    <!-- Face circle -->
+    <circle cx="256" cy="256" r="120" fill="#ff8c42"/>
+
+    <!-- Mane -->
+    <circle cx="210" cy="190" r="32" fill="#ff7f30"/>
+    <circle cx="302" cy="190" r="32" fill="#ff7f30"/>
+    <circle cx="160" cy="235" r="32" fill="#ff7f30"/>
+    <circle cx="352" cy="235" r="32" fill="#ff7f30"/>
+    <circle cx="150" cy="310" r="32" fill="#ff7f30"/>
+    <circle cx="362" cy="310" r="32" fill="#ff7f30"/>
+    <circle cx="185" cy="360" r="28" fill="#ff7f30"/>
+    <circle cx="327" cy="360" r="28" fill="#ff7f30"/>
+
+    <!-- Eyes -->
+    <circle cx="230" cy="240" r="16" fill="#ffffff"/>
+    <circle cx="282" cy="240" r="16" fill="#ffffff"/>
+    <circle cx="233" cy="243" r="8" fill="#1a1a2e"/>
+    <circle cx="285" cy="243" r="8" fill="#1a1a2e"/>
+    <circle cx="235" cy="240" r="3" fill="#ffffff"/>
+    <circle cx="287" cy="240" r="3" fill="#ffffff"/>
+
+    <!-- Nose -->
+    <ellipse cx="256" cy="270" rx="10" ry="14" fill="#1a1a2e"/>
+
+    <!-- Mouth -->
+    <path d="M 256 270 Q 240 290 220 287" stroke="#1a1a2e" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M 256 270 Q 272 290 292 287" stroke="#1a1a2e" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+    <!-- Whiskers -->
+    <line x1="160" y1="260" x2="140" y2="255" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+    <line x1="160" y1="280" x2="140" y2="285" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+    <line x1="352" y1="260" x2="372" y2="255" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+    <line x1="352" y1="280" x2="372" y2="285" stroke="#1a1a2e" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Decorative elements -->
+  <g opacity="0.3">
+    <circle cx="80" cy="100" r="8" fill="#ffffff"/>
+    <circle cx="430" cy="120" r="8" fill="#ffffff"/>
+    <circle cx="100" cy="420" r="8" fill="#ffffff"/>
+    <circle cx="410" cy="400" r="8" fill="#ffffff"/>
+  </g>
+</svg>

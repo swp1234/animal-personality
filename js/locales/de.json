@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "description": "Welches ist dein inneres Tier? 🦁 Entdecken Sie Ihr inneres Tier durch 12 Fragen. Welcher der 12 Tiertypen sind Sie? Unterhaltsamer Persönlichkeitstest, der auf Social Media teilbar ist.",
+    "keywords": "Tierpersönlichkeitstest, Persönlichkeitstest, Charakterbewertung, viraler Test, inneres Tier, Persönlichkeitstypen",
+    "og_title": "Welches ist dein inneres Tier? 🦁 Welcher der 12?",
+    "og_description": "Finden Sie heraus, welcher der 12 Tiertypen Sie durch 12 Fragen sind! Löwe, Adler, Wolf, Delfin... Machen Sie den Test und teilen Sie Ihre Ergebnisse in sozialen Medien!",
+    "twitter_title": "Welches ist dein inneres Tier? 🦁 Welcher der 12?",
+    "twitter_description": "Entdecke, welcher Tiertyp zu deiner Persönlichkeit passt!"
+  },
+  "loader": {
+    "text": "Wird geladen..."
+  },
+  "a11y": {
+    "language": "Wählen Sie eine Sprache"
+  },
+  "home": {
+    "title": "Welches ist dein inneres Tier?",
+    "subtitle": "Entdecke dein inneres Tier durch 12 Fragen",
+    "description": "Welcher der 12 Tiertypen sind Sie? Löwe, Adler, Wolf, Delfin und mehr... Machen Sie den Test, erfahren Sie mehr über die Merkmale jedes Tieres und teilen Sie Ihre Ergebnisse in sozialen Medien!"
+  },
+  "btn": {
+    "start": "Test starten",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "download": "Bild herunterladen",
+    "share_kakao": "Kakao Talk",
+    "share_twitter": "Twitter",
+    "share_url": "Link kopieren",
+    "retake": "Test wiederholen"
+  },
+  "result": {
+    "characteristics": "Merkmale",
+    "strengths": "Stärken",
+    "weaknesses": "Schwächen",
+    "compatible": "Kompatible Tiere"
+  },
+  "rec": {
+    "title": "Weitere unterhaltsame Tests"
+  },
+  "share": {
+    "copied": "Link kopiert!",
+    "download_success": "Bild heruntergeladen!"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "description": "Qual é seu animal interior? 🦁 Descubra seu animal interior através de 12 perguntas. Qual dos 12 tipos de animais você é? Teste de personalidade divertido e compartilhável em redes sociais.",
+    "keywords": "teste de personalidade animal, teste de personalidade, avaliação de caráter, teste viral, animal interior, tipos de personalidade",
+    "og_title": "Qual é seu animal interior? 🦁 Qual dos 12?",
+    "og_description": "Descubra qual dos 12 tipos de animais você é através de 12 perguntas! Leão, Águia, Lobo, Golfinho... Faça o teste e compartilhe seus resultados nas redes sociais!",
+    "twitter_title": "Qual é seu animal interior? 🦁 Qual dos 12?",
+    "twitter_description": "Descubra qual tipo de animal corresponde à sua personalidade!"
+  },
+  "loader": {
+    "text": "Carregando..."
+  },
+  "a11y": {
+    "language": "Selecionar idioma"
+  },
+  "home": {
+    "title": "Qual é seu animal interior?",
+    "subtitle": "Descubra seu animal interior através de 12 perguntas",
+    "description": "Qual dos 12 tipos de animais você é? Leão, Águia, Lobo, Golfinho e mais... Faça o teste, aprenda sobre as características de cada animal e compartilhe seus resultados nas redes sociais!"
+  },
+  "btn": {
+    "start": "Iniciar teste",
+    "prev": "Anterior",
+    "next": "Próximo",
+    "download": "Baixar imagem",
+    "share_kakao": "Kakao Talk",
+    "share_twitter": "Twitter",
+    "share_url": "Copiar link",
+    "retake": "Repetir teste"
+  },
+  "result": {
+    "characteristics": "Características",
+    "strengths": "Forças",
+    "weaknesses": "Fraquezas",
+    "compatible": "Animais compatíveis"
+  },
+  "rec": {
+    "title": "Outros testes divertidos"
+  },
+  "share": {
+    "copied": "Link copiado!",
+    "download_success": "Imagem baixada!"
+  }
+}

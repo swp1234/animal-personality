@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "description": "Quel est votre animal intérieur? 🦁 Découvrez votre animal intérieur à travers 12 questions. Lequel des 12 types d'animaux êtes-vous? Test de personnalité amusant et partageable sur les réseaux sociaux.",
+    "keywords": "test de personnalité animal, test de personnalité, évaluation du caractère, test viral, animal intérieur, types de personnalité",
+    "og_title": "Quel est votre animal intérieur? 🦁 Lequel des 12?",
+    "og_description": "Découvrez lequel des 12 types d'animaux vous êtes à travers 12 questions! Lion, Aigle, Loup, Dauphin... Faites le test et partagez vos résultats sur les réseaux sociaux!",
+    "twitter_title": "Quel est votre animal intérieur? 🦁 Lequel des 12?",
+    "twitter_description": "Découvrez quel type d'animal correspond à votre personnalité!"
+  },
+  "loader": {
+    "text": "Chargement..."
+  },
+  "a11y": {
+    "language": "Sélectionner la langue"
+  },
+  "home": {
+    "title": "Quel est votre animal intérieur?",
+    "subtitle": "Découvrez votre animal intérieur à travers 12 questions",
+    "description": "Lequel des 12 types d'animaux êtes-vous? Lion, Aigle, Loup, Dauphin et plus... Faites le test, découvrez les caractéristiques de chaque animal et partagez vos résultats sur les réseaux sociaux!"
+  },
+  "btn": {
+    "start": "Commencer le test",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "download": "Télécharger l'image",
+    "share_kakao": "Kakao Talk",
+    "share_twitter": "Twitter",
+    "share_url": "Copier le lien",
+    "retake": "Recommencer le test"
+  },
+  "result": {
+    "characteristics": "Caractéristiques",
+    "strengths": "Points forts",
+    "weaknesses": "Points faibles",
+    "compatible": "Animaux compatibles"
+  },
+  "rec": {
+    "title": "Autres tests amusants"
+  },
+  "share": {
+    "copied": "Lien copié!",
+    "download_success": "Image téléchargée!"
+  }
+}

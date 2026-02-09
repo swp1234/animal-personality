@@ -1,0 +1,48 @@
+<svg viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8e44ad;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6c2d8a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="192" height="192" fill="url(#bgGradient)"/>
+
+  <!-- Circle background -->
+  <circle cx="96" cy="96" r="85" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+
+  <!-- Lion face (simplified) -->
+  <g id="lion">
+    <!-- Face circle -->
+    <circle cx="96" cy="96" r="45" fill="#ff8c42"/>
+
+    <!-- Mane -->
+    <circle cx="75" cy="70" r="12" fill="#ff7f30"/>
+    <circle cx="117" cy="70" r="12" fill="#ff7f30"/>
+    <circle cx="60" cy="85" r="12" fill="#ff7f30"/>
+    <circle cx="132" cy="85" r="12" fill="#ff7f30"/>
+    <circle cx="55" cy="105" r="12" fill="#ff7f30"/>
+    <circle cx="137" cy="105" r="12" fill="#ff7f30"/>
+
+    <!-- Eyes -->
+    <circle cx="85" cy="90" r="6" fill="#ffffff"/>
+    <circle cx="107" cy="90" r="6" fill="#ffffff"/>
+    <circle cx="86" cy="91" r="3" fill="#1a1a2e"/>
+    <circle cx="108" cy="91" r="3" fill="#1a1a2e"/>
+
+    <!-- Nose -->
+    <ellipse cx="96" cy="102" rx="4" ry="5" fill="#1a1a2e"/>
+
+    <!-- Mouth -->
+    <path d="M 96 102 Q 90 108 85 107" stroke="#1a1a2e" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M 96 102 Q 102 108 107 107" stroke="#1a1a2e" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Decorative elements -->
+  <g opacity="0.3">
+    <circle cx="30" cy="40" r="3" fill="#ffffff"/>
+    <circle cx="160" cy="50" r="3" fill="#ffffff"/>
+    <circle cx="40" cy="160" r="3" fill="#ffffff"/>
+    <circle cx="150" cy="155" r="3" fill="#ffffff"/>
+  </g>
+</svg>

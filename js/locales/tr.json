@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "description": "İç hayvanınız ne? 🦁 12 soru aracılığıyla iç hayvanınızı keşfedin. 12 hayvan türünden hangisisiniz? Sosyal ağlarda paylaşılabilir eğlenceli kişilik testi.",
+    "keywords": "hayvan kişilik testi, kişilik testi, karakter değerlendirmesi, viral test, iç hayvan, kişilik türleri",
+    "og_title": "İç hayvanınız ne? 🦁 12'den hangisi?",
+    "og_description": "12 soru aracılığıyla 12 hayvan türünden hangisi olduğunuzu bulun! Aslan, Kartal, Kurt, Yunus... Testi yapın ve sonuçlarınızı sosyal ağlarda paylaşın!",
+    "twitter_title": "İç hayvanınız ne? 🦁 12'den hangisi?",
+    "twitter_description": "Hangi hayvan türünün kişiliğinizle eşleştiğini keşfedin!"
+  },
+  "loader": {
+    "text": "Yükleniyor..."
+  },
+  "a11y": {
+    "language": "Dil seçin"
+  },
+  "home": {
+    "title": "İç hayvanınız ne?",
+    "subtitle": "12 soru aracılığıyla iç hayvanınızı keşfedin",
+    "description": "12 hayvan türünden hangisisiniz? Aslan, Kartal, Kurt, Yunus ve daha fazlası... Testi yapın, her hayvanın özelliklerini öğrenin ve sonuçlarınızı sosyal ağlarda paylaşın!"
+  },
+  "btn": {
+    "start": "Teste başla",
+    "prev": "Önceki",
+    "next": "Sonraki",
+    "download": "Görüntüyü indir",
+    "share_kakao": "Kakao Sohbet",
+    "share_twitter": "Twitter",
+    "share_url": "Bağlantıyı kopyala",
+    "retake": "Testi yeniden yap"
+  },
+  "result": {
+    "characteristics": "Özellikler",
+    "strengths": "Güçlü yönler",
+    "weaknesses": "Zayıf yönler",
+    "compatible": "Uyumlu hayvanlar"
+  },
+  "rec": {
+    "title": "Diğer eğlenceli testler"
+  },
+  "share": {
+    "copied": "Bağlantı kopyalandı!",
+    "download_success": "Görüntü indirildi!"
+  }
+}
