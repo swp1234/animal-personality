@@ -86,6 +86,13 @@ class AnimalPersonalityApp {
     }
 
     startQuiz() {
+        // GA4: 테스트 시작
+        if (typeof gtag === 'function') {
+            gtag('event', 'test_start', {
+                app_name: 'animal-personality',
+                content_type: 'test'
+            });
+        }
         this.homeScreen.classList.remove('active');
         this.quizScreen.classList.add('active');
         this.currentQuestion = 0;
@@ -209,6 +216,14 @@ class AnimalPersonalityApp {
             data: quizData.animals[resultAnimal],
             scores: this.scores
         };
+
+        // GA4: 테스트 완료
+        if (typeof gtag === 'function') {
+            gtag('event', 'test_complete', {
+                app_name: 'animal-personality',
+                result_type: resultAnimal
+            });
+        }
     }
 
     displayResult() {
@@ -304,6 +319,14 @@ class AnimalPersonalityApp {
         link.download = `animal-personality-${this.result.animal}.png`;
         link.click();
 
+        // GA4: 이미지 저장
+        if (typeof gtag === 'function') {
+            gtag('event', 'save_image', {
+                app_name: 'animal-personality',
+                content_type: 'test_result'
+            });
+        }
+
         // 피드백
         const btn = this.downloadBtn;
         const originalText = btn.textContent;
@@ -320,6 +343,14 @@ class AnimalPersonalityApp {
         }
 
         const animal = this.result.data;
+        // GA4: 공유
+        if (typeof gtag === 'function') {
+            gtag('event', 'share', {
+                method: 'kakao',
+                app_name: 'animal-personality',
+                content_type: 'test_result'
+            });
+        }
         Kakao.Share.sendDefault({
             objectType: 'feed',
             content: {
@@ -336,6 +367,14 @@ class AnimalPersonalityApp {
 
     shareTwitter() {
         const animal = this.result.data;
+        // GA4: 공유
+        if (typeof gtag === 'function') {
+            gtag('event', 'share', {
+                method: 'twitter',
+                app_name: 'animal-personality',
+                content_type: 'test_result'
+            });
+        }
         const text = `나의 내면 동물은 ${animal.name} 🦁입니다! 당신은 무엇일까요? 테스트 해보세요!`;
         const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(this.shareUrl)}`;
         window.open(url, '_blank');
@@ -344,6 +383,15 @@ class AnimalPersonalityApp {
     shareUrl() {
         const animal = this.result.data;
         const text = `나의 내면 동물: ${animal.name}\n${this.shareUrl}`;
+
+        // GA4: 공유
+        if (typeof gtag === 'function') {
+            gtag('event', 'share', {
+                method: navigator.share ? 'native' : 'clipboard',
+                app_name: 'animal-personality',
+                content_type: 'test_result'
+            });
+        }
 
         if (navigator.share) {
             navigator.share({
@@ -374,12 +422,14 @@ class AnimalPersonalityApp {
     }
 
     loadRecommendations() {
-        // 추천 섹션 로드 (다른 테스트 앱 링크)
-        // 이는 나중에 실제 앱 링크로 업데이트될 수 있습니다
+        // 추천 섹션 로드 (다른 성격/심리 테스트 앱)
         const recommendations = [
-            { name: 'Brain Type', emoji: '🧠', link: '../brain-type/' },
-            { name: 'MBTI Love', emoji: '💕', link: '../mbti-love/' },
-            { name: 'Dream Fortune', emoji: '🔮', link: '../dream-fortune/' }
+            { name: '뇌유형 검사', emoji: '🧠', link: '../brain-type/' },
+            { name: 'MBTI 궁합', emoji: '💕', link: '../mbti-love/' },
+            { name: '꿈해몽/운세', emoji: '🔮', link: '../dream-fortune/' },
+            { name: '성격 색상 테스트', emoji: '🎨', link: '../color-personality/' },
+            { name: '감정 온도계', emoji: '🌡️', link: '../emotion-temp/' },
+            { name: 'HSP 민감성 검사', emoji: '✨', link: '../hsp-test/' }
         ];
 
         this.recGrid.innerHTML = '';
