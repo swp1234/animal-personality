@@ -463,4 +463,11 @@ class AnimalPersonalityApp {
 // 앱 초기화
 document.addEventListener('DOMContentLoaded', () => {
     window.app = new AnimalPersonalityApp();
+
+    // Hide app loader
+    const loader = document.getElementById('app-loader');
+    if (loader) {
+        loader.classList.add('hidden');
+        setTimeout(() => loader.remove(), 300);
+    }
 });
