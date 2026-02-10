@@ -15,7 +15,11 @@ class AnimalPersonalityApp {
 
     async init() {
         // i18n 초기화
-        await i18n.init();
+        try {
+            await i18n.init();
+        } catch (e) {
+            console.warn('i18n init failed:', e);
+        }
 
         // DOM 요소 캐싱
         this.cacheElements();
