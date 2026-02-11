@@ -14,26 +14,26 @@ class AnimalPersonalityApp {
     }
 
     async init() {
-        // i18n 초기화
         try {
-            await i18n.init();
+            try {
+                await i18n.init();
+            } catch (e) {
+                console.warn('i18n init failed:', e);
+            }
+
+            this.cacheElements();
+            this.attachEventListeners();
+            this.loadRecommendations();
         } catch (e) {
-            console.warn('i18n init failed:', e);
+            console.error('App init error:', e);
+        } finally {
+            // Always hide loader regardless of errors
+            const loader = document.getElementById('appLoader');
+            if (loader) {
+                loader.classList.add('hidden');
+                setTimeout(() => loader.remove(), 300);
+            }
         }
-
-        // DOM 요소 캐싱
-        this.cacheElements();
-
-        // 이벤트 리스너 등록
-        this.attachEventListeners();
-
-        // 추천 섹션 로드
-        this.loadRecommendations();
-
-        // 앱 로더 숨기기
-        setTimeout(() => {
-            this.appLoader.classList.add('hidden');
-        }, 500);
     }
 
     cacheElements() {
