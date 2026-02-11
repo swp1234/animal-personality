@@ -28,14 +28,19 @@
     --unicorn-color: #ff1493;
 }
 
-/* Dark mode (기본) */
-body.light-mode {
+/* Light Theme */
+[data-theme="light"] {
     --secondary-color: #ffffff;
-    --bg-dark: #f5f5f5;
+    --bg-dark: #f5f5fa;
     --bg-card: #ffffff;
     --border-color: #e0e0e0;
     --text-primary: #1a1a2e;
-    --text-secondary: #666666;
+    --text-secondary: #5a5a70;
+}
+
+[data-theme="light"] body {
+    background: var(--bg-dark);
+    color: var(--text-primary);
 }
 
 * {
@@ -143,6 +148,39 @@ body {
     flex-direction: column;
     background: var(--bg-dark);
     position: relative;
+}
+
+/* === Theme Toggle === */
+.theme-toggle {
+    position: fixed;
+    top: 12px;
+    right: 56px;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    background: rgba(142, 68, 173, 0.2);
+    transform: scale(1.1);
+}
+
+[data-theme="light"] .theme-toggle {
+    background: rgba(142, 68, 173, 0.1);
+    border-color: rgba(142, 68, 173, 0.2);
+}
+
+[data-theme="light"] .theme-toggle:hover {
+    background: rgba(142, 68, 173, 0.2);
 }
 
 /* === Language Selector === */
