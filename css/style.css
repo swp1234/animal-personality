@@ -602,6 +602,12 @@ body {
     100% { transform: scale(1); box-shadow: 0 4px 15px rgba(142,68,173,0.3); }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .btn-large {
+        animation: none !important;
+    }
+}
+
 .btn-share {
     background: var(--primary-color);
     color: #ffffff;
