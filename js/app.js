@@ -35,6 +35,37 @@ class AnimalPersonalityApp {
                 loader.classList.add('hidden');
                 setTimeout(() => loader.remove(), 300);
             }
+
+            // GA4 engagement tracking to reduce bounce rate
+            this.engagementTracked = false;
+            this.trackFirstInteraction();
+        }
+    }
+
+    /**
+     * Track first interaction for GA4 engagement (reduces bounce rate)
+     */
+    trackFirstInteraction() {
+        const handler = () => {
+            this.trackEngagement('first_interaction');
+            document.removeEventListener('click', handler);
+            document.removeEventListener('keydown', handler);
+        };
+        document.addEventListener('click', handler, { once: true });
+        document.addEventListener('keydown', handler, { once: true });
+    }
+
+    /**
+     * Track GA4 engagement event
+     */
+    trackEngagement(label) {
+        if (this.engagementTracked) return;
+        this.engagementTracked = true;
+        if (typeof gtag === 'function') {
+            gtag('event', 'engagement', {
+                event_category: 'animal_personality',
+                event_label: label
+            });
         }
     }
 
@@ -115,6 +146,7 @@ class AnimalPersonalityApp {
                 content_type: 'test'
             });
         }
+        this.trackEngagement('test_start');
         this.homeScreen.classList.remove('active');
         this.quizScreen.classList.add('active');
         this.currentQuestion = 0;
