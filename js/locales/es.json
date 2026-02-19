@@ -16,7 +16,8 @@
   "home": {
     "title": "¿Cuál es tu animal interior?",
     "subtitle": "Descubre tu animal interior a través de 12 preguntas",
-    "description": "¿Cuál de los 12 tipos de animales eres? León, Águila, Lobo, Delfín y más... ¡Haz la prueba, aprende sobre las características de cada animal y comparte tus resultados en redes sociales!"
+    "description": "¿Cuál de los 12 tipos de animales eres? León, Águila, Lobo, Delfín y más... ¡Haz la prueba, aprende sobre las características de cada animal y comparte tus resultados en redes sociales!",
+    "socialStats": "⏱ Aprox. 2 min | 🐾 12 tipos de animales | 👥 2.100+ participantes"
   },
   "btn": {
     "start": "Comenzar prueba",
@@ -40,5 +41,8 @@
   "share": {
     "copied": "¡Enlace copiado!",
     "download_success": "¡Imagen descargada!"
+  },
+  "accessibility": {
+    "skipMain": "Saltar al contenido"
   }
 }

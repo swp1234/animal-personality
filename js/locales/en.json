@@ -16,7 +16,8 @@
   "home": {
     "title": "What is Your Inner Animal?",
     "subtitle": "Discover your inner animal through 12 questions",
-    "description": "Which of 12 animal types are you? Lion, Eagle, Wolf, Dolphin and more... Take the test, learn about each animal's characteristics, and share your results on social media!"
+    "description": "Which of 12 animal types are you? Lion, Eagle, Wolf, Dolphin and more... Take the test, learn about each animal's characteristics, and share your results on social media!",
+    "socialStats": "⏱ About 2 min | 🐾 12 Animal Types | 👥 2,100+ Tested"
   },
   "btn": {
     "start": "Start Test",
@@ -40,5 +41,8 @@
   "share": {
     "copied": "Link copied!",
     "download_success": "Image downloaded!"
+  },
+  "accessibility": {
+    "skipMain": "Skip to content"
   }
 }

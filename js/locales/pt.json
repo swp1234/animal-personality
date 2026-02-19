@@ -16,7 +16,8 @@
   "home": {
     "title": "Qual é seu animal interior?",
     "subtitle": "Descubra seu animal interior através de 12 perguntas",
-    "description": "Qual dos 12 tipos de animais você é? Leão, Águia, Lobo, Golfinho e mais... Faça o teste, aprenda sobre as características de cada animal e compartilhe seus resultados nas redes sociais!"
+    "description": "Qual dos 12 tipos de animais você é? Leão, Águia, Lobo, Golfinho e mais... Faça o teste, aprenda sobre as características de cada animal e compartilhe seus resultados nas redes sociais!",
+    "socialStats": "⏱ Aprox. 2 min | 🐾 12 tipos de animais | 👥 2.100+ participantes"
   },
   "btn": {
     "start": "Iniciar teste",
@@ -40,5 +41,8 @@
   "share": {
     "copied": "Link copiado!",
     "download_success": "Imagem baixada!"
+  },
+  "accessibility": {
+    "skipMain": "Pular para o conteúdo"
   }
 }

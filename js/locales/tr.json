@@ -16,7 +16,8 @@
   "home": {
     "title": "İç hayvanınız ne?",
     "subtitle": "12 soru aracılığıyla iç hayvanınızı keşfedin",
-    "description": "12 hayvan türünden hangisisiniz? Aslan, Kartal, Kurt, Yunus ve daha fazlası... Testi yapın, her hayvanın özelliklerini öğrenin ve sonuçlarınızı sosyal ağlarda paylaşın!"
+    "description": "12 hayvan türünden hangisisiniz? Aslan, Kartal, Kurt, Yunus ve daha fazlası... Testi yapın, her hayvanın özelliklerini öğrenin ve sonuçlarınızı sosyal ağlarda paylaşın!",
+    "socialStats": "⏱ Yaklaşık 2 dk | 🐾 12 hayvan tipi | 👥 2.100+ katılımcı"
   },
   "btn": {
     "start": "Teste başla",
@@ -40,5 +41,8 @@
   "share": {
     "copied": "Bağlantı kopyalandı!",
     "download_success": "Görüntü indirildi!"
+  },
+  "accessibility": {
+    "skipMain": "İçeriğe atla"
   }
 }

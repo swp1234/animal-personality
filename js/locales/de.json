@@ -16,7 +16,8 @@
   "home": {
     "title": "Welches ist dein inneres Tier?",
     "subtitle": "Entdecke dein inneres Tier durch 12 Fragen",
-    "description": "Welcher der 12 Tiertypen sind Sie? Löwe, Adler, Wolf, Delfin und mehr... Machen Sie den Test, erfahren Sie mehr über die Merkmale jedes Tieres und teilen Sie Ihre Ergebnisse in sozialen Medien!"
+    "description": "Welcher der 12 Tiertypen sind Sie? Löwe, Adler, Wolf, Delfin und mehr... Machen Sie den Test, erfahren Sie mehr über die Merkmale jedes Tieres und teilen Sie Ihre Ergebnisse in sozialen Medien!",
+    "socialStats": "⏱ Ca. 2 Min | 🐾 12 Tiertypen | 👥 2.100+ Teilnehmer"
   },
   "btn": {
     "start": "Test starten",
@@ -40,5 +41,8 @@
   "share": {
     "copied": "Link kopiert!",
     "download_success": "Bild heruntergeladen!"
+  },
+  "accessibility": {
+    "skipMain": "Zum Inhalt springen"
   }
 }

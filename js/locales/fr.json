@@ -16,7 +16,8 @@
   "home": {
     "title": "Quel est votre animal intérieur?",
     "subtitle": "Découvrez votre animal intérieur à travers 12 questions",
-    "description": "Lequel des 12 types d'animaux êtes-vous? Lion, Aigle, Loup, Dauphin et plus... Faites le test, découvrez les caractéristiques de chaque animal et partagez vos résultats sur les réseaux sociaux!"
+    "description": "Lequel des 12 types d'animaux êtes-vous? Lion, Aigle, Loup, Dauphin et plus... Faites le test, découvrez les caractéristiques de chaque animal et partagez vos résultats sur les réseaux sociaux!",
+    "socialStats": "⏱ Environ 2 min | 🐾 12 types d'animaux | 👥 2 100+ participants"
   },
   "btn": {
     "start": "Commencer le test",
@@ -40,5 +41,8 @@
   "share": {
     "copied": "Lien copié!",
     "download_success": "Image téléchargée!"
+  },
+  "accessibility": {
+    "skipMain": "Aller au contenu"
   }
 }
