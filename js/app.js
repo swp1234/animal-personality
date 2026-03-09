@@ -1,13 +1,87 @@
 /**
- * Animal Personality Test - Main Application Logic
- * 나의 내면 동물 성격 테스트
+ * Animal Personality - Wilderness Survival Journey
+ * Immersive biome-based survival scenarios that reveal your spirit animal
  */
 
-class AnimalPersonalityApp {
+// =========== GAME DATA ===========
+const BIOMES = {
+    forest: { emoji: '🌲', color: '#2d6a4f' },
+    ocean: { emoji: '🌊', color: '#0077b6' },
+    mountain: { emoji: '🏔️', color: '#6c757d' },
+    desert: { emoji: '🏜️', color: '#c17817' }
+};
+
+// 12 existing animals mapped to 4 biomes (3 per biome)
+const ANIMALS = {
+    wolf:      { emoji: '🐺', biome: 'forest',   traits: ['loyalty', 'instinct', 'independence', 'mystery'],   pack: ['bear', 'fox'],      rival: 'cat' },
+    bear:      { emoji: '🐻', biome: 'forest',   traits: ['strength', 'protection', 'patience', 'warmth'],     pack: ['wolf', 'owl'],      rival: 'butterfly' },
+    fox:       { emoji: '🦊', biome: 'forest',   traits: ['cleverness', 'adaptability', 'charm', 'creativity'],pack: ['eagle', 'butterfly'],rival: 'bear' },
+    dolphin:   { emoji: '🐬', biome: 'ocean',    traits: ['empathy', 'social', 'harmony', 'playfulness'],      pack: ['rabbit', 'unicorn'],rival: 'lion' },
+    cat:       { emoji: '🐱', biome: 'ocean',    traits: ['independence', 'elegance', 'intuition', 'mystery'], pack: ['owl', 'wolf'],      rival: 'dolphin' },
+    owl:       { emoji: '🦉', biome: 'ocean',    traits: ['wisdom', 'insight', 'analysis', 'patience'],        pack: ['cat', 'eagle'],     rival: 'fox' },
+    eagle:     { emoji: '🦅', biome: 'mountain', traits: ['vision', 'strategy', 'speed', 'objectivity'],       pack: ['lion', 'fox'],      rival: 'rabbit' },
+    lion:      { emoji: '🦁', biome: 'mountain', traits: ['leadership', 'courage', 'charisma', 'determination'],pack: ['eagle', 'dragon'],  rival: 'owl' },
+    dragon:    { emoji: '🐉', biome: 'mountain', traits: ['power', 'ambition', 'influence', 'mystery'],        pack: ['lion', 'unicorn'],  rival: 'rabbit' },
+    rabbit:    { emoji: '🐰', biome: 'desert',   traits: ['sensitivity', 'speed', 'gentleness', 'intuition'], pack: ['dolphin', 'butterfly'],rival: 'dragon' },
+    butterfly: { emoji: '🦋', biome: 'desert',   traits: ['transformation', 'creativity', 'freedom', 'beauty'],pack: ['rabbit', 'unicorn'],rival: 'bear' },
+    unicorn:   { emoji: '🦄', biome: 'desert',   traits: ['idealism', 'uniqueness', 'purity', 'imagination'], pack: ['butterfly', 'dolphin'],rival: 'eagle' }
+};
+
+// Scenario scene icons per biome
+const SCENARIO_ICONS = {
+    forest:   ['🌙', '🐾', '💧', '👁️', '⛈️', '🍎'],
+    ocean:    ['🌊', '🐟', '🏝️', '🌀', '🌙', '👀'],
+    mountain: ['🔀', '❄️', '🦅', '⛰️', '🌫️', '🏔️'],
+    desert:   ['☀️', '💧', '🌪️', '🐾', '✨', '🌵']
+};
+
+// Binary scoring: each choice maps to animal traits
+// choiceA and choiceB each have scoring weights for the 3 animals of the chosen biome
+const SCENARIOS = {
+    forest: [
+        { icon: 0, choiceA: { wolf: 1, bear: 0, fox: 2 }, choiceB: { wolf: 2, bear: 1, fox: 0 } },
+        { icon: 1, choiceA: { wolf: 2, bear: 2, fox: 0 }, choiceB: { wolf: 0, bear: 0, fox: 2 } },
+        { icon: 2, choiceA: { wolf: 1, bear: 0, fox: 2 }, choiceB: { wolf: 0, bear: 2, fox: 1 } },
+        { icon: 3, choiceA: { wolf: 0, bear: 1, fox: 0 }, choiceB: { wolf: 2, bear: 0, fox: 2 } },
+        { icon: 4, choiceA: { wolf: 0, bear: 2, fox: 1 }, choiceB: { wolf: 1, bear: 0, fox: 2 } },
+        { icon: 5, choiceA: { wolf: 1, bear: 0, fox: 2 }, choiceB: { wolf: 0, bear: 2, fox: 0 } }
+    ],
+    ocean: [
+        { icon: 0, choiceA: { dolphin: 2, cat: 1, owl: 0 }, choiceB: { dolphin: 0, cat: 2, owl: 1 } },
+        { icon: 1, choiceA: { dolphin: 2, cat: 0, owl: 1 }, choiceB: { dolphin: 0, cat: 1, owl: 2 } },
+        { icon: 2, choiceA: { dolphin: 2, cat: 1, owl: 0 }, choiceB: { dolphin: 0, cat: 2, owl: 1 } },
+        { icon: 3, choiceA: { dolphin: 1, cat: 0, owl: 0 }, choiceB: { dolphin: 0, cat: 2, owl: 2 } },
+        { icon: 4, choiceA: { dolphin: 2, cat: 1, owl: 0 }, choiceB: { dolphin: 0, cat: 0, owl: 2 } },
+        { icon: 5, choiceA: { dolphin: 2, cat: 0, owl: 1 }, choiceB: { dolphin: 0, cat: 2, owl: 0 } }
+    ],
+    mountain: [
+        { icon: 0, choiceA: { eagle: 1, lion: 2, dragon: 2 }, choiceB: { eagle: 2, lion: 0, dragon: 0 } },
+        { icon: 1, choiceA: { eagle: 1, lion: 2, dragon: 1 }, choiceB: { eagle: 2, lion: 0, dragon: 0 } },
+        { icon: 2, choiceA: { eagle: 2, lion: 1, dragon: 0 }, choiceB: { eagle: 0, lion: 2, dragon: 1 } },
+        { icon: 3, choiceA: { eagle: 1, lion: 0, dragon: 2 }, choiceB: { eagle: 2, lion: 1, dragon: 0 } },
+        { icon: 4, choiceA: { eagle: 0, lion: 1, dragon: 2 }, choiceB: { eagle: 2, lion: 1, dragon: 0 } },
+        { icon: 5, choiceA: { eagle: 0, lion: 0, dragon: 1 }, choiceB: { eagle: 1, lion: 2, dragon: 0 } }
+    ],
+    desert: [
+        { icon: 0, choiceA: { rabbit: 0, butterfly: 1, unicorn: 2 }, choiceB: { rabbit: 2, butterfly: 0, unicorn: 1 } },
+        { icon: 1, choiceA: { rabbit: 0, butterfly: 2, unicorn: 1 }, choiceB: { rabbit: 2, butterfly: 0, unicorn: 1 } },
+        { icon: 2, choiceA: { rabbit: 2, butterfly: 0, unicorn: 1 }, choiceB: { rabbit: 0, butterfly: 1, unicorn: 2 } },
+        { icon: 3, choiceA: { rabbit: 0, butterfly: 2, unicorn: 1 }, choiceB: { rabbit: 1, butterfly: 0, unicorn: 2 } },
+        { icon: 4, choiceA: { rabbit: 1, butterfly: 0, unicorn: 2 }, choiceB: { rabbit: 2, butterfly: 1, unicorn: 0 } },
+        { icon: 5, choiceA: { rabbit: 0, butterfly: 2, unicorn: 0 }, choiceB: { rabbit: 2, butterfly: 0, unicorn: 1 } }
+    ]
+};
+
+// i18n keys for animal data (names, descriptions, etc.)
+// These map to locale JSON keys like "animals.wolf.name", "animals.wolf.description", etc.
+
+
+// =========== APP CLASS ===========
+class WildernessSurvivalApp {
     constructor() {
-        this.currentQuestion = 0;
+        this.selectedBiome = null;
+        this.currentScenario = 0;
         this.scores = {};
-        this.answers = [];
         this.result = null;
         this.shareUrl = window.location.href;
         this.init();
@@ -26,25 +100,20 @@ class AnimalPersonalityApp {
             this.attachEventListeners();
             this.loadRecommendations();
             this.setupTheme();
+            this.renderBiomeCards();
         } catch (e) {
             console.error('App init error:', e);
         } finally {
-            // Always hide loader regardless of errors
             const loader = document.getElementById('appLoader');
             if (loader) {
                 loader.classList.add('hidden');
                 setTimeout(() => loader.remove(), 300);
             }
-
-            // GA4 engagement tracking to reduce bounce rate
             this.engagementTracked = false;
             this.trackFirstInteraction();
         }
     }
 
-    /**
-     * Track first interaction for GA4 engagement (reduces bounce rate)
-     */
     trackFirstInteraction() {
         const handler = () => {
             this.trackEngagement('first_interaction');
@@ -55,9 +124,6 @@ class AnimalPersonalityApp {
         document.addEventListener('keydown', handler, { once: true });
     }
 
-    /**
-     * Track GA4 engagement event
-     */
     trackEngagement(label) {
         if (this.engagementTracked) return;
         this.engagementTracked = true;
@@ -86,13 +152,11 @@ class AnimalPersonalityApp {
     }
 
     cacheElements() {
-        this.appLoader = document.getElementById('appLoader');
         this.homeScreen = document.getElementById('homeScreen');
-        this.quizScreen = document.getElementById('quizScreen');
+        this.biomeScreen = document.getElementById('biomeScreen');
+        this.scenarioScreen = document.getElementById('scenarioScreen');
         this.resultScreen = document.getElementById('resultScreen');
         this.startBtn = document.getElementById('startBtn');
-        this.prevBtn = document.getElementById('prevBtn');
-        this.nextBtn = document.getElementById('nextBtn');
         this.retakeBtn = document.getElementById('retakeBtn');
         this.downloadBtn = document.getElementById('downloadBtn');
         this.shareKakaoBtn = document.getElementById('shareKakaoBtn');
@@ -101,36 +165,29 @@ class AnimalPersonalityApp {
         this.langToggle = document.getElementById('lang-toggle');
         this.langMenu = document.getElementById('lang-menu');
         this.langOptions = document.querySelectorAll('.lang-option');
-        this.progressFill = document.getElementById('progressFill');
-        this.progressText = document.getElementById('progressText');
-        this.questionTitle = document.getElementById('questionTitle');
-        this.choicesContainer = document.getElementById('choicesContainer');
+        this.biomeGrid = document.getElementById('biomeGrid');
+        this.scenarioBg = document.getElementById('scenarioBg');
+        this.scenarioProgressFill = document.getElementById('scenarioProgressFill');
+        this.scenarioStep = document.getElementById('scenarioStep');
+        this.scenarioScene = document.getElementById('scenarioScene');
+        this.scenarioIcon = document.getElementById('scenarioIcon');
+        this.scenarioText = document.getElementById('scenarioText');
+        this.scenarioChoices = document.getElementById('scenarioChoices');
         this.resultCanvas = document.getElementById('resultCanvas');
         this.recGrid = document.getElementById('recGrid');
     }
 
     attachEventListeners() {
-        // Home screen
-        this.startBtn.addEventListener('click', () => this.startQuiz());
-
-        // Quiz navigation
-        this.prevBtn.addEventListener('click', () => this.previousQuestion());
-        this.nextBtn.addEventListener('click', () => this.nextQuestion());
-
-        // Result screen
-        this.retakeBtn.addEventListener('click', () => this.resetQuiz());
+        this.startBtn.addEventListener('click', () => this.startJourney());
+        this.retakeBtn.addEventListener('click', () => this.resetJourney());
         this.downloadBtn.addEventListener('click', () => this.downloadResultImage());
         this.shareKakaoBtn.addEventListener('click', () => this.shareKakao());
         this.shareTwitterBtn.addEventListener('click', () => this.shareTwitter());
         this.shareUrlBtn.addEventListener('click', () => this.shareUrl());
-
-        // Language selector
         this.langToggle.addEventListener('click', () => this.toggleLanguageMenu());
         this.langOptions.forEach(option => {
             option.addEventListener('click', (e) => this.changeLanguage(e.target.dataset.lang));
         });
-
-        // Close language menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!e.target.closest('.language-selector')) {
                 this.langMenu.classList.add('hidden');
@@ -138,231 +195,336 @@ class AnimalPersonalityApp {
         });
     }
 
-    startQuiz() {
-        // GA4: 테스트 시작
+    // =========== PHASE 0: START ===========
+    startJourney() {
         if (typeof gtag === 'function') {
-            gtag('event', 'test_start', {
-                app_name: 'animal-personality',
-                content_type: 'test'
-            });
+            gtag('event', 'test_start', { app_name: 'animal-personality', content_type: 'wilderness_survival' });
         }
         this.trackEngagement('test_start');
-        this.homeScreen.classList.remove('active');
-        this.quizScreen.classList.add('active');
-        this.currentQuestion = 0;
+        this.switchScreen(this.homeScreen, this.biomeScreen);
+    }
+
+    // =========== PHASE 1: BIOME SELECTION ===========
+    renderBiomeCards() {
+        this.biomeGrid.innerHTML = '';
+        const biomeKeys = Object.keys(BIOMES);
+        biomeKeys.forEach(key => {
+            const card = document.createElement('button');
+            card.className = 'biome-card';
+            card.setAttribute('data-biome', key);
+            card.innerHTML = `
+                <div class="biome-emoji">${BIOMES[key].emoji}</div>
+                <div class="biome-name" data-i18n="biome.${key}">${i18n.t('biome.' + key)}</div>
+                <div class="biome-desc" data-i18n="biome.${key}_desc">${i18n.t('biome.' + key + '_desc')}</div>
+            `;
+            card.addEventListener('click', () => this.selectBiome(key));
+            this.biomeGrid.appendChild(card);
+        });
+    }
+
+    selectBiome(biome) {
+        this.selectedBiome = biome;
+        this.currentScenario = 0;
         this.scores = {};
-        this.answers = [];
-        this.displayQuestion();
-    }
 
-    displayQuestion() {
-        const question = quizData.questions[this.currentQuestion];
-        if (!question) return;
+        // Initialize scores for the 3 animals of this biome
+        const biomeAnimals = Object.keys(ANIMALS).filter(a => ANIMALS[a].biome === biome);
+        biomeAnimals.forEach(a => { this.scores[a] = 0; });
 
-        // 질문 제목 표시
-        this.questionTitle.textContent = question.question;
-
-        // 선택지 표시
-        this.choicesContainer.innerHTML = '';
-        question.choices.forEach((choice, index) => {
-            const btn = document.createElement('button');
-            btn.className = 'btn choice-btn';
-            btn.textContent = choice.text;
-            btn.addEventListener('click', () => this.selectChoice(index, choice));
-            this.choicesContainer.appendChild(btn);
-        });
-
-        // 진행률 업데이트
-        this.updateProgress();
-
-        // 버튼 상태 업데이트
-        this.updateNavigationButtons();
-    }
-
-    selectChoice(index, choice) {
-        this.answers[this.currentQuestion] = choice;
-
-        // 점수 계산
-        for (const animal in choice.animals) {
-            this.scores[animal] = (this.scores[animal] || 0) + choice.animals[animal];
+        if (typeof gtag === 'function') {
+            gtag('event', 'biome_selected', { app_name: 'animal-personality', biome: biome });
         }
 
-        // 버튼 활성화 상태 업데이트
-        const buttons = this.choicesContainer.querySelectorAll('.choice-btn');
+        // Set biome background
+        this.scenarioBg.className = 'scenario-bg ' + biome;
+
+        this.switchScreen(this.biomeScreen, this.scenarioScreen);
+        this.displayScenario();
+    }
+
+    // =========== PHASE 2: SURVIVAL SCENARIOS ===========
+    displayScenario() {
+        const scenarios = SCENARIOS[this.selectedBiome];
+        const scenario = scenarios[this.currentScenario];
+        const icons = SCENARIO_ICONS[this.selectedBiome];
+
+        // Update progress
+        const progress = ((this.currentScenario + 1) / scenarios.length) * 100;
+        this.scenarioProgressFill.style.width = progress + '%';
+        this.scenarioStep.textContent = `${this.currentScenario + 1} / ${scenarios.length}`;
+
+        // Scene icon
+        this.scenarioIcon.textContent = icons[scenario.icon];
+
+        // Scene text from i18n
+        const scenarioKey = `scenarios.${this.selectedBiome}.${this.currentScenario}`;
+        this.scenarioText.textContent = i18n.t(scenarioKey + '.text');
+
+        // Render two binary choices
+        this.scenarioChoices.innerHTML = '';
+
+        const choiceABtn = document.createElement('button');
+        choiceABtn.className = 'scenario-choice';
+        choiceABtn.textContent = i18n.t(scenarioKey + '.a');
+        choiceABtn.addEventListener('click', () => this.makeChoice('A', scenario));
+
+        const choiceBBtn = document.createElement('button');
+        choiceBBtn.className = 'scenario-choice';
+        choiceBBtn.textContent = i18n.t(scenarioKey + '.b');
+        choiceBBtn.addEventListener('click', () => this.makeChoice('B', scenario));
+
+        this.scenarioChoices.appendChild(choiceABtn);
+        this.scenarioChoices.appendChild(choiceBBtn);
+
+        // Animate scene in
+        this.scenarioScene.style.animation = 'none';
+        // Force reflow
+        void this.scenarioScene.offsetHeight;
+        this.scenarioScene.style.animation = 'sceneFadeIn 0.5s ease';
+    }
+
+    makeChoice(choice, scenario) {
+        const scoring = choice === 'A' ? scenario.choiceA : scenario.choiceB;
+
+        // Add scores
+        for (const animal in scoring) {
+            this.scores[animal] = (this.scores[animal] || 0) + scoring[animal];
+        }
+
+        // Mark selected
+        const buttons = this.scenarioChoices.querySelectorAll('.scenario-choice');
         buttons.forEach((btn, i) => {
-            if (i === index) {
+            if ((choice === 'A' && i === 0) || (choice === 'B' && i === 1)) {
                 btn.classList.add('selected');
-            } else {
-                btn.classList.remove('selected');
             }
+            btn.style.pointerEvents = 'none';
         });
 
-        // 자동으로 다음 질문으로 이동
+        // Flash a random animal silhouette from this biome
+        this.flashAnimalSilhouette();
+
+        // Next scenario after delay
         setTimeout(() => {
-            if (this.currentQuestion < quizData.questions.length - 1) {
-                this.nextQuestion();
+            if (this.currentScenario < SCENARIOS[this.selectedBiome].length - 1) {
+                this.currentScenario++;
+                this.displayScenario();
+            } else {
+                this.finishJourney();
             }
-        }, 300);
+        }, 600);
     }
 
-    nextQuestion() {
-        if (this.currentQuestion < quizData.questions.length - 1) {
-            this.currentQuestion++;
-            this.displayQuestion();
-        } else {
-            this.finishQuiz();
-        }
+    flashAnimalSilhouette() {
+        const biomeAnimals = Object.keys(ANIMALS).filter(a => ANIMALS[a].biome === this.selectedBiome);
+        const randomAnimal = biomeAnimals[Math.floor(Math.random() * biomeAnimals.length)];
+
+        const flash = document.createElement('div');
+        flash.className = 'animal-flash';
+        flash.textContent = ANIMALS[randomAnimal].emoji;
+        document.body.appendChild(flash);
+
+        setTimeout(() => flash.remove(), 900);
     }
 
-    previousQuestion() {
-        if (this.currentQuestion > 0) {
-            this.currentQuestion--;
-            // 이전 선택 복원
-            const buttons = this.choicesContainer.querySelectorAll('.choice-btn');
-            if (this.answers[this.currentQuestion]) {
-                buttons.forEach((btn, i) => {
-                    if (btn.textContent === this.answers[this.currentQuestion].text) {
-                        btn.classList.add('selected');
-                    } else {
-                        btn.classList.remove('selected');
-                    }
-                });
-            }
-            this.displayQuestion();
-        }
-    }
-
-    updateProgress() {
-        const progress = ((this.currentQuestion + 1) / quizData.questions.length) * 100;
-        this.progressFill.style.width = progress + '%';
-        this.progressText.textContent = `${this.currentQuestion + 1} / ${quizData.questions.length}`;
-    }
-
-    updateNavigationButtons() {
-        // 이전 버튼 활성화 여부
-        this.prevBtn.disabled = this.currentQuestion === 0;
-
-        // 다음 버튼 비활성화 (자동으로 진행됨)
-        this.nextBtn.style.display = 'none';
-    }
-
-    finishQuiz() {
-        this.quizScreen.classList.remove('active');
-        this.resultScreen.classList.add('active');
+    // =========== PHASE 3: RESULT ===========
+    finishJourney() {
         this.calculateResult();
+        this.switchScreen(this.scenarioScreen, this.resultScreen);
         this.displayResult();
+
+        // Show ad
+        const adTop = document.getElementById('ad-top');
+        if (adTop) adTop.style.display = '';
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'test_complete', {
+                app_name: 'animal-personality',
+                result_type: this.result.key,
+                biome: this.selectedBiome
+            });
+        }
     }
 
     calculateResult() {
-        // 가장 높은 점수를 가진 동물 찾기
-        let maxScore = 0;
-        let resultAnimal = null;
+        let maxScore = -1;
+        let resultKey = null;
 
         for (const animal in this.scores) {
             if (this.scores[animal] > maxScore) {
                 maxScore = this.scores[animal];
-                resultAnimal = animal;
+                resultKey = animal;
             }
         }
 
         this.result = {
-            animal: resultAnimal,
-            data: quizData.animals[resultAnimal],
-            scores: this.scores
+            key: resultKey,
+            data: ANIMALS[resultKey]
         };
-
-        // GA4: 테스트 완료
-        if (typeof gtag === 'function') {
-            gtag('event', 'test_complete', {
-                app_name: 'animal-personality',
-                result_type: resultAnimal
-            });
-        }
     }
 
     displayResult() {
         const animal = this.result.data;
+        const key = this.result.key;
 
-        // 동물 아이콘
+        // Set biome background
+        const resultBg = document.getElementById('resultBg');
+        resultBg.className = 'result-bg ' + this.selectedBiome;
+
+        // Animal icon
         document.getElementById('resultAnimalIcon').textContent = animal.emoji;
 
-        // 제목 및 설명
-        document.getElementById('resultTitle').textContent = animal.name;
-        document.getElementById('resultSubtitle').textContent = animal.description;
+        // Title and subtitle
+        document.getElementById('resultTitle').textContent = i18n.t('animals.' + key + '.name');
+        document.getElementById('resultSubtitle').textContent = i18n.t('animals.' + key + '.description');
 
-        // 상세 정보
-        document.getElementById('resultCharacteristics').textContent = animal.characteristics;
-        document.getElementById('resultStrengths').textContent = animal.strengths;
-        document.getElementById('resultWeaknesses').textContent = animal.weaknesses;
-        document.getElementById('resultCompatible').textContent = animal.compatible;
+        // Characteristics
+        document.getElementById('resultCharacteristics').textContent = i18n.t('animals.' + key + '.characteristics');
 
-        // Canvas 결과 이미지 생성
+        // Trait cards
+        const traitCards = document.getElementById('traitCards');
+        traitCards.innerHTML = '';
+        const traitEmojis = {
+            loyalty: '🤝', instinct: '⚡', independence: '🐺', mystery: '🌙',
+            strength: '💪', protection: '🛡️', patience: '⏳', warmth: '❤️',
+            cleverness: '🧠', adaptability: '🔄', charm: '✨', creativity: '🎨',
+            empathy: '💕', social: '👥', harmony: '☯️', playfulness: '🎭',
+            elegance: '👑', intuition: '🔮', wisdom: '📚', insight: '🔍',
+            analysis: '📊', vision: '👁️', strategy: '♟️', speed: '⚡',
+            objectivity: '⚖️', leadership: '🏛️', courage: '🦁', charisma: '🌟',
+            determination: '🎯', power: '🔥', ambition: '🚀', influence: '🌐',
+            sensitivity: '🌸', gentleness: '🕊️', transformation: '🦋', freedom: '🕊️',
+            beauty: '💎', idealism: '🌈', uniqueness: '⭐', purity: '🤍',
+            imagination: '💭'
+        };
+
+        animal.traits.forEach(trait => {
+            const card = document.createElement('div');
+            card.className = 'trait-card';
+            card.innerHTML = `
+                <div class="trait-emoji">${traitEmojis[trait] || '✨'}</div>
+                <div class="trait-label" data-i18n="traits.${trait}">${i18n.t('traits.' + trait)}</div>
+            `;
+            traitCards.appendChild(card);
+        });
+
+        // Compatible animals (pack)
+        const compatContainer = document.getElementById('compatAnimals');
+        compatContainer.innerHTML = '';
+        animal.pack.forEach(packKey => {
+            const packAnimal = ANIMALS[packKey];
+            const div = document.createElement('div');
+            div.className = 'compat-animal';
+            div.innerHTML = `
+                <span class="compat-animal-emoji">${packAnimal.emoji}</span>
+                <span data-i18n="animals.${packKey}.name">${i18n.t('animals.' + packKey + '.name')}</span>
+            `;
+            compatContainer.appendChild(div);
+        });
+
+        // Rival animal
+        const rivalContainer = document.getElementById('rivalAnimal');
+        rivalContainer.innerHTML = '';
+        const rivalKey = animal.rival;
+        const rivalData = ANIMALS[rivalKey];
+        const rivalDiv = document.createElement('div');
+        rivalDiv.className = 'compat-animal rival-animal';
+        rivalDiv.innerHTML = `
+            <span class="compat-animal-emoji">${rivalData.emoji}</span>
+            <span data-i18n="animals.${rivalKey}.name">${i18n.t('animals.' + rivalKey + '.name')}</span>
+        `;
+        rivalContainer.appendChild(rivalDiv);
+
+        // Canvas share image
         this.generateResultCanvas();
 
-        // Google Ads 갱신
+        // Google Ads refresh
         if (window.adsbygoogle) {
-            try {
-                adsbygoogle.push({});
-            } catch (e) {
-                // Ad loading error
-            }
+            try { adsbygoogle.push({}); } catch (e) { /* Ad error */ }
         }
     }
 
     generateResultCanvas() {
         const canvas = this.resultCanvas;
         const ctx = canvas.getContext('2d');
+        const key = this.result.key;
         const animal = this.result.data;
 
-        // 캔버스 배경
+        // Biome background gradient
+        const biomeColors = {
+            forest: ['#0b3d1e', '#2d6a4f'],
+            ocean: ['#03045e', '#0077b6'],
+            mountain: ['#2b2d42', '#495057'],
+            desert: ['#7f5539', '#ddb892']
+        };
+        const colors = biomeColors[this.selectedBiome] || ['#0f0f23', '#1a1a2e'];
         const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-        gradient.addColorStop(0, '#0f0f23');
-        gradient.addColorStop(1, '#1a1a2e');
+        gradient.addColorStop(0, colors[0]);
+        gradient.addColorStop(1, colors[1]);
         ctx.fillStyle = gradient;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        // 제목
-        ctx.fillStyle = '#ffffff';
-        ctx.font = 'bold 28px Arial';
-        ctx.textAlign = 'center';
-        ctx.fillText('나의 내면 동물은?', canvas.width / 2, 60);
+        // Dark overlay for readability
+        ctx.fillStyle = 'rgba(0, 0, 0, 0.4)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        // 동물 아이콘
+        // Title
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 22px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText(i18n.t('result.wilderness_spoken'), canvas.width / 2, 50);
+
+        // Animal emoji
         ctx.font = '80px Arial';
         ctx.fillText(animal.emoji, canvas.width / 2, 150);
 
-        // 동물 이름
-        ctx.font = 'bold 24px Arial';
-        ctx.fillStyle = '#8e44ad';
-        ctx.fillText(animal.name, canvas.width / 2, 200);
+        // Animal name
+        ctx.font = 'bold 28px Arial';
+        ctx.fillStyle = '#b56edb';
+        ctx.fillText(i18n.t('animals.' + key + '.name'), canvas.width / 2, 210);
 
-        // 설명 텍스트 (줄바꿈 처리)
+        // Biome
         ctx.font = '14px Arial';
-        ctx.fillStyle = '#b0b0b0';
-        const description = animal.description;
-        const words = description.split(' ');
-        let line = '';
-        let y = 250;
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
+        ctx.fillText(BIOMES[this.selectedBiome].emoji + ' ' + i18n.t('biome.' + this.selectedBiome), canvas.width / 2, 240);
 
+        // Traits
+        ctx.font = 'bold 14px Arial';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+        const traitTexts = animal.traits.map(t => i18n.t('traits.' + t));
+        ctx.fillText(traitTexts.join(' · '), canvas.width / 2, 280);
+
+        // Description
+        ctx.font = '13px Arial';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+        const desc = i18n.t('animals.' + key + '.description');
+        const words = desc.split(' ');
+        let line = '';
+        let y = 320;
         words.forEach(word => {
             const testLine = line + word + ' ';
-            const metrics = ctx.measureText(testLine);
-
-            if (metrics.width > canvas.width - 40) {
-                ctx.fillText(line, canvas.width / 2, y);
+            if (ctx.measureText(testLine).width > canvas.width - 60) {
+                ctx.fillText(line.trim(), canvas.width / 2, y);
                 line = word + ' ';
                 y += 20;
             } else {
                 line = testLine;
             }
         });
-        if (line) {
-            ctx.fillText(line, canvas.width / 2, y);
-        }
+        if (line.trim()) ctx.fillText(line.trim(), canvas.width / 2, y);
 
-        // 출처 표시
+        // Pack
+        y += 40;
+        ctx.font = 'bold 13px Arial';
+        ctx.fillStyle = 'rgba(181, 110, 219, 0.9)';
+        ctx.fillText(i18n.t('result.your_pack'), canvas.width / 2, y);
+        y += 22;
+        ctx.font = '24px Arial';
+        const packEmojis = animal.pack.map(p => ANIMALS[p].emoji).join('  ');
+        ctx.fillText(packEmojis, canvas.width / 2, y);
+
+        // Footer
         ctx.font = '12px Arial';
-        ctx.fillStyle = '#666666';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
         ctx.fillText('DopaBrain.com', canvas.width / 2, canvas.height - 20);
     }
 
@@ -370,120 +532,96 @@ class AnimalPersonalityApp {
         const canvas = this.resultCanvas;
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
-        link.download = `animal-personality-${this.result.animal}.png`;
+        link.download = `spirit-animal-${this.result.key}.png`;
         link.click();
 
-        // GA4: 이미지 저장
         if (typeof gtag === 'function') {
-            gtag('event', 'save_image', {
-                app_name: 'animal-personality',
-                content_type: 'test_result'
-            });
+            gtag('event', 'save_image', { app_name: 'animal-personality', content_type: 'test_result' });
         }
 
-        // 피드백
         const btn = this.downloadBtn;
         const originalText = btn.textContent;
         btn.textContent = i18n.t('share.download_success');
-        setTimeout(() => {
-            btn.textContent = originalText;
-        }, 2000);
+        setTimeout(() => { btn.textContent = originalText; }, 2000);
     }
 
     shareKakao() {
-        if (!window.Kakao) {
-            alert('카카오톡 공유 기능은 준비 중입니다.');
-            return;
-        }
-
-        const animal = this.result.data;
-        // GA4: 공유
+        if (!window.Kakao) return;
+        const key = this.result.key;
         if (typeof gtag === 'function') {
-            gtag('event', 'share', {
-                method: 'kakao',
-                app_name: 'animal-personality',
-                content_type: 'test_result'
-            });
+            gtag('event', 'share', { method: 'kakao', app_name: 'animal-personality', content_type: 'test_result' });
         }
         Kakao.Share.sendDefault({
             objectType: 'feed',
             content: {
-                title: `나의 내면 동물: ${animal.name} 🦁`,
-                description: animal.description,
+                title: i18n.t('animals.' + key + '.name') + ' ' + ANIMALS[key].emoji,
+                description: i18n.t('animals.' + key + '.description'),
                 imageUrl: window.location.origin + '/animal-personality/icon-512.svg',
-                link: {
-                    webUrl: this.shareUrl,
-                    mobileWebUrl: this.shareUrl
-                }
+                link: { webUrl: this.shareUrl, mobileWebUrl: this.shareUrl }
             }
         });
     }
 
     shareTwitter() {
-        const animal = this.result.data;
-        // GA4: 공유
+        const key = this.result.key;
         if (typeof gtag === 'function') {
-            gtag('event', 'share', {
-                method: 'twitter',
-                app_name: 'animal-personality',
-                content_type: 'test_result'
-            });
+            gtag('event', 'share', { method: 'twitter', app_name: 'animal-personality', content_type: 'test_result' });
         }
-        const text = `나의 내면 동물은 ${animal.name} 🦁입니다! 당신은 무엇일까요? 테스트 해보세요!`;
+        const name = i18n.t('animals.' + key + '.name');
+        const text = i18n.t('share.twitter_text').replace('{animal}', name + ' ' + ANIMALS[key].emoji);
         const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(this.shareUrl)}`;
         window.open(url, '_blank');
     }
 
     shareUrl() {
-        const animal = this.result.data;
-        const text = `나의 내면 동물: ${animal.name}\n${this.shareUrl}`;
-
-        // GA4: 공유
+        const key = this.result.key;
         if (typeof gtag === 'function') {
-            gtag('event', 'share', {
-                method: navigator.share ? 'native' : 'clipboard',
-                app_name: 'animal-personality',
-                content_type: 'test_result'
-            });
+            gtag('event', 'share', { method: navigator.share ? 'native' : 'clipboard', app_name: 'animal-personality', content_type: 'test_result' });
         }
-
+        const name = i18n.t('animals.' + key + '.name');
         if (navigator.share) {
             navigator.share({
-                title: '나의 내면 동물',
-                text: `나의 내면 동물은 ${animal.name}입니다!`,
+                title: i18n.t('home.title'),
+                text: i18n.t('share.native_text').replace('{animal}', name),
                 url: this.shareUrl
             });
         } else {
-            // Fallback: 링크 복사
             navigator.clipboard.writeText(this.shareUrl).then(() => {
                 const btn = this.shareUrlBtn;
                 const originalText = btn.textContent;
                 btn.textContent = i18n.t('share.copied');
-                setTimeout(() => {
-                    btn.textContent = originalText;
-                }, 2000);
+                setTimeout(() => { btn.textContent = originalText; }, 2000);
             });
         }
     }
 
-    resetQuiz() {
+    // =========== NAVIGATION ===========
+    switchScreen(from, to) {
+        from.classList.remove('active');
+        to.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    resetJourney() {
         this.resultScreen.classList.remove('active');
         this.homeScreen.classList.add('active');
-        this.currentQuestion = 0;
+        this.selectedBiome = null;
+        this.currentScenario = 0;
         this.scores = {};
-        this.answers = [];
         this.result = null;
+        const adTop = document.getElementById('ad-top');
+        if (adTop) adTop.style.display = 'none';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     loadRecommendations() {
-        // 추천 섹션 로드 (다른 성격/심리 테스트 앱)
         const recommendations = [
-            { name: '뇌유형 검사', emoji: '🧠', link: '../brain-type/' },
-            { name: 'MBTI 궁합', emoji: '💕', link: '../mbti-love/' },
-            { name: '꿈해몽/운세', emoji: '🔮', link: '../dream-fortune/' },
-            { name: '성격 색상 테스트', emoji: '🎨', link: '../color-personality/' },
-            { name: '감정 온도계', emoji: '🌡️', link: '../emotion-temp/' },
-            { name: 'HSP 민감성 검사', emoji: '✨', link: '../hsp-test/' }
+            { name: i18n.t('rec.brain_type') || '뇌유형 검사', emoji: '🧠', link: '../brain-type/' },
+            { name: i18n.t('rec.mbti_love') || 'MBTI 궁합', emoji: '💕', link: '../mbti-love/' },
+            { name: i18n.t('rec.dream_fortune') || '꿈해몽/운세', emoji: '🔮', link: '../dream-fortune/' },
+            { name: i18n.t('rec.color_personality') || '성격 색상', emoji: '🎨', link: '../color-personality/' },
+            { name: i18n.t('rec.emotion_temp') || '감정 온도계', emoji: '🌡️', link: '../emotion-temp/' },
+            { name: i18n.t('rec.hsp_test') || 'HSP 검사', emoji: '✨', link: '../hsp-test/' }
         ];
 
         this.recGrid.innerHTML = '';
@@ -504,17 +642,23 @@ class AnimalPersonalityApp {
     }
 
     changeLanguage(lang) {
-        i18n.setLanguage(lang);
-        this.langMenu.classList.add('hidden');
-
-        // 현재 화면 업데이트
-        if (this.quizScreen.classList.contains('active')) {
-            this.displayQuestion();
-        }
+        i18n.setLanguage(lang).then(() => {
+            this.langMenu.classList.add('hidden');
+            this.renderBiomeCards();
+            this.loadRecommendations();
+            // Re-render current scenario if in scenario phase
+            if (this.scenarioScreen.classList.contains('active') && this.selectedBiome) {
+                this.displayScenario();
+            }
+            // Re-render result if showing
+            if (this.resultScreen.classList.contains('active') && this.result) {
+                this.displayResult();
+            }
+        });
     }
 }
 
-// 앱 초기화
+// Initialize
 document.addEventListener('DOMContentLoaded', () => {
-    window.app = new AnimalPersonalityApp();
+    window.app = new WildernessSurvivalApp();
 });

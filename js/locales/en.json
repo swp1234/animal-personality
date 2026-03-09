@@ -1,11 +1,11 @@
 {
   "meta": {
-    "description": "What is your inner animal? 🦁 Discover your inner animal personality through 12 questions. Which of 12 animal types are you? Fun personality test shareable on social media.",
-    "keywords": "animal personality test, personality test, character assessment, viral test, inner animal, personality types",
-    "og_title": "What is Your Inner Animal? 🦁 Which of 12 Are You?",
-    "og_description": "Find which of 12 animal types you are through 12 questions! Lion, Eagle, Wolf, Dolphin... Take the test and share your results on social media!",
-    "twitter_title": "What is Your Inner Animal? 🦁 Which of 12 Are You?",
-    "twitter_description": "Discover which of 12 animal types matches your personality!"
+    "description": "What is your spirit animal? 🦁 Discover your spirit animal through a wilderness survival journey. Which of 12 animal types are you? An immersive personality test!",
+    "keywords": "spirit animal test, personality test, wilderness survival, animal personality, personality types, viral test",
+    "og_title": "Your Spirit Animal 🦁 Wilderness Survival Journey",
+    "og_description": "Discover your spirit animal through immersive wilderness survival scenarios! 12 animal types await.",
+    "twitter_title": "Your Spirit Animal 🦁 Wilderness Survival Journey",
+    "twitter_description": "Discover your spirit animal through wilderness survival scenarios!"
   },
   "loader": {
     "text": "Loading..."
@@ -14,33 +14,190 @@
     "language": "Select Language"
   },
   "home": {
-    "title": "What is Your Inner Animal?",
-    "subtitle": "Discover your inner animal through 12 questions",
-    "description": "Which of 12 animal types are you? Lion, Eagle, Wolf, Dolphin and more... Take the test, learn about each animal's characteristics, and share your results on social media!",
+    "title": "Wilderness Survival Journey",
+    "subtitle": "You've wandered into the wilderness. Your survival instincts will reveal your spirit animal.",
+    "description": "Experience 6 survival scenarios across 4 biomes to discover your spirit animal. Follow your instincts — the wilderness will reveal the answer.",
     "socialStats": "⏱ About 2 min | 🐾 12 Animal Types | 👥 2,100+ Tested"
   },
   "btn": {
-    "start": "Start Test",
-    "prev": "Previous",
-    "next": "Next",
+    "start": "Begin Journey",
     "download": "Download Image",
-    "share_kakao": "Kakao Talk",
+    "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",
     "share_url": "Copy Link",
-    "retake": "Retake Test"
+    "retake": "Try Again"
+  },
+  "biome": {
+    "title": "Choose the environment that calls to you",
+    "subtitle": "Go where your instincts lead",
+    "forest": "Forest",
+    "forest_desc": "Walk among the silent trees",
+    "ocean": "Ocean",
+    "ocean_desc": "Dive beyond the endless horizon",
+    "mountain": "Mountain",
+    "mountain_desc": "Climb toward the summit",
+    "desert": "Desert",
+    "desert_desc": "Walk across the endless sands"
+  },
+  "scenarios": {
+    "forest": {
+      "0": { "text": "Night falls suddenly.", "a": "Build a shelter", "b": "Keep moving by moonlight" },
+      "1": { "text": "You hear a growl nearby.", "a": "Stand your ground", "b": "Climb a tree" },
+      "2": { "text": "You find a stream.", "a": "Follow it downstream", "b": "Stay and set up camp" },
+      "3": { "text": "Another creature approaches.", "a": "Observe silently", "b": "Make yourself known" },
+      "4": { "text": "A storm is coming.", "a": "Find a cave", "b": "Build a canopy from branches" },
+      "5": { "text": "You spot food high up.", "a": "Climb for it", "b": "Search the ground instead" }
+    },
+    "ocean": {
+      "0": { "text": "The waves are getting stronger.", "a": "Ride them", "b": "Seek calm waters" },
+      "1": { "text": "You spot a school of fish.", "a": "Dive in", "b": "Wait patiently on the surface" },
+      "2": { "text": "An island appears in the distance.", "a": "Swim for it", "b": "Stay in open water" },
+      "3": { "text": "The current pulls you.", "a": "Go with the flow", "b": "Fight against it" },
+      "4": { "text": "Night falls on the water.", "a": "Float and rest", "b": "Keep swimming" },
+      "5": { "text": "Another creature surfaces.", "a": "Approach curiously", "b": "Keep your distance" }
+    },
+    "mountain": {
+      "0": { "text": "The path splits.", "a": "Take the steep shortcut", "b": "Follow the long safe trail" },
+      "1": { "text": "Temperature drops sharply.", "a": "Keep climbing", "b": "Find shelter and wait" },
+      "2": { "text": "An eagle circles above.", "a": "Follow it", "b": "Chart your own course" },
+      "3": { "text": "You stand at a cliff edge.", "a": "Look down", "b": "Focus on the summit" },
+      "4": { "text": "Fog rolls in.", "a": "Trust your instincts", "b": "Wait for it to clear" },
+      "5": { "text": "You reach a plateau.", "a": "Rest and survey", "b": "Push for the peak" }
+    },
+    "desert": {
+      "0": { "text": "The sun is blazing.", "a": "Travel by night", "b": "Push through the heat" },
+      "1": { "text": "You find an oasis.", "a": "Drink deeply", "b": "Ration carefully" },
+      "2": { "text": "A sandstorm approaches.", "a": "Dig in and wait", "b": "Find rock shelter" },
+      "3": { "text": "You see tracks in the sand.", "a": "Follow them", "b": "Make your own path" },
+      "4": { "text": "Stars come out.", "a": "Navigate by them", "b": "Camp for the night" },
+      "5": { "text": "Mirage or real?", "a": "Investigate", "b": "Trust your senses" }
+    }
+  },
+  "traits": {
+    "loyalty": "Loyalty",
+    "instinct": "Instinct",
+    "independence": "Independence",
+    "mystery": "Mystery",
+    "strength": "Strength",
+    "protection": "Protection",
+    "patience": "Patience",
+    "warmth": "Warmth",
+    "cleverness": "Cleverness",
+    "adaptability": "Adaptability",
+    "charm": "Charm",
+    "creativity": "Creativity",
+    "empathy": "Empathy",
+    "social": "Social",
+    "harmony": "Harmony",
+    "playfulness": "Playfulness",
+    "elegance": "Elegance",
+    "intuition": "Intuition",
+    "wisdom": "Wisdom",
+    "insight": "Insight",
+    "analysis": "Analysis",
+    "vision": "Vision",
+    "strategy": "Strategy",
+    "speed": "Speed",
+    "objectivity": "Objectivity",
+    "leadership": "Leadership",
+    "courage": "Courage",
+    "charisma": "Charisma",
+    "determination": "Determination",
+    "power": "Power",
+    "ambition": "Ambition",
+    "influence": "Influence",
+    "sensitivity": "Sensitivity",
+    "gentleness": "Gentleness",
+    "transformation": "Transformation",
+    "freedom": "Freedom",
+    "beauty": "Beauty",
+    "idealism": "Idealism",
+    "uniqueness": "Uniqueness",
+    "purity": "Purity",
+    "imagination": "Imagination"
+  },
+  "animals": {
+    "wolf": {
+      "name": "Wolf",
+      "description": "You are a spirit of mysterious independence. You walk your own path and form deep bonds with a select few.",
+      "characteristics": "Independent and enigmatic temperament. You prefer your own path, forming deep connections with loyal companions."
+    },
+    "bear": {
+      "name": "Bear",
+      "description": "You are dependable and trustworthy. Your steady presence brings comfort to those around you.",
+      "characteristics": "Reliable and protective nature. You move slowly but surely, with a natural instinct to shield others."
+    },
+    "fox": {
+      "name": "Fox",
+      "description": "You are clever and creative. Your flexible thinking leads you to unique solutions.",
+      "characteristics": "Clever and creative. You break conventions and solve problems in your own unique way."
+    },
+    "dolphin": {
+      "name": "Dolphin",
+      "description": "You have a warm heart and deep empathy. Your kindness brightens everything around you.",
+      "characteristics": "Kind and emotionally perceptive. You easily understand others' feelings and seek harmony and peace."
+    },
+    "cat": {
+      "name": "Cat",
+      "description": "You are an elegant, independent soul. You live to your own rhythm, revealing deep emotions when it matters.",
+      "characteristics": "Independent yet emotionally nuanced. You act on your own terms, showing your true feelings at crucial moments."
+    },
+    "owl": {
+      "name": "Owl",
+      "description": "You possess deep wisdom and insight. Your quiet observation and advice hold immense value.",
+      "characteristics": "Wise with a preference for deep thinking. You observe quietly but offer insightful guidance."
+    },
+    "eagle": {
+      "name": "Eagle",
+      "description": "You are a strategist with exceptional vision. You see the big picture and act with precision.",
+      "characteristics": "Perceptive and goal-oriented. You judge situations from a high vantage point with both analytical and intuitive prowess."
+    },
+    "lion": {
+      "name": "Lion",
+      "description": "You are a natural-born leader. Your bravery and charisma inspire others to follow.",
+      "characteristics": "Confident and bold leader. You pursue goals with strong will and passion."
+    },
+    "dragon": {
+      "name": "Dragon",
+      "description": "You possess extraordinary power and mystique. Your influence and vision can transform the world.",
+      "characteristics": "Powerful, mysterious, and charismatic. You dream big and strive to accomplish the extraordinary."
+    },
+    "rabbit": {
+      "name": "Rabbit",
+      "description": "You are sensitive and caring. Your empathy and thoughtfulness deepen every relationship.",
+      "characteristics": "Gentle with sensitive emotions. Quick reflexes and heightened awareness, always seeking safety."
+    },
+    "butterfly": {
+      "name": "Butterfly",
+      "description": "You love beauty and creativity. Your inspiration makes everything brighter and more colorful.",
+      "characteristics": "You embrace change and pursue beauty. You crave diverse experiences and add creativity to life."
+    },
+    "unicorn": {
+      "name": "Unicorn",
+      "description": "You possess a magical uniqueness. Your pure beliefs and creativity make the world more beautiful.",
+      "characteristics": "Rare and special temperament. An idealist with a strong inner core."
+    }
   },
   "result": {
+    "wilderness_spoken": "The wilderness has spoken...",
     "characteristics": "Characteristics",
-    "strengths": "Strengths",
-    "weaknesses": "Weaknesses",
-    "compatible": "Compatible Animals"
+    "your_pack": "Your Pack",
+    "your_rival": "Your Rival"
   },
   "rec": {
-    "title": "Other Fun Tests"
+    "title": "Other Fun Tests",
+    "brain_type": "Brain Type",
+    "mbti_love": "MBTI Love",
+    "dream_fortune": "Dream Fortune",
+    "color_personality": "Color Personality",
+    "emotion_temp": "Emotion Temp",
+    "hsp_test": "HSP Test"
   },
   "share": {
     "copied": "Link copied!",
-    "download_success": "Image downloaded!"
+    "download_success": "Image downloaded!",
+    "twitter_text": "My spirit animal is {animal}! What's yours?",
+    "native_text": "My spirit animal is {animal}!"
   },
   "accessibility": {
     "skipMain": "Skip to content"
