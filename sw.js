@@ -3,14 +3,13 @@
  * 오프라인 기능과 캐싱을 담당합니다
  */
 
-const CACHE_NAME = 'animal-personality-v1';
+const CACHE_NAME = 'animal-personality-v2';
 const URLS_TO_CACHE = [
   '/',
   '/index.html',
   '/css/style.css',
   '/js/app.js',
   '/js/i18n.js',
-  '/js/quiz-data.js',
   '/js/locales/ko.json',
   '/js/locales/en.json',
   '/js/locales/zh.json',

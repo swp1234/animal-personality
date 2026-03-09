@@ -1,48 +1,117 @@
 {
   "meta": {
-    "description": "¿Cuál es tu animal interior? 🦁 Descubre tu animal interior a través de 12 preguntas. ¿Cuál de los 12 tipos de animales eres? Prueba de personalidad divertida y compartible en redes sociales.",
-    "keywords": "prueba de personalidad animal, prueba de personalidad, evaluación de carácter, prueba viral, animal interior, tipos de personalidad",
-    "og_title": "¿Cuál es tu animal interior? 🦁 ¿Cuál de los 12?",
-    "og_description": "¡Encuentra cuál de los 12 tipos de animales eres a través de 12 preguntas! León, Águila, Lobo, Delfín... ¡Haz la prueba y comparte tus resultados en redes sociales!",
-    "twitter_title": "¿Cuál es tu animal interior? 🦁 ¿Cuál de los 12?",
-    "twitter_description": "¡Descubre qué tipo de animal coincide con tu personalidad!"
+    "description": "Cual es tu animal espiritual? 🦁 Descubrelo a traves de un viaje de supervivencia salvaje. Cual de los 12 tipos eres? Test de personalidad inmersivo!",
+    "keywords": "animal espiritual, test de personalidad, supervivencia salvaje, personalidad animal",
+    "og_title": "Tu Animal Espiritual 🦁 Viaje de Supervivencia",
+    "og_description": "Descubre tu animal espiritual a traves de escenarios de supervivencia salvaje!",
+    "twitter_title": "Tu Animal Espiritual 🦁 Viaje de Supervivencia",
+    "twitter_description": "Descubre tu animal espiritual con escenarios de supervivencia!"
   },
-  "loader": {
-    "text": "Cargando..."
-  },
-  "a11y": {
-    "language": "Seleccionar idioma"
-  },
+  "loader": { "text": "Cargando..." },
+  "a11y": { "language": "Seleccionar idioma" },
   "home": {
-    "title": "¿Cuál es tu animal interior?",
-    "subtitle": "Descubre tu animal interior a través de 12 preguntas",
-    "description": "¿Cuál de los 12 tipos de animales eres? León, Águila, Lobo, Delfín y más... ¡Haz la prueba, aprende sobre las características de cada animal y comparte tus resultados en redes sociales!",
-    "socialStats": "⏱ Aprox. 2 min | 🐾 12 tipos de animales | 👥 2.100+ participantes"
+    "title": "Viaje de Supervivencia Salvaje",
+    "subtitle": "Te has adentrado en la naturaleza. Tus instintos de supervivencia revelaran tu animal espiritual.",
+    "description": "Experimenta 6 escenarios de supervivencia en 4 biomas para descubrir tu animal espiritual. Sigue tus instintos: la naturaleza te dara la respuesta.",
+    "socialStats": "⏱ Aprox. 2 min | 🐾 12 tipos de animales | 👥 2,100+ probados"
   },
   "btn": {
-    "start": "Comenzar prueba",
-    "prev": "Anterior",
-    "next": "Siguiente",
-    "download": "Descargar imagen",
-    "share_kakao": "Kakao Talk",
+    "start": "Comenzar Viaje",
+    "download": "Descargar Imagen",
+    "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",
-    "share_url": "Copiar enlace",
-    "retake": "Repetir prueba"
+    "share_url": "Copiar Enlace",
+    "retake": "Reintentar"
+  },
+  "biome": {
+    "title": "Elige el entorno que te atrae",
+    "subtitle": "Ve donde te lleven tus instintos",
+    "forest": "Bosque",
+    "forest_desc": "Camina entre los arboles silenciosos",
+    "ocean": "Oceano",
+    "ocean_desc": "Sumérgete mas alla del horizonte",
+    "mountain": "Montana",
+    "mountain_desc": "Escala hacia la cumbre",
+    "desert": "Desierto",
+    "desert_desc": "Camina por las arenas infinitas"
+  },
+  "scenarios": {
+    "forest": {
+      "0": { "text": "La noche cae de repente.", "a": "Construir un refugio", "b": "Seguir a la luz de la luna" },
+      "1": { "text": "Escuchas un rugido cercano.", "a": "Mantener tu posicion", "b": "Trepar a un arbol" },
+      "2": { "text": "Encuentras un arroyo.", "a": "Seguirlo rio abajo", "b": "Quedarte y acampar" },
+      "3": { "text": "Otra criatura se acerca.", "a": "Observar en silencio", "b": "Hacerte notar" },
+      "4": { "text": "Se acerca una tormenta.", "a": "Buscar una cueva", "b": "Construir un dosel con ramas" },
+      "5": { "text": "Ves comida en lo alto.", "a": "Trepar a buscarla", "b": "Buscar en el suelo" }
+    },
+    "ocean": {
+      "0": { "text": "Las olas se intensifican.", "a": "Surfearlas", "b": "Buscar aguas tranquilas" },
+      "1": { "text": "Ves un banco de peces.", "a": "Sumergirte", "b": "Esperar pacientemente en la superficie" },
+      "2": { "text": "Una isla aparece a lo lejos.", "a": "Nadar hacia ella", "b": "Quedarte en mar abierto" },
+      "3": { "text": "La corriente te arrastra.", "a": "Dejarte llevar", "b": "Luchar contra ella" },
+      "4": { "text": "La noche cae sobre el agua.", "a": "Flotar y descansar", "b": "Seguir nadando" },
+      "5": { "text": "Otra criatura emerge.", "a": "Acercarte con curiosidad", "b": "Mantener distancia" }
+    },
+    "mountain": {
+      "0": { "text": "El camino se bifurca.", "a": "Tomar el atajo empinado", "b": "Seguir el camino largo y seguro" },
+      "1": { "text": "La temperatura baja bruscamente.", "a": "Seguir escalando", "b": "Buscar refugio y esperar" },
+      "2": { "text": "Un aguila da vueltas arriba.", "a": "Seguirla", "b": "Trazar tu propio rumbo" },
+      "3": { "text": "Estas al borde de un precipicio.", "a": "Mirar abajo", "b": "Concentrarte en la cumbre" },
+      "4": { "text": "La niebla se cierne.", "a": "Confiar en tus instintos", "b": "Esperar a que se disipe" },
+      "5": { "text": "Llegas a una meseta.", "a": "Descansar y observar", "b": "Seguir hacia la cima" }
+    },
+    "desert": {
+      "0": { "text": "El sol abrasa.", "a": "Viajar de noche", "b": "Avanzar en el calor" },
+      "1": { "text": "Encuentras un oasis.", "a": "Beber abundantemente", "b": "Racionar con cuidado" },
+      "2": { "text": "Se acerca una tormenta de arena.", "a": "Enterrarte y esperar", "b": "Buscar refugio en las rocas" },
+      "3": { "text": "Ves huellas en la arena.", "a": "Seguirlas", "b": "Hacer tu propio camino" },
+      "4": { "text": "Salen las estrellas.", "a": "Navegar por ellas", "b": "Acampar por la noche" },
+      "5": { "text": "Espejismo o realidad?", "a": "Investigar", "b": "Confiar en tus sentidos" }
+    }
+  },
+  "traits": {
+    "loyalty": "Lealtad", "instinct": "Instinto", "independence": "Independencia", "mystery": "Misterio",
+    "strength": "Fuerza", "protection": "Proteccion", "patience": "Paciencia", "warmth": "Calidez",
+    "cleverness": "Astucia", "adaptability": "Adaptabilidad", "charm": "Encanto", "creativity": "Creatividad",
+    "empathy": "Empatia", "social": "Social", "harmony": "Armonia", "playfulness": "Alegria",
+    "elegance": "Elegancia", "intuition": "Intuicion", "wisdom": "Sabiduria", "insight": "Perspicacia",
+    "analysis": "Analisis", "vision": "Vision", "strategy": "Estrategia", "speed": "Velocidad",
+    "objectivity": "Objetividad", "leadership": "Liderazgo", "courage": "Valor", "charisma": "Carisma",
+    "determination": "Determinacion", "power": "Poder", "ambition": "Ambicion", "influence": "Influencia",
+    "sensitivity": "Sensibilidad", "gentleness": "Dulzura", "transformation": "Transformacion", "freedom": "Libertad",
+    "beauty": "Belleza", "idealism": "Idealismo", "uniqueness": "Singularidad", "purity": "Pureza",
+    "imagination": "Imaginacion"
+  },
+  "animals": {
+    "wolf": { "name": "Lobo", "description": "Eres un espiritu de independencia misteriosa. Caminas tu propio camino y formas vinculos profundos con unos pocos elegidos.", "characteristics": "Temperamento independiente y enigmatico. Prefiere su propio camino, formando conexiones profundas con companeros leales." },
+    "bear": { "name": "Oso", "description": "Eres confiable y digno de confianza. Tu presencia estable da confort a quienes te rodean.", "characteristics": "Naturaleza confiable y protectora. Se mueve lento pero seguro, con instinto natural de proteger." },
+    "fox": { "name": "Zorro", "description": "Eres astuto y creativo. Tu pensamiento flexible te lleva a soluciones unicas.", "characteristics": "Astuto y creativo. Rompe convenciones y resuelve problemas a su manera." },
+    "dolphin": { "name": "Delfin", "description": "Tienes un corazon calido y profunda empatia. Tu amabilidad ilumina todo a tu alrededor.", "characteristics": "Amable y emocionalmente perceptivo. Entiende facilmente los sentimientos ajenos, busca armonia y paz." },
+    "cat": { "name": "Gato", "description": "Eres un alma elegante e independiente. Vives a tu propio ritmo, mostrando emociones profundas cuando importa.", "characteristics": "Independiente pero emocionalmente sutil. Actua en sus propios terminos, mostrando sentimientos verdaderos en momentos cruciales." },
+    "owl": { "name": "Buho", "description": "Posees profunda sabiduria y perspicacia. Tu observacion silenciosa y consejos tienen inmenso valor.", "characteristics": "Sabio, prefiere el pensamiento profundo. Observa en silencio pero ofrece orientacion perspicaz." },
+    "eagle": { "name": "Aguila", "description": "Eres un estratega con vision excepcional. Ves el panorama general y actuas con precision.", "characteristics": "Perceptivo y orientado a objetivos. Juzga situaciones desde lo alto con capacidad analitica e intuitiva." },
+    "lion": { "name": "Leon", "description": "Eres un lider nato. Tu valentia y carisma inspiran a otros a seguirte.", "characteristics": "Lider confiado y audaz. Persigue objetivos con fuerte voluntad y pasion." },
+    "dragon": { "name": "Dragon", "description": "Posees poder y misticismo extraordinarios. Tu influencia y vision pueden transformar el mundo.", "characteristics": "Poderoso, misterioso y carismatico. Suena en grande y lucha por lo extraordinario." },
+    "rabbit": { "name": "Conejo", "description": "Eres sensible y cuidadoso. Tu empatia y consideracion profundizan cada relacion.", "characteristics": "Gentil con emociones sensibles. Reflejos rapidos y alta alerta, siempre buscando seguridad." },
+    "butterfly": { "name": "Mariposa", "description": "Amas la belleza y la creatividad. Tu inspiracion hace todo mas brillante y colorido.", "characteristics": "Abraza el cambio y persigue la belleza. Anhela experiencias diversas, anadiendo creatividad a la vida." },
+    "unicorn": { "name": "Unicornio", "description": "Posees una singularidad magica. Tus creencias puras y creatividad hacen el mundo mas bello.", "characteristics": "Temperamento raro y especial. Idealista con un nucleo interior fuerte." }
   },
   "result": {
-    "characteristics": "Características",
-    "strengths": "Fortalezas",
-    "weaknesses": "Debilidades",
-    "compatible": "Animales compatibles"
+    "wilderness_spoken": "La naturaleza ha hablado...",
+    "characteristics": "Caracteristicas",
+    "your_pack": "Tu Manada",
+    "your_rival": "Tu Rival"
   },
   "rec": {
-    "title": "Otras pruebas divertidas"
+    "title": "Otros tests divertidos",
+    "brain_type": "Tipo de Cerebro", "mbti_love": "MBTI Amor", "dream_fortune": "Suenos/Fortuna",
+    "color_personality": "Color Personalidad", "emotion_temp": "Temp. Emocional", "hsp_test": "Test HSP"
   },
   "share": {
-    "copied": "¡Enlace copiado!",
-    "download_success": "¡Imagen descargada!"
+    "copied": "Enlace copiado!",
+    "download_success": "Imagen descargada!",
+    "twitter_text": "Mi animal espiritual es {animal}! Cual es el tuyo?",
+    "native_text": "Mi animal espiritual es {animal}!"
   },
-  "accessibility": {
-    "skipMain": "Saltar al contenido"
-  }
+  "accessibility": { "skipMain": "Ir al contenido" }
 }

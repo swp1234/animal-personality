@@ -1,48 +1,117 @@
 {
   "meta": {
-    "description": "Welches ist dein inneres Tier? 🦁 Entdecken Sie Ihr inneres Tier durch 12 Fragen. Welcher der 12 Tiertypen sind Sie? Unterhaltsamer Persönlichkeitstest, der auf Social Media teilbar ist.",
-    "keywords": "Tierpersönlichkeitstest, Persönlichkeitstest, Charakterbewertung, viraler Test, inneres Tier, Persönlichkeitstypen",
-    "og_title": "Welches ist dein inneres Tier? 🦁 Welcher der 12?",
-    "og_description": "Finden Sie heraus, welcher der 12 Tiertypen Sie durch 12 Fragen sind! Löwe, Adler, Wolf, Delfin... Machen Sie den Test und teilen Sie Ihre Ergebnisse in sozialen Medien!",
-    "twitter_title": "Welches ist dein inneres Tier? 🦁 Welcher der 12?",
-    "twitter_description": "Entdecke, welcher Tiertyp zu deiner Persönlichkeit passt!"
+    "description": "Was ist dein Seelentier? 🦁 Entdecke es durch eine Wildnis-Überlebensreise. Welcher der 12 Tiertypen bist du? Immersiver Persönlichkeitstest!",
+    "keywords": "Seelentier Test, Persönlichkeitstest, Wildnis Überleben, Tier Persönlichkeit",
+    "og_title": "Dein Seelentier 🦁 Wildnis-Überlebensreise",
+    "og_description": "Entdecke dein Seelentier durch immersive Wildnis-Überlebensszenarien!",
+    "twitter_title": "Dein Seelentier 🦁 Wildnis-Überlebensreise",
+    "twitter_description": "Entdecke dein Seelentier durch Wildnis-Szenarien!"
   },
-  "loader": {
-    "text": "Wird geladen..."
-  },
-  "a11y": {
-    "language": "Wählen Sie eine Sprache"
-  },
+  "loader": { "text": "Laden..." },
+  "a11y": { "language": "Sprache wählen" },
   "home": {
-    "title": "Welches ist dein inneres Tier?",
-    "subtitle": "Entdecke dein inneres Tier durch 12 Fragen",
-    "description": "Welcher der 12 Tiertypen sind Sie? Löwe, Adler, Wolf, Delfin und mehr... Machen Sie den Test, erfahren Sie mehr über die Merkmale jedes Tieres und teilen Sie Ihre Ergebnisse in sozialen Medien!",
-    "socialStats": "⏱ Ca. 2 Min | 🐾 12 Tiertypen | 👥 2.100+ Teilnehmer"
+    "title": "Wildnis-Überlebensreise",
+    "subtitle": "Du bist in die Wildnis gewandert. Deine Überlebensinstinkte werden dein Seelentier enthüllen.",
+    "description": "Erlebe 6 Überlebensszenarien in 4 Biomen und entdecke dein Seelentier. Folge deinen Instinkten — die Wildnis wird die Antwort geben.",
+    "socialStats": "⏱ Ca. 2 Min | 🐾 12 Tiertypen | 👥 2.100+ getestet"
   },
   "btn": {
-    "start": "Test starten",
-    "prev": "Zurück",
-    "next": "Weiter",
+    "start": "Reise beginnen",
     "download": "Bild herunterladen",
-    "share_kakao": "Kakao Talk",
+    "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",
     "share_url": "Link kopieren",
-    "retake": "Test wiederholen"
+    "retake": "Nochmal versuchen"
+  },
+  "biome": {
+    "title": "Wähle die Umgebung, die dich anzieht",
+    "subtitle": "Geh dahin, wohin deine Instinkte führen",
+    "forest": "Wald",
+    "forest_desc": "Wandere zwischen den stillen Bäumen",
+    "ocean": "Ozean",
+    "ocean_desc": "Tauche jenseits des endlosen Horizonts",
+    "mountain": "Berg",
+    "mountain_desc": "Klettere zum Gipfel",
+    "desert": "Wüste",
+    "desert_desc": "Wandere über den endlosen Sand"
+  },
+  "scenarios": {
+    "forest": {
+      "0": { "text": "Die Nacht bricht plötzlich herein.", "a": "Unterschlupf bauen", "b": "Im Mondlicht weitergehen" },
+      "1": { "text": "Du hörst ein Knurren in der Nähe.", "a": "Standhalten", "b": "Auf einen Baum klettern" },
+      "2": { "text": "Du findest einen Bach.", "a": "Flussabwärts folgen", "b": "Bleiben und Lager aufschlagen" },
+      "3": { "text": "Ein anderes Wesen nähert sich.", "a": "Still beobachten", "b": "Dich bemerkbar machen" },
+      "4": { "text": "Ein Sturm zieht auf.", "a": "Eine Höhle finden", "b": "Ein Dach aus Ästen bauen" },
+      "5": { "text": "Du siehst Essen weit oben.", "a": "Hochklettern", "b": "Am Boden suchen" }
+    },
+    "ocean": {
+      "0": { "text": "Die Wellen werden stärker.", "a": "Sie reiten", "b": "Ruhige Gewässer suchen" },
+      "1": { "text": "Du siehst einen Fischschwarm.", "a": "Eintauchen", "b": "Geduldig an der Oberfläche warten" },
+      "2": { "text": "Eine Insel erscheint in der Ferne.", "a": "Hinschwimmen", "b": "Im offenen Meer bleiben" },
+      "3": { "text": "Die Strömung zieht dich.", "a": "Mitfließen", "b": "Dagegen ankämpfen" },
+      "4": { "text": "Die Nacht bricht über dem Wasser herein.", "a": "Treiben und ausruhen", "b": "Weiterschwimmen" },
+      "5": { "text": "Ein anderes Wesen taucht auf.", "a": "Neugierig nähern", "b": "Abstand halten" }
+    },
+    "mountain": {
+      "0": { "text": "Der Weg teilt sich.", "a": "Die steile Abkürzung nehmen", "b": "Den langen sicheren Weg gehen" },
+      "1": { "text": "Die Temperatur sinkt stark.", "a": "Weiterklettern", "b": "Unterschlupf suchen und warten" },
+      "2": { "text": "Ein Adler kreist oben.", "a": "Ihm folgen", "b": "Eigenen Kurs bestimmen" },
+      "3": { "text": "Du stehst am Klippenrand.", "a": "Hinunterschauen", "b": "Auf den Gipfel fokussieren" },
+      "4": { "text": "Nebel zieht auf.", "a": "Den Instinkten vertrauen", "b": "Warten bis er sich lichtet" },
+      "5": { "text": "Du erreichst ein Plateau.", "a": "Ausruhen und Umgebung erkunden", "b": "Zum Gipfel weitergehen" }
+    },
+    "desert": {
+      "0": { "text": "Die Sonne brennt.", "a": "Nachts reisen", "b": "Durch die Hitze gehen" },
+      "1": { "text": "Du findest eine Oase.", "a": "Ausgiebig trinken", "b": "Sorgfältig rationieren" },
+      "2": { "text": "Ein Sandsturm nähert sich.", "a": "Eingraben und warten", "b": "Felsschutz suchen" },
+      "3": { "text": "Du siehst Spuren im Sand.", "a": "Ihnen folgen", "b": "Eigenen Weg machen" },
+      "4": { "text": "Sterne erscheinen.", "a": "Nach ihnen navigieren", "b": "Für die Nacht lagern" },
+      "5": { "text": "Fata Morgana oder echt?", "a": "Untersuchen", "b": "Den Sinnen vertrauen" }
+    }
+  },
+  "traits": {
+    "loyalty": "Treue", "instinct": "Instinkt", "independence": "Unabhängigkeit", "mystery": "Geheimnis",
+    "strength": "Stärke", "protection": "Schutz", "patience": "Geduld", "warmth": "Wärme",
+    "cleverness": "Klugheit", "adaptability": "Anpassung", "charm": "Charme", "creativity": "Kreativität",
+    "empathy": "Empathie", "social": "Sozial", "harmony": "Harmonie", "playfulness": "Verspieltheit",
+    "elegance": "Eleganz", "intuition": "Intuition", "wisdom": "Weisheit", "insight": "Einsicht",
+    "analysis": "Analyse", "vision": "Vision", "strategy": "Strategie", "speed": "Schnelligkeit",
+    "objectivity": "Objektivität", "leadership": "Führung", "courage": "Mut", "charisma": "Charisma",
+    "determination": "Entschlossenheit", "power": "Macht", "ambition": "Ehrgeiz", "influence": "Einfluss",
+    "sensitivity": "Sensibilität", "gentleness": "Sanftmut", "transformation": "Wandlung", "freedom": "Freiheit",
+    "beauty": "Schönheit", "idealism": "Idealismus", "uniqueness": "Einzigartigkeit", "purity": "Reinheit",
+    "imagination": "Fantasie"
+  },
+  "animals": {
+    "wolf": { "name": "Wolf", "description": "Du bist ein Geist geheimnisvoller Unabhängigkeit. Du gehst deinen eigenen Weg und bildest tiefe Bindungen mit wenigen Auserwählten.", "characteristics": "Unabhängiges und enigmatisches Temperament. Bevorzugt den eigenen Weg und bildet tiefe Verbindungen mit treuen Gefährten." },
+    "bear": { "name": "Bär", "description": "Du bist zuverlässig und vertrauenswürdig. Deine beständige Präsenz gibt den Menschen um dich herum Geborgenheit.", "characteristics": "Zuverlässige und schützende Natur. Bewegt sich langsam aber sicher, mit natürlichem Beschützerinstinkt." },
+    "fox": { "name": "Fuchs", "description": "Du bist klug und kreativ. Dein flexibles Denken führt zu einzigartigen Lösungen.", "characteristics": "Klug und kreativ. Bricht Konventionen und löst Probleme auf eigene Weise." },
+    "dolphin": { "name": "Delfin", "description": "Du hast ein warmes Herz und tiefe Empathie. Deine Freundlichkeit erhellt alles um dich herum.", "characteristics": "Freundlich und emotional wahrnehmend. Versteht leicht die Gefühle anderer, sucht Harmonie und Frieden." },
+    "cat": { "name": "Katze", "description": "Du bist eine elegante, unabhängige Seele. Du lebst in deinem eigenen Rhythmus und zeigst tiefe Emotionen, wenn es darauf ankommt.", "characteristics": "Unabhängig aber emotional nuanciert. Handelt nach eigenen Bedingungen, zeigt wahre Gefühle in entscheidenden Momenten." },
+    "owl": { "name": "Eule", "description": "Du besitzt tiefe Weisheit und Einsicht. Deine stille Beobachtung und Ratschläge sind von immensem Wert.", "characteristics": "Weise, bevorzugt tiefes Denken. Beobachtet still, bietet aber einsichtsvolle Anleitung." },
+    "eagle": { "name": "Adler", "description": "Du bist ein Stratege mit außergewöhnlicher Vision. Du siehst das große Ganze und handelst präzise.", "characteristics": "Wahrnehmend und zielorientiert. Beurteilt Situationen aus der Höhe mit analytischer und intuitiver Fähigkeit." },
+    "lion": { "name": "Löwe", "description": "Du bist ein geborener Anführer. Dein Mut und Charisma inspirieren andere, dir zu folgen.", "characteristics": "Selbstbewusster und kühner Anführer. Verfolgt Ziele mit starkem Willen und Leidenschaft." },
+    "dragon": { "name": "Drache", "description": "Du besitzt außerordentliche Kraft und Mystik. Dein Einfluss und deine Vision können die Welt verändern.", "characteristics": "Mächtig, geheimnisvoll und charismatisch. Träumt groß und strebt nach dem Außergewöhnlichen." },
+    "rabbit": { "name": "Hase", "description": "Du bist sensibel und fürsorglich. Deine Empathie und Rücksichtnahme vertiefen jede Beziehung.", "characteristics": "Sanft mit sensiblen Emotionen. Schnelle Reflexe und hohe Aufmerksamkeit, sucht stets Sicherheit." },
+    "butterfly": { "name": "Schmetterling", "description": "Du liebst Schönheit und Kreativität. Deine Inspiration macht alles heller und bunter.", "characteristics": "Umarmt Veränderung und sucht Schönheit. Sehnt sich nach vielfältigen Erfahrungen und fügt dem Leben Kreativität hinzu." },
+    "unicorn": { "name": "Einhorn", "description": "Du besitzt eine magische Einzigartigkeit. Deine reinen Überzeugungen und Kreativität machen die Welt schöner.", "characteristics": "Seltenes und besonderes Temperament. Idealist mit einem starken inneren Kern." }
   },
   "result": {
-    "characteristics": "Merkmale",
-    "strengths": "Stärken",
-    "weaknesses": "Schwächen",
-    "compatible": "Kompatible Tiere"
+    "wilderness_spoken": "Die Wildnis hat gesprochen...",
+    "characteristics": "Eigenschaften",
+    "your_pack": "Dein Rudel",
+    "your_rival": "Dein Rivale"
   },
   "rec": {
-    "title": "Weitere unterhaltsame Tests"
+    "title": "Andere lustige Tests",
+    "brain_type": "Gehirntyp", "mbti_love": "MBTI Liebe", "dream_fortune": "Traumdeutung",
+    "color_personality": "Farbpersönlichkeit", "emotion_temp": "Emotionstemperatur", "hsp_test": "HSP Test"
   },
   "share": {
     "copied": "Link kopiert!",
-    "download_success": "Bild heruntergeladen!"
+    "download_success": "Bild heruntergeladen!",
+    "twitter_text": "Mein Seelentier ist {animal}! Was ist deins?",
+    "native_text": "Mein Seelentier ist {animal}!"
   },
-  "accessibility": {
-    "skipMain": "Zum Inhalt springen"
-  }
+  "accessibility": { "skipMain": "Zum Inhalt springen" }
 }

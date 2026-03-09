@@ -1,48 +1,117 @@
 {
   "meta": {
-    "description": "你的内心动物是什么? 🦁 通过12个问题发现你的内心动物。12种动物类型中你是哪一种? 有趣的性格测试,可在社交媒体上分享。",
-    "keywords": "动物性格测试, 性格测试, 个性评估, 病毒测试, 内心动物, 性格类型",
-    "og_title": "你的内心动物是什么? 🦁 12种中你是哪一种?",
-    "og_description": "通过12个问题找到你的12种动物类型之一! 狮子, 鹰, 狼, 海豚... 参加测试并在社交媒体上分享你的结果!",
-    "twitter_title": "你的内心动物是什么? 🦁 12种中你是哪一种?",
-    "twitter_description": "发现哪种动物类型符合你的个性!"
+    "description": "你的灵魂动物是什么？🦁 通过荒野生存之旅发现你的灵魂动物。12种动物类型中你是哪一种？沉浸式性格测试！",
+    "keywords": "灵魂动物测试, 性格测试, 荒野生存, 动物性格, 性格类型",
+    "og_title": "你的灵魂动物 🦁 荒野生存之旅",
+    "og_description": "通过沉浸式荒野生存场景发现你的灵魂动物！",
+    "twitter_title": "你的灵魂动物 🦁 荒野生存之旅",
+    "twitter_description": "通过荒野生存场景发现你的灵魂动物！"
   },
-  "loader": {
-    "text": "加载中..."
-  },
-  "a11y": {
-    "language": "选择语言"
-  },
+  "loader": { "text": "加载中..." },
+  "a11y": { "language": "选择语言" },
   "home": {
-    "title": "你的内心动物是什么?",
-    "subtitle": "通过12个问题发现你的内心动物",
-    "description": "12种动物类型中你是哪一种? 狮子、鹰、狼、海豚等... 参加测试,了解每种动物的特性,并在社交媒体上分享你的结果!",
+    "title": "荒野生存之旅",
+    "subtitle": "你踏入了荒野。你的生存本能将揭示你的灵魂动物。",
+    "description": "在4个生态环境中体验6个生存场景，发现你的灵魂动物。跟随直觉选择——荒野会告诉你答案。",
     "socialStats": "⏱ 约2分钟 | 🐾 12种动物类型 | 👥 2,100+人参与"
   },
   "btn": {
-    "start": "开始测试",
-    "prev": "上一个",
-    "next": "下一个",
-    "download": "下载图像",
-    "share_kakao": "Kakao Talk",
-    "share_twitter": "推特",
+    "start": "开始旅程",
+    "download": "下载图片",
+    "share_kakao": "KakaoTalk",
+    "share_twitter": "Twitter",
     "share_url": "复制链接",
     "retake": "重新测试"
   },
+  "biome": {
+    "title": "选择吸引你的环境",
+    "subtitle": "跟随直觉前行",
+    "forest": "森林",
+    "forest_desc": "在寂静的树木间漫步",
+    "ocean": "海洋",
+    "ocean_desc": "潜入无尽的地平线",
+    "mountain": "山脉",
+    "mountain_desc": "攀登至顶峰",
+    "desert": "沙漠",
+    "desert_desc": "在无尽的沙丘上行走"
+  },
+  "scenarios": {
+    "forest": {
+      "0": { "text": "夜幕突然降临。", "a": "搭建庇护所", "b": "在月光下继续前行" },
+      "1": { "text": "你听到附近的低吼声。", "a": "坚守阵地", "b": "爬上树" },
+      "2": { "text": "你发现了一条小溪。", "a": "沿溪流而下", "b": "留下来扎营" },
+      "3": { "text": "另一个生物靠近了。", "a": "静静地观察", "b": "让它知道你的存在" },
+      "4": { "text": "暴风雨要来了。", "a": "寻找洞穴", "b": "用树枝搭建遮蔽" },
+      "5": { "text": "你看到高处有食物。", "a": "攀爬上去", "b": "在地面上寻找替代" }
+    },
+    "ocean": {
+      "0": { "text": "海浪越来越大。", "a": "乘风破浪", "b": "寻找平静的水域" },
+      "1": { "text": "你发现了一群鱼。", "a": "潜入水中", "b": "在水面耐心等待" },
+      "2": { "text": "远处出现了一座岛屿。", "a": "游过去", "b": "留在开阔水域" },
+      "3": { "text": "水流在拉扯你。", "a": "顺流而行", "b": "逆流而上" },
+      "4": { "text": "夜幕降临在海面上。", "a": "漂浮休息", "b": "继续游泳" },
+      "5": { "text": "另一个生物浮出水面。", "a": "好奇地靠近", "b": "保持距离" }
+    },
+    "mountain": {
+      "0": { "text": "道路分岔了。", "a": "走陡峭的捷径", "b": "走安全的长路" },
+      "1": { "text": "温度骤降。", "a": "继续攀登", "b": "寻找庇护等待" },
+      "2": { "text": "一只鹰在头顶盘旋。", "a": "跟随它", "b": "走自己的路" },
+      "3": { "text": "你站在悬崖边缘。", "a": "往下看", "b": "专注于山顶" },
+      "4": { "text": "大雾弥漫。", "a": "相信直觉", "b": "等雾散去" },
+      "5": { "text": "你到达了高原。", "a": "休息并环顾四周", "b": "向顶峰进发" }
+    },
+    "desert": {
+      "0": { "text": "烈日当空。", "a": "等到夜间出行", "b": "在酷热中前进" },
+      "1": { "text": "你发现了一片绿洲。", "a": "大口畅饮", "b": "仔细配给" },
+      "2": { "text": "沙暴来了。", "a": "挖坑等待", "b": "寻找岩石庇护" },
+      "3": { "text": "你看到沙地上的脚印。", "a": "跟随它们", "b": "开辟自己的路" },
+      "4": { "text": "星星出现了。", "a": "以星导航", "b": "就地扎营" },
+      "5": { "text": "海市蜃楼还是真实的？", "a": "去看看", "b": "相信自己的感觉" }
+    }
+  },
+  "traits": {
+    "loyalty": "忠诚", "instinct": "本能", "independence": "独立", "mystery": "神秘",
+    "strength": "力量", "protection": "保护", "patience": "耐心", "warmth": "温暖",
+    "cleverness": "聪明", "adaptability": "适应力", "charm": "魅力", "creativity": "创造力",
+    "empathy": "共情", "social": "社交", "harmony": "和谐", "playfulness": "活泼",
+    "elegance": "优雅", "intuition": "直觉", "wisdom": "智慧", "insight": "洞察",
+    "analysis": "分析", "vision": "远见", "strategy": "策略", "speed": "速度",
+    "objectivity": "客观", "leadership": "领导力", "courage": "勇气", "charisma": "魅力",
+    "determination": "决心", "power": "力量", "ambition": "野心", "influence": "影响力",
+    "sensitivity": "敏感", "gentleness": "温柔", "transformation": "蜕变", "freedom": "自由",
+    "beauty": "美丽", "idealism": "理想主义", "uniqueness": "独特", "purity": "纯洁",
+    "imagination": "想象力"
+  },
+  "animals": {
+    "wolf": { "name": "狼", "description": "你是一个神秘而独立的灵魂。你走自己的路，与少数人建立深厚的关系。", "characteristics": "独立神秘的气质。喜欢走自己的路，与忠诚的伙伴建立深厚的联系。" },
+    "bear": { "name": "熊", "description": "你是可靠而值得信赖的人。你的稳定感让周围的人感到安心。", "characteristics": "可靠而有保护欲。行动缓慢但坚定，有保护他人的天生本能。" },
+    "fox": { "name": "狐狸", "description": "你聪明而有创造力。你灵活的思维能找到独特的解决方案。", "characteristics": "聪明而有创造力。打破常规，用自己独特的方式解决问题。" },
+    "dolphin": { "name": "海豚", "description": "你有一颗温暖的心和深厚的同理心。你的善良照亮了周围的一切。", "characteristics": "善良而感同身受。容易理解他人的感受，追求和谐与和平。" },
+    "cat": { "name": "猫", "description": "你是一个优雅而独立的灵魂。按自己的节奏生活，在关键时刻展现深情。", "characteristics": "独立而情感细腻。按自己的方式行事，在重要时刻展现真心。" },
+    "owl": { "name": "猫头鹰", "description": "你拥有深刻的智慧和洞察力。你安静的观察和建议具有极大的价值。", "characteristics": "智慧而偏好深思。静静观察但能提供有洞察力的指导。" },
+    "eagle": { "name": "鹰", "description": "你是一个拥有卓越视野的战略家。你看到大局并精准行动。", "characteristics": "观察力强且目标导向。从高处判断局势，兼具分析力和直觉力。" },
+    "lion": { "name": "狮子", "description": "你是天生的领导者。你的勇敢和魅力激励他人追随。", "characteristics": "自信而大胆的领导者。以坚强的意志和热情追求目标。" },
+    "dragon": { "name": "龙", "description": "你拥有非凡的力量和神秘感。你的影响力和远见可以改变世界。", "characteristics": "强大、神秘、有魅力。怀有远大梦想，致力于完成非凡之事。" },
+    "rabbit": { "name": "兔子", "description": "你敏感而体贴。你的共情和关怀让每段关系更加深刻。", "characteristics": "温顺而感情细腻。反应敏捷，警觉性高，始终追求安全感。" },
+    "butterfly": { "name": "蝴蝶", "description": "你热爱美丽和创造力。你的灵感让一切变得更明亮更多彩。", "characteristics": "热爱变化和追求美丽。渴望多样的体验，为生活增添创意和色彩。" },
+    "unicorn": { "name": "独角兽", "description": "你拥有魔法般的独特性。你纯洁的信念和创造力让世界更美好。", "characteristics": "稀有而特别的气质。理想主义者，拥有坚强的内心。" }
+  },
   "result": {
+    "wilderness_spoken": "荒野已经开口...",
     "characteristics": "特征",
-    "strengths": "优势",
-    "weaknesses": "弱点",
-    "compatible": "兼容的动物"
+    "your_pack": "你的伙伴",
+    "your_rival": "你的对手"
   },
   "rec": {
-    "title": "其他有趣的测试"
+    "title": "其他有趣的测试",
+    "brain_type": "脑型测试", "mbti_love": "MBTI缘分", "dream_fortune": "解梦/运势",
+    "color_personality": "性格色彩", "emotion_temp": "情绪温度", "hsp_test": "HSP测试"
   },
   "share": {
-    "copied": "链接已复制!",
-    "download_success": "图像已下载!"
+    "copied": "链接已复制！",
+    "download_success": "图片已下载！",
+    "twitter_text": "我的灵魂动物是{animal}！你的呢？",
+    "native_text": "我的灵魂动物是{animal}！"
   },
-  "accessibility": {
-    "skipMain": "跳到主要内容"
-  }
+  "accessibility": { "skipMain": "跳到内容" }
 }
