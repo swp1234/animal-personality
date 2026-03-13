@@ -17,10 +17,18 @@
     "title": "Jornada de Sobrevivencia Selvagem",
     "subtitle": "Voce se aventurou na natureza selvagem. Seus instintos de sobrevivencia revelarao seu animal espiritual.",
     "description": "Experimente 6 cenarios de sobrevivencia em 4 biomas para descobrir seu animal espiritual. Siga seus instintos — a natureza dara a resposta.",
-    "socialStats": "⏱ Cerca de 2 min | 🐾 12 tipos de animais | 👥 2.100+ testados"
+    "socialStats": "⏱ Cerca de 2 min | 🐾 12 tipos de animais | 👥 2.100+ testados",
+    "proofText": "4,6 estrelas de 2.350 avaliacoes",
+    "resultTease": "🦁 A maioria das pessoas recebe..."
+  },
+  "carousel": {
+    "fox": "Raposa — Criativa & Independente",
+    "bear": "Urso — Protetor & Leal",
+    "lion": "Leao — Lider Corajoso",
+    "dolphin": "Golfinho — Empatia & Harmonia"
   },
   "btn": {
-    "start": "Iniciar Jornada",
+    "start": "Qual animal voce e?",
     "download": "Baixar Imagem",
     "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",

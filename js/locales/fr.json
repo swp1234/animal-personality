@@ -17,10 +17,18 @@
     "title": "Voyage de Survie Sauvage",
     "subtitle": "Vous êtes entré dans la nature sauvage. Vos instincts de survie révéleront votre animal totem.",
     "description": "Vivez 6 scénarios de survie dans 4 biomes pour découvrir votre animal totem. Suivez vos instincts — la nature donnera la réponse.",
-    "socialStats": "⏱ Environ 2 min | 🐾 12 types d'animaux | 👥 2 100+ testés"
+    "socialStats": "⏱ Environ 2 min | 🐾 12 types d'animaux | 👥 2 100+ testés",
+    "proofText": "4,6 étoiles sur 2 350 avis",
+    "resultTease": "🦁 La plupart des gens obtiennent..."
+  },
+  "carousel": {
+    "fox": "Renard — Créatif & Indépendant",
+    "bear": "Ours — Protecteur & Loyal",
+    "lion": "Lion — Leader Courageux",
+    "dolphin": "Dauphin — Empathie & Harmonie"
   },
   "btn": {
-    "start": "Commencer le Voyage",
+    "start": "Quel animal êtes-vous ?",
     "download": "Télécharger l'Image",
     "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",

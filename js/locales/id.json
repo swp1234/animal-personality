@@ -17,10 +17,18 @@
     "title": "Perjalanan Bertahan Hidup di Alam Liar",
     "subtitle": "Kamu telah masuk ke alam liar. Insting bertahan hidupmu akan mengungkap hewan jiwamu.",
     "description": "Alami 6 skenario bertahan hidup di 4 bioma untuk menemukan hewan jiwamu. Ikuti instingmu — alam liar akan memberikan jawaban.",
-    "socialStats": "⏱ Sekitar 2 menit | 🐾 12 tipe hewan | 👥 2.100+ diuji"
+    "socialStats": "⏱ Sekitar 2 menit | 🐾 12 tipe hewan | 👥 2.100+ diuji",
+    "proofText": "4,6 bintang dari 2.350 penilaian",
+    "resultTease": "🦁 Kebanyakan orang mendapat..."
+  },
+  "carousel": {
+    "fox": "Rubah — Kreatif & Mandiri",
+    "bear": "Beruang — Pelindung & Setia",
+    "lion": "Singa — Pemimpin Berani",
+    "dolphin": "Lumba-lumba — Empati & Harmoni"
   },
   "btn": {
-    "start": "Mulai Perjalanan",
+    "start": "Hewan apa kamu?",
     "download": "Unduh Gambar",
     "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",

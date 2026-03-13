@@ -417,6 +417,138 @@ body {
     backdrop-filter: blur(10px);
 }
 
+/* === Animal Parade === */
+.animal-parade {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 48px;
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.parade-track {
+    display: flex;
+    gap: 24px;
+    animation: paradeScroll 20s linear infinite;
+    width: max-content;
+}
+
+.parade-animal {
+    font-size: 32px;
+    flex-shrink: 0;
+    animation: paradeFloat 3s ease-in-out infinite;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.parade-animal:nth-child(odd) { animation-delay: 0s; }
+.parade-animal:nth-child(even) { animation-delay: 1.5s; }
+
+@keyframes paradeScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+@keyframes paradeFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+/* === Result Preview Carousel === */
+.result-carousel {
+    width: 100%;
+    max-width: 340px;
+    height: 52px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(142, 68, 173, 0.12);
+    border: 1px solid rgba(142, 68, 173, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.carousel-card {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    padding: 0 16px;
+}
+
+.carousel-card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carousel-emoji {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.carousel-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+/* === Social Proof Badge === */
+.social-proof-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+.star-rating {
+    font-size: 18px;
+    color: #ffc107;
+    letter-spacing: 2px;
+    text-shadow: 0 0 8px rgba(255, 193, 7, 0.4);
+}
+
+.proof-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-light);
+}
+
+.proof-participants {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="light"] .proof-participants {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+/* === Result Tease === */
+.result-tease {
+    font-size: 13px;
+    color: var(--primary-light);
+    opacity: 0.8;
+    animation: teaseFlicker 4s ease-in-out infinite;
+    cursor: default;
+}
+
+@keyframes teaseFlicker {
+    0%, 100% { opacity: 0.6; }
+    50% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .parade-track { animation: none !important; }
+    .parade-animal { animation: none !important; }
+    .result-tease { animation: none !important; }
+}
+
 /* === Biome Selection Phase === */
 .screen-biome {
     justify-content: center;

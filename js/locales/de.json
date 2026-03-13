@@ -17,10 +17,18 @@
     "title": "Wildnis-Überlebensreise",
     "subtitle": "Du bist in die Wildnis gewandert. Deine Überlebensinstinkte werden dein Seelentier enthüllen.",
     "description": "Erlebe 6 Überlebensszenarien in 4 Biomen und entdecke dein Seelentier. Folge deinen Instinkten — die Wildnis wird die Antwort geben.",
-    "socialStats": "⏱ Ca. 2 Min | 🐾 12 Tiertypen | 👥 2.100+ getestet"
+    "socialStats": "⏱ Ca. 2 Min | 🐾 12 Tiertypen | 👥 2.100+ getestet",
+    "proofText": "4,6 Sterne aus 2.350 Bewertungen",
+    "resultTease": "🦁 Die meisten bekommen..."
+  },
+  "carousel": {
+    "fox": "Fuchs — Kreativ & Unabhangig",
+    "bear": "Bar — Beschutzend & Treu",
+    "lion": "Lowe — Mutiger Anfuhrer",
+    "dolphin": "Delfin — Empathie & Harmonie"
   },
   "btn": {
-    "start": "Reise beginnen",
+    "start": "Welches Tier bist du?",
     "download": "Bild herunterladen",
     "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",

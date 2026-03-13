@@ -17,10 +17,18 @@
     "title": "荒野生存之旅",
     "subtitle": "你踏入了荒野。你的生存本能将揭示你的灵魂动物。",
     "description": "在4个生态环境中体验6个生存场景，发现你的灵魂动物。跟随直觉选择——荒野会告诉你答案。",
-    "socialStats": "⏱ 约2分钟 | 🐾 12种动物类型 | 👥 2,100+人参与"
+    "socialStats": "⏱ 约2分钟 | 🐾 12种动物类型 | 👥 2,100+人参与",
+    "proofText": "2,350人评分4.6分",
+    "resultTease": "🦁 大多数人的结果是..."
+  },
+  "carousel": {
+    "fox": "狐狸 — 创意 & 独立",
+    "bear": "熊 — 守护 & 忠诚",
+    "lion": "狮子 — 勇敢的领导者",
+    "dolphin": "海豚 — 共情 & 和谐"
   },
   "btn": {
-    "start": "开始旅程",
+    "start": "你是哪种动物？",
     "download": "下载图片",
     "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",

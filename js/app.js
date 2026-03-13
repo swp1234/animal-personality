@@ -101,6 +101,7 @@ class WildernessSurvivalApp {
             this.loadRecommendations();
             this.setupTheme();
             this.renderBiomeCards();
+            this.startResultCarousel();
         } catch (e) {
             console.error('App init error:', e);
         } finally {
@@ -643,6 +644,19 @@ class WildernessSurvivalApp {
             `;
             this.recGrid.appendChild(card);
         });
+    }
+
+    startResultCarousel() {
+        const carousel = document.getElementById('resultCarousel');
+        if (!carousel) return;
+        const cards = carousel.querySelectorAll('.carousel-card');
+        if (cards.length < 2) return;
+        let current = 0;
+        this.carouselInterval = setInterval(() => {
+            cards[current].classList.remove('active');
+            current = (current + 1) % cards.length;
+            cards[current].classList.add('active');
+        }, 3000);
     }
 
     toggleLanguageMenu() {

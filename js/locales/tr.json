@@ -17,10 +17,18 @@
     "title": "Vahsi Doga Hayatta Kalma Yolculugu",
     "subtitle": "Vahsi dogaya adim attin. Hayatta kalma icegunlerin ruh hayvanini ortaya cikaracak.",
     "description": "4 biyomda 6 hayatta kalma senaryosu deneyimleyerek ruh hayvanini kesfet. Icgudulerini takip et — vahsi doga cevabi verecek.",
-    "socialStats": "⏱ Yaklasik 2 dk | 🐾 12 hayvan turu | 👥 2.100+ test edildi"
+    "socialStats": "⏱ Yaklasik 2 dk | 🐾 12 hayvan turu | 👥 2.100+ test edildi",
+    "proofText": "2.350 degerlendirmeden 4,6 yildiz",
+    "resultTease": "🦁 Cogu kisinin sonucu..."
+  },
+  "carousel": {
+    "fox": "Tilki — Yaratici & Bagimsiz",
+    "bear": "Ayi — Koruyucu & Sadik",
+    "lion": "Aslan — Cesur Lider",
+    "dolphin": "Yunus — Empati & Uyum"
   },
   "btn": {
-    "start": "Yolculuga Basla",
+    "start": "Sen hangi hayvansin?",
     "download": "Gorsel Indir",
     "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",

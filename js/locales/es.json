@@ -17,10 +17,18 @@
     "title": "Viaje de Supervivencia Salvaje",
     "subtitle": "Te has adentrado en la naturaleza. Tus instintos de supervivencia revelaran tu animal espiritual.",
     "description": "Experimenta 6 escenarios de supervivencia en 4 biomas para descubrir tu animal espiritual. Sigue tus instintos: la naturaleza te dara la respuesta.",
-    "socialStats": "⏱ Aprox. 2 min | 🐾 12 tipos de animales | 👥 2,100+ probados"
+    "socialStats": "⏱ Aprox. 2 min | 🐾 12 tipos de animales | 👥 2,100+ probados",
+    "proofText": "4.6 estrellas de 2,350 valoraciones",
+    "resultTease": "🦁 La mayoria obtiene..."
+  },
+  "carousel": {
+    "fox": "Zorro — Creativo & Independiente",
+    "bear": "Oso — Protector & Leal",
+    "lion": "Leon — Lider Valiente",
+    "dolphin": "Delfin — Empatia & Armonia"
   },
   "btn": {
-    "start": "Comenzar Viaje",
+    "start": "Que animal eres?",
     "download": "Descargar Imagen",
     "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",

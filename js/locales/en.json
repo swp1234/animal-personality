@@ -17,10 +17,18 @@
     "title": "Wilderness Survival Journey",
     "subtitle": "You've wandered into the wilderness. Your survival instincts will reveal your spirit animal.",
     "description": "Experience 6 survival scenarios across 4 biomes to discover your spirit animal. Follow your instincts — the wilderness will reveal the answer.",
-    "socialStats": "⏱ About 2 min | 🐾 12 Animal Types | 👥 2,100+ Tested"
+    "socialStats": "⏱ About 2 min | 🐾 12 Animal Types | 👥 2,100+ Tested",
+    "proofText": "4.6 stars from 2,350 ratings",
+    "resultTease": "🦁 Most people get..."
+  },
+  "carousel": {
+    "fox": "Fox — Creative & Independent",
+    "bear": "Bear — Protective & Loyal",
+    "lion": "Lion — Brave Leader",
+    "dolphin": "Dolphin — Empathy & Harmony"
   },
   "btn": {
-    "start": "Begin Journey",
+    "start": "Which Animal Are You?",
     "download": "Download Image",
     "share_kakao": "KakaoTalk",
     "share_twitter": "Twitter",
