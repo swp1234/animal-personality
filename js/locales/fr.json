@@ -7,8 +7,12 @@
     "twitter_title": "Votre Animal Totem 🦁 Voyage de Survie",
     "twitter_description": "Découvrez votre animal totem avec des scénarios de survie !"
   },
-  "loader": { "text": "Chargement..." },
-  "a11y": { "language": "Choisir la langue" },
+  "loader": {
+    "text": "Chargement..."
+  },
+  "a11y": {
+    "language": "Choisir la langue"
+  },
   "home": {
     "title": "Voyage de Survie Sauvage",
     "subtitle": "Vous êtes entré dans la nature sauvage. Vos instincts de survie révéleront votre animal totem.",
@@ -37,75 +41,255 @@
   },
   "scenarios": {
     "forest": {
-      "0": { "text": "La nuit tombe soudainement.", "a": "Construire un abri", "b": "Continuer au clair de lune" },
-      "1": { "text": "Vous entendez un grognement proche.", "a": "Tenir bon", "b": "Grimper à un arbre" },
-      "2": { "text": "Vous trouvez un ruisseau.", "a": "Le suivre en aval", "b": "Rester et établir un camp" },
-      "3": { "text": "Une autre créature approche.", "a": "Observer en silence", "b": "Se faire remarquer" },
-      "4": { "text": "Un orage approche.", "a": "Trouver une grotte", "b": "Construire un auvent de branches" },
-      "5": { "text": "Vous voyez de la nourriture en hauteur.", "a": "Grimper la chercher", "b": "Chercher au sol" }
+      "0": {
+        "text": "La nuit tombe soudainement.",
+        "a": "Construire un abri",
+        "b": "Continuer au clair de lune"
+      },
+      "1": {
+        "text": "Vous entendez un grognement proche.",
+        "a": "Tenir bon",
+        "b": "Grimper à un arbre"
+      },
+      "2": {
+        "text": "Vous trouvez un ruisseau.",
+        "a": "Le suivre en aval",
+        "b": "Rester et établir un camp"
+      },
+      "3": {
+        "text": "Une autre créature approche.",
+        "a": "Observer en silence",
+        "b": "Se faire remarquer"
+      },
+      "4": {
+        "text": "Un orage approche.",
+        "a": "Trouver une grotte",
+        "b": "Construire un auvent de branches"
+      },
+      "5": {
+        "text": "Vous voyez de la nourriture en hauteur.",
+        "a": "Grimper la chercher",
+        "b": "Chercher au sol"
+      }
     },
     "ocean": {
-      "0": { "text": "Les vagues se renforcent.", "a": "Les chevaucher", "b": "Chercher des eaux calmes" },
-      "1": { "text": "Vous repérez un banc de poissons.", "a": "Plonger", "b": "Attendre patiemment en surface" },
-      "2": { "text": "Une île apparaît au loin.", "a": "Nager vers elle", "b": "Rester en pleine mer" },
-      "3": { "text": "Le courant vous tire.", "a": "Se laisser porter", "b": "Lutter contre" },
-      "4": { "text": "La nuit tombe sur l'eau.", "a": "Flotter et se reposer", "b": "Continuer à nager" },
-      "5": { "text": "Une autre créature fait surface.", "a": "S'approcher avec curiosité", "b": "Garder ses distances" }
+      "0": {
+        "text": "Les vagues se renforcent.",
+        "a": "Les chevaucher",
+        "b": "Chercher des eaux calmes"
+      },
+      "1": {
+        "text": "Vous repérez un banc de poissons.",
+        "a": "Plonger",
+        "b": "Attendre patiemment en surface"
+      },
+      "2": {
+        "text": "Une île apparaît au loin.",
+        "a": "Nager vers elle",
+        "b": "Rester en pleine mer"
+      },
+      "3": {
+        "text": "Le courant vous tire.",
+        "a": "Se laisser porter",
+        "b": "Lutter contre"
+      },
+      "4": {
+        "text": "La nuit tombe sur l'eau.",
+        "a": "Flotter et se reposer",
+        "b": "Continuer à nager"
+      },
+      "5": {
+        "text": "Une autre créature fait surface.",
+        "a": "S'approcher avec curiosité",
+        "b": "Garder ses distances"
+      }
     },
     "mountain": {
-      "0": { "text": "Le chemin se divise.", "a": "Prendre le raccourci escarpé", "b": "Suivre le long sentier sûr" },
-      "1": { "text": "La température chute brutalement.", "a": "Continuer à grimper", "b": "Trouver un abri et attendre" },
-      "2": { "text": "Un aigle tourne au-dessus.", "a": "Le suivre", "b": "Tracer sa propre route" },
-      "3": { "text": "Vous êtes au bord d'une falaise.", "a": "Regarder en bas", "b": "Se concentrer sur le sommet" },
-      "4": { "text": "Le brouillard arrive.", "a": "Faire confiance à ses instincts", "b": "Attendre qu'il se dissipe" },
-      "5": { "text": "Vous atteignez un plateau.", "a": "Se reposer et observer", "b": "Continuer vers le sommet" }
+      "0": {
+        "text": "Le chemin se divise.",
+        "a": "Prendre le raccourci escarpé",
+        "b": "Suivre le long sentier sûr"
+      },
+      "1": {
+        "text": "La température chute brutalement.",
+        "a": "Continuer à grimper",
+        "b": "Trouver un abri et attendre"
+      },
+      "2": {
+        "text": "Un aigle tourne au-dessus.",
+        "a": "Le suivre",
+        "b": "Tracer sa propre route"
+      },
+      "3": {
+        "text": "Vous êtes au bord d'une falaise.",
+        "a": "Regarder en bas",
+        "b": "Se concentrer sur le sommet"
+      },
+      "4": {
+        "text": "Le brouillard arrive.",
+        "a": "Faire confiance à ses instincts",
+        "b": "Attendre qu'il se dissipe"
+      },
+      "5": {
+        "text": "Vous atteignez un plateau.",
+        "a": "Se reposer et observer",
+        "b": "Continuer vers le sommet"
+      }
     },
     "desert": {
-      "0": { "text": "Le soleil brûle.", "a": "Voyager de nuit", "b": "Avancer dans la chaleur" },
-      "1": { "text": "Vous trouvez une oasis.", "a": "Boire abondamment", "b": "Rationner soigneusement" },
-      "2": { "text": "Une tempête de sable approche.", "a": "S'enterrer et attendre", "b": "Trouver un abri rocheux" },
-      "3": { "text": "Vous voyez des traces dans le sable.", "a": "Les suivre", "b": "Tracer son propre chemin" },
-      "4": { "text": "Les étoiles apparaissent.", "a": "Naviguer par les étoiles", "b": "Camper pour la nuit" },
-      "5": { "text": "Mirage ou réalité ?", "a": "Enquêter", "b": "Faire confiance à ses sens" }
+      "0": {
+        "text": "Le soleil brûle.",
+        "a": "Voyager de nuit",
+        "b": "Avancer dans la chaleur"
+      },
+      "1": {
+        "text": "Vous trouvez une oasis.",
+        "a": "Boire abondamment",
+        "b": "Rationner soigneusement"
+      },
+      "2": {
+        "text": "Une tempête de sable approche.",
+        "a": "S'enterrer et attendre",
+        "b": "Trouver un abri rocheux"
+      },
+      "3": {
+        "text": "Vous voyez des traces dans le sable.",
+        "a": "Les suivre",
+        "b": "Tracer son propre chemin"
+      },
+      "4": {
+        "text": "Les étoiles apparaissent.",
+        "a": "Naviguer par les étoiles",
+        "b": "Camper pour la nuit"
+      },
+      "5": {
+        "text": "Mirage ou réalité ?",
+        "a": "Enquêter",
+        "b": "Faire confiance à ses sens"
+      }
     }
   },
   "traits": {
-    "loyalty": "Fidélité", "instinct": "Instinct", "independence": "Indépendance", "mystery": "Mystère",
-    "strength": "Force", "protection": "Protection", "patience": "Patience", "warmth": "Chaleur",
-    "cleverness": "Ruse", "adaptability": "Adaptabilité", "charm": "Charme", "creativity": "Créativité",
-    "empathy": "Empathie", "social": "Social", "harmony": "Harmonie", "playfulness": "Enjouement",
-    "elegance": "Élégance", "intuition": "Intuition", "wisdom": "Sagesse", "insight": "Perspicacité",
-    "analysis": "Analyse", "vision": "Vision", "strategy": "Stratégie", "speed": "Vitesse",
-    "objectivity": "Objectivité", "leadership": "Leadership", "courage": "Courage", "charisma": "Charisme",
-    "determination": "Détermination", "power": "Puissance", "ambition": "Ambition", "influence": "Influence",
-    "sensitivity": "Sensibilité", "gentleness": "Douceur", "transformation": "Transformation", "freedom": "Liberté",
-    "beauty": "Beauté", "idealism": "Idéalisme", "uniqueness": "Unicité", "purity": "Pureté",
+    "loyalty": "Fidélité",
+    "instinct": "Instinct",
+    "independence": "Indépendance",
+    "mystery": "Mystère",
+    "strength": "Force",
+    "protection": "Protection",
+    "patience": "Patience",
+    "warmth": "Chaleur",
+    "cleverness": "Ruse",
+    "adaptability": "Adaptabilité",
+    "charm": "Charme",
+    "creativity": "Créativité",
+    "empathy": "Empathie",
+    "social": "Social",
+    "harmony": "Harmonie",
+    "playfulness": "Enjouement",
+    "elegance": "Élégance",
+    "intuition": "Intuition",
+    "wisdom": "Sagesse",
+    "insight": "Perspicacité",
+    "analysis": "Analyse",
+    "vision": "Vision",
+    "strategy": "Stratégie",
+    "speed": "Vitesse",
+    "objectivity": "Objectivité",
+    "leadership": "Leadership",
+    "courage": "Courage",
+    "charisma": "Charisme",
+    "determination": "Détermination",
+    "power": "Puissance",
+    "ambition": "Ambition",
+    "influence": "Influence",
+    "sensitivity": "Sensibilité",
+    "gentleness": "Douceur",
+    "transformation": "Transformation",
+    "freedom": "Liberté",
+    "beauty": "Beauté",
+    "idealism": "Idéalisme",
+    "uniqueness": "Unicité",
+    "purity": "Pureté",
     "imagination": "Imagination"
   },
   "animals": {
-    "wolf": { "name": "Loup", "description": "Vous êtes un esprit d'indépendance mystérieuse. Vous suivez votre propre chemin et formez des liens profonds avec quelques élus.", "characteristics": "Tempérament indépendant et énigmatique. Préfère son propre chemin, formant des connexions profondes avec des compagnons loyaux." },
-    "bear": { "name": "Ours", "description": "Vous êtes fiable et digne de confiance. Votre présence stable apporte du réconfort à ceux qui vous entourent.", "characteristics": "Nature fiable et protectrice. Se déplace lentement mais sûrement, avec un instinct naturel de protection." },
-    "fox": { "name": "Renard", "description": "Vous êtes rusé et créatif. Votre pensée flexible mène à des solutions uniques.", "characteristics": "Rusé et créatif. Brise les conventions et résout les problèmes à sa façon." },
-    "dolphin": { "name": "Dauphin", "description": "Vous avez un cœur chaleureux et une empathie profonde. Votre gentillesse illumine tout autour de vous.", "characteristics": "Gentil et émotionnellement perspicace. Comprend facilement les sentiments des autres, cherche harmonie et paix." },
-    "cat": { "name": "Chat", "description": "Vous êtes une âme élégante et indépendante. Vous vivez à votre propre rythme, révélant des émotions profondes quand cela compte.", "characteristics": "Indépendant mais émotionnellement nuancé. Agit selon ses propres termes, montrant ses vrais sentiments aux moments cruciaux." },
-    "owl": { "name": "Hibou", "description": "Vous possédez une sagesse profonde et de la perspicacité. Votre observation silencieuse et vos conseils ont une valeur immense.", "characteristics": "Sage, préfère la réflexion profonde. Observe en silence mais offre des conseils perspicaces." },
-    "eagle": { "name": "Aigle", "description": "Vous êtes un stratège avec une vision exceptionnelle. Vous voyez la vue d'ensemble et agissez avec précision.", "characteristics": "Perceptif et orienté vers les objectifs. Juge les situations de haut avec des capacités analytiques et intuitives." },
-    "lion": { "name": "Lion", "description": "Vous êtes un leader né. Votre bravoure et votre charisme inspirent les autres à suivre.", "characteristics": "Leader confiant et audacieux. Poursuit ses objectifs avec une volonté forte et de la passion." },
-    "dragon": { "name": "Dragon", "description": "Vous possédez une puissance et un mysticisme extraordinaires. Votre influence et votre vision peuvent transformer le monde.", "characteristics": "Puissant, mystérieux et charismatique. Rêve grand et s'efforce d'accomplir l'extraordinaire." },
-    "rabbit": { "name": "Lapin", "description": "Vous êtes sensible et attentionné. Votre empathie et votre prévenance approfondissent chaque relation.", "characteristics": "Doux avec des émotions sensibles. Réflexes rapides et grande vigilance, cherchant toujours la sécurité." },
-    "butterfly": { "name": "Papillon", "description": "Vous aimez la beauté et la créativité. Votre inspiration rend tout plus lumineux et coloré.", "characteristics": "Embrasse le changement et recherche la beauté. Aspire à des expériences diverses, ajoutant de la créativité à la vie." },
-    "unicorn": { "name": "Licorne", "description": "Vous possédez une unicité magique. Vos croyances pures et votre créativité rendent le monde plus beau.", "characteristics": "Tempérament rare et spécial. Idéaliste avec un noyau intérieur fort." }
+    "wolf": {
+      "name": "Loup",
+      "description": "Vous êtes un esprit d'indépendance mystérieuse. Vous suivez votre propre chemin et formez des liens profonds avec quelques élus.",
+      "characteristics": "Tempérament indépendant et énigmatique. Préfère son propre chemin, formant des connexions profondes avec des compagnons loyaux."
+    },
+    "bear": {
+      "name": "Ours",
+      "description": "Vous êtes fiable et digne de confiance. Votre présence stable apporte du réconfort à ceux qui vous entourent.",
+      "characteristics": "Nature fiable et protectrice. Se déplace lentement mais sûrement, avec un instinct naturel de protection."
+    },
+    "fox": {
+      "name": "Renard",
+      "description": "Vous êtes rusé et créatif. Votre pensée flexible mène à des solutions uniques.",
+      "characteristics": "Rusé et créatif. Brise les conventions et résout les problèmes à sa façon."
+    },
+    "dolphin": {
+      "name": "Dauphin",
+      "description": "Vous avez un cœur chaleureux et une empathie profonde. Votre gentillesse illumine tout autour de vous.",
+      "characteristics": "Gentil et émotionnellement perspicace. Comprend facilement les sentiments des autres, cherche harmonie et paix."
+    },
+    "cat": {
+      "name": "Chat",
+      "description": "Vous êtes une âme élégante et indépendante. Vous vivez à votre propre rythme, révélant des émotions profondes quand cela compte.",
+      "characteristics": "Indépendant mais émotionnellement nuancé. Agit selon ses propres termes, montrant ses vrais sentiments aux moments cruciaux."
+    },
+    "owl": {
+      "name": "Hibou",
+      "description": "Vous possédez une sagesse profonde et de la perspicacité. Votre observation silencieuse et vos conseils ont une valeur immense.",
+      "characteristics": "Sage, préfère la réflexion profonde. Observe en silence mais offre des conseils perspicaces."
+    },
+    "eagle": {
+      "name": "Aigle",
+      "description": "Vous êtes un stratège avec une vision exceptionnelle. Vous voyez la vue d'ensemble et agissez avec précision.",
+      "characteristics": "Perceptif et orienté vers les objectifs. Juge les situations de haut avec des capacités analytiques et intuitives."
+    },
+    "lion": {
+      "name": "Lion",
+      "description": "Vous êtes un leader né. Votre bravoure et votre charisme inspirent les autres à suivre.",
+      "characteristics": "Leader confiant et audacieux. Poursuit ses objectifs avec une volonté forte et de la passion."
+    },
+    "dragon": {
+      "name": "Dragon",
+      "description": "Vous possédez une puissance et un mysticisme extraordinaires. Votre influence et votre vision peuvent transformer le monde.",
+      "characteristics": "Puissant, mystérieux et charismatique. Rêve grand et s'efforce d'accomplir l'extraordinaire."
+    },
+    "rabbit": {
+      "name": "Lapin",
+      "description": "Vous êtes sensible et attentionné. Votre empathie et votre prévenance approfondissent chaque relation.",
+      "characteristics": "Doux avec des émotions sensibles. Réflexes rapides et grande vigilance, cherchant toujours la sécurité."
+    },
+    "butterfly": {
+      "name": "Papillon",
+      "description": "Vous aimez la beauté et la créativité. Votre inspiration rend tout plus lumineux et coloré.",
+      "characteristics": "Embrasse le changement et recherche la beauté. Aspire à des expériences diverses, ajoutant de la créativité à la vie."
+    },
+    "unicorn": {
+      "name": "Licorne",
+      "description": "Vous possédez une unicité magique. Vos croyances pures et votre créativité rendent le monde plus beau.",
+      "characteristics": "Tempérament rare et spécial. Idéaliste avec un noyau intérieur fort."
+    }
   },
   "result": {
     "wilderness_spoken": "La nature a parlé...",
     "characteristics": "Caractéristiques",
     "your_pack": "Votre Meute",
-    "your_rival": "Votre Rival"
+    "your_rival": "Votre Rival",
+    "moreTests": "Découvrir plus de tests",
+    "percentileStat": "Seulement <strong>{percent}%</strong> des participants sont ce type d'animal"
   },
   "rec": {
     "title": "Autres tests amusants",
-    "brain_type": "Type de Cerveau", "mbti_love": "MBTI Amour", "dream_fortune": "Rêves/Fortune",
-    "color_personality": "Couleur Personnalité", "emotion_temp": "Temp. Émotionnelle", "hsp_test": "Test HSP"
+    "brain_type": "Type de Cerveau",
+    "mbti_love": "MBTI Amour",
+    "dream_fortune": "Rêves/Fortune",
+    "color_personality": "Couleur Personnalité",
+    "emotion_temp": "Temp. Émotionnelle",
+    "hsp_test": "Test HSP"
   },
   "share": {
     "copied": "Lien copié !",
@@ -113,5 +297,13 @@
     "twitter_text": "Mon animal totem est {animal} ! Et le vôtre ?",
     "native_text": "Mon animal totem est {animal} !"
   },
-  "accessibility": { "skipMain": "Aller au contenu" }
+  "accessibility": {
+    "skipMain": "Aller au contenu"
+  },
+  "related": {
+    "sleepAnimal": "Animal du sommeil",
+    "colorPersonality": "Personnalité couleur",
+    "brainType": "Type de cerveau",
+    "mbtiLove": "MBTI Amour"
+  }
 }

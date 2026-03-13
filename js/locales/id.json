@@ -7,8 +7,12 @@
     "twitter_title": "Hewan Jiwamu 🦁 Perjalanan Bertahan Hidup",
     "twitter_description": "Temukan hewan jiwamu dengan skenario bertahan hidup!"
   },
-  "loader": { "text": "Memuat..." },
-  "a11y": { "language": "Pilih Bahasa" },
+  "loader": {
+    "text": "Memuat..."
+  },
+  "a11y": {
+    "language": "Pilih Bahasa"
+  },
   "home": {
     "title": "Perjalanan Bertahan Hidup di Alam Liar",
     "subtitle": "Kamu telah masuk ke alam liar. Insting bertahan hidupmu akan mengungkap hewan jiwamu.",
@@ -37,75 +41,255 @@
   },
   "scenarios": {
     "forest": {
-      "0": { "text": "Malam tiba-tiba turun.", "a": "Bangun tempat berlindung", "b": "Terus berjalan di bawah bulan" },
-      "1": { "text": "Kamu mendengar geraman di dekat.", "a": "Berdiri teguh", "b": "Panjat pohon" },
-      "2": { "text": "Kamu menemukan sungai kecil.", "a": "Ikuti ke hilir", "b": "Tinggal dan berkemah" },
-      "3": { "text": "Makhluk lain mendekat.", "a": "Amati diam-diam", "b": "Perlihatkan dirimu" },
-      "4": { "text": "Badai datang.", "a": "Cari gua", "b": "Bangun kanopi dari ranting" },
-      "5": { "text": "Kamu melihat makanan di atas.", "a": "Panjat untuk mengambilnya", "b": "Cari di tanah" }
+      "0": {
+        "text": "Malam tiba-tiba turun.",
+        "a": "Bangun tempat berlindung",
+        "b": "Terus berjalan di bawah bulan"
+      },
+      "1": {
+        "text": "Kamu mendengar geraman di dekat.",
+        "a": "Berdiri teguh",
+        "b": "Panjat pohon"
+      },
+      "2": {
+        "text": "Kamu menemukan sungai kecil.",
+        "a": "Ikuti ke hilir",
+        "b": "Tinggal dan berkemah"
+      },
+      "3": {
+        "text": "Makhluk lain mendekat.",
+        "a": "Amati diam-diam",
+        "b": "Perlihatkan dirimu"
+      },
+      "4": {
+        "text": "Badai datang.",
+        "a": "Cari gua",
+        "b": "Bangun kanopi dari ranting"
+      },
+      "5": {
+        "text": "Kamu melihat makanan di atas.",
+        "a": "Panjat untuk mengambilnya",
+        "b": "Cari di tanah"
+      }
     },
     "ocean": {
-      "0": { "text": "Ombak semakin kuat.", "a": "Naiki ombak", "b": "Cari perairan tenang" },
-      "1": { "text": "Kamu melihat sekumpulan ikan.", "a": "Menyelam", "b": "Tunggu sabar di permukaan" },
-      "2": { "text": "Sebuah pulau muncul di kejauhan.", "a": "Berenang ke sana", "b": "Tetap di laut terbuka" },
-      "3": { "text": "Arus menarikmu.", "a": "Ikuti arus", "b": "Lawan arusnya" },
-      "4": { "text": "Malam turun di atas air.", "a": "Mengapung dan istirahat", "b": "Terus berenang" },
-      "5": { "text": "Makhluk lain muncul.", "a": "Mendekati dengan penasaran", "b": "Jaga jarak" }
+      "0": {
+        "text": "Ombak semakin kuat.",
+        "a": "Naiki ombak",
+        "b": "Cari perairan tenang"
+      },
+      "1": {
+        "text": "Kamu melihat sekumpulan ikan.",
+        "a": "Menyelam",
+        "b": "Tunggu sabar di permukaan"
+      },
+      "2": {
+        "text": "Sebuah pulau muncul di kejauhan.",
+        "a": "Berenang ke sana",
+        "b": "Tetap di laut terbuka"
+      },
+      "3": {
+        "text": "Arus menarikmu.",
+        "a": "Ikuti arus",
+        "b": "Lawan arusnya"
+      },
+      "4": {
+        "text": "Malam turun di atas air.",
+        "a": "Mengapung dan istirahat",
+        "b": "Terus berenang"
+      },
+      "5": {
+        "text": "Makhluk lain muncul.",
+        "a": "Mendekati dengan penasaran",
+        "b": "Jaga jarak"
+      }
     },
     "mountain": {
-      "0": { "text": "Jalan bercabang.", "a": "Ambil jalan pintas yang curam", "b": "Ikuti jalur panjang yang aman" },
-      "1": { "text": "Suhu turun drastis.", "a": "Terus mendaki", "b": "Cari perlindungan dan tunggu" },
-      "2": { "text": "Seekor elang berputar di atas.", "a": "Ikuti dia", "b": "Tentukan jalanmu sendiri" },
-      "3": { "text": "Kamu berdiri di tepi tebing.", "a": "Lihat ke bawah", "b": "Fokus pada puncak" },
-      "4": { "text": "Kabut datang.", "a": "Percaya instingmu", "b": "Tunggu sampai reda" },
-      "5": { "text": "Kamu mencapai dataran tinggi.", "a": "Istirahat dan survei", "b": "Terus ke puncak" }
+      "0": {
+        "text": "Jalan bercabang.",
+        "a": "Ambil jalan pintas yang curam",
+        "b": "Ikuti jalur panjang yang aman"
+      },
+      "1": {
+        "text": "Suhu turun drastis.",
+        "a": "Terus mendaki",
+        "b": "Cari perlindungan dan tunggu"
+      },
+      "2": {
+        "text": "Seekor elang berputar di atas.",
+        "a": "Ikuti dia",
+        "b": "Tentukan jalanmu sendiri"
+      },
+      "3": {
+        "text": "Kamu berdiri di tepi tebing.",
+        "a": "Lihat ke bawah",
+        "b": "Fokus pada puncak"
+      },
+      "4": {
+        "text": "Kabut datang.",
+        "a": "Percaya instingmu",
+        "b": "Tunggu sampai reda"
+      },
+      "5": {
+        "text": "Kamu mencapai dataran tinggi.",
+        "a": "Istirahat dan survei",
+        "b": "Terus ke puncak"
+      }
     },
     "desert": {
-      "0": { "text": "Matahari menyengat.", "a": "Berjalan di malam hari", "b": "Terobos panas" },
-      "1": { "text": "Kamu menemukan oasis.", "a": "Minum banyak", "b": "Jatah dengan hati-hati" },
-      "2": { "text": "Badai pasir mendekat.", "a": "Gali dan tunggu", "b": "Cari perlindungan batu" },
-      "3": { "text": "Kamu melihat jejak di pasir.", "a": "Ikuti mereka", "b": "Buat jalanmu sendiri" },
-      "4": { "text": "Bintang-bintang muncul.", "a": "Navigasi dengannya", "b": "Berkemah untuk malam" },
-      "5": { "text": "Fatamorgana atau nyata?", "a": "Selidiki", "b": "Percaya indra" }
+      "0": {
+        "text": "Matahari menyengat.",
+        "a": "Berjalan di malam hari",
+        "b": "Terobos panas"
+      },
+      "1": {
+        "text": "Kamu menemukan oasis.",
+        "a": "Minum banyak",
+        "b": "Jatah dengan hati-hati"
+      },
+      "2": {
+        "text": "Badai pasir mendekat.",
+        "a": "Gali dan tunggu",
+        "b": "Cari perlindungan batu"
+      },
+      "3": {
+        "text": "Kamu melihat jejak di pasir.",
+        "a": "Ikuti mereka",
+        "b": "Buat jalanmu sendiri"
+      },
+      "4": {
+        "text": "Bintang-bintang muncul.",
+        "a": "Navigasi dengannya",
+        "b": "Berkemah untuk malam"
+      },
+      "5": {
+        "text": "Fatamorgana atau nyata?",
+        "a": "Selidiki",
+        "b": "Percaya indra"
+      }
     }
   },
   "traits": {
-    "loyalty": "Kesetiaan", "instinct": "Insting", "independence": "Kemandirian", "mystery": "Misteri",
-    "strength": "Kekuatan", "protection": "Perlindungan", "patience": "Kesabaran", "warmth": "Kehangatan",
-    "cleverness": "Kecerdikan", "adaptability": "Adaptasi", "charm": "Pesona", "creativity": "Kreativitas",
-    "empathy": "Empati", "social": "Sosial", "harmony": "Harmoni", "playfulness": "Keceriaan",
-    "elegance": "Keanggunan", "intuition": "Intuisi", "wisdom": "Kebijaksanaan", "insight": "Wawasan",
-    "analysis": "Analisis", "vision": "Visi", "strategy": "Strategi", "speed": "Kecepatan",
-    "objectivity": "Objektivitas", "leadership": "Kepemimpinan", "courage": "Keberanian", "charisma": "Karisma",
-    "determination": "Tekad", "power": "Kekuasaan", "ambition": "Ambisi", "influence": "Pengaruh",
-    "sensitivity": "Sensitivitas", "gentleness": "Kelembutan", "transformation": "Transformasi", "freedom": "Kebebasan",
-    "beauty": "Keindahan", "idealism": "Idealisme", "uniqueness": "Keunikan", "purity": "Kemurnian",
+    "loyalty": "Kesetiaan",
+    "instinct": "Insting",
+    "independence": "Kemandirian",
+    "mystery": "Misteri",
+    "strength": "Kekuatan",
+    "protection": "Perlindungan",
+    "patience": "Kesabaran",
+    "warmth": "Kehangatan",
+    "cleverness": "Kecerdikan",
+    "adaptability": "Adaptasi",
+    "charm": "Pesona",
+    "creativity": "Kreativitas",
+    "empathy": "Empati",
+    "social": "Sosial",
+    "harmony": "Harmoni",
+    "playfulness": "Keceriaan",
+    "elegance": "Keanggunan",
+    "intuition": "Intuisi",
+    "wisdom": "Kebijaksanaan",
+    "insight": "Wawasan",
+    "analysis": "Analisis",
+    "vision": "Visi",
+    "strategy": "Strategi",
+    "speed": "Kecepatan",
+    "objectivity": "Objektivitas",
+    "leadership": "Kepemimpinan",
+    "courage": "Keberanian",
+    "charisma": "Karisma",
+    "determination": "Tekad",
+    "power": "Kekuasaan",
+    "ambition": "Ambisi",
+    "influence": "Pengaruh",
+    "sensitivity": "Sensitivitas",
+    "gentleness": "Kelembutan",
+    "transformation": "Transformasi",
+    "freedom": "Kebebasan",
+    "beauty": "Keindahan",
+    "idealism": "Idealisme",
+    "uniqueness": "Keunikan",
+    "purity": "Kemurnian",
     "imagination": "Imajinasi"
   },
   "animals": {
-    "wolf": { "name": "Serigala", "description": "Kamu adalah jiwa yang misterius dan mandiri. Berjalan di jalanmu sendiri dan membentuk ikatan mendalam dengan sedikit orang.", "characteristics": "Temperamen mandiri dan misterius. Lebih suka jalannya sendiri, membentuk koneksi mendalam dengan sahabat setia." },
-    "bear": { "name": "Beruang", "description": "Kamu dapat diandalkan dan dipercaya. Kehadiranmu yang stabil memberi kenyamanan.", "characteristics": "Sifat yang andal dan protektif. Bergerak pelan tapi pasti, dengan insting melindungi." },
-    "fox": { "name": "Rubah", "description": "Kamu cerdik dan kreatif. Pemikiranmu yang fleksibel menemukan solusi unik.", "characteristics": "Cerdik dan kreatif. Melanggar konvensi dan menyelesaikan masalah dengan caranya sendiri." },
-    "dolphin": { "name": "Lumba-lumba", "description": "Kamu punya hati yang hangat dan empati yang dalam. Kebaikanmu menerangi sekelilingmu.", "characteristics": "Baik hati dan peka secara emosional. Mudah memahami perasaan orang lain, mencari harmoni dan kedamaian." },
-    "cat": { "name": "Kucing", "description": "Kamu jiwa yang elegan dan mandiri. Hidup dengan iramamu, menunjukkan emosi mendalam saat penting.", "characteristics": "Mandiri namun bernuansa emosional. Bertindak sesuai keinginannya, menunjukkan perasaan sejati di momen krusial." },
-    "owl": { "name": "Burung Hantu", "description": "Kamu memiliki kebijaksanaan dan wawasan yang dalam. Pengamatan dan nasihatmu sangat berharga.", "characteristics": "Bijaksana, menyukai pemikiran mendalam. Mengamati diam-diam tapi memberikan bimbingan berwawasan." },
-    "eagle": { "name": "Elang", "description": "Kamu adalah ahli strategi dengan visi luar biasa. Melihat gambaran besar dan bertindak presisi.", "characteristics": "Perseptif dan berorientasi tujuan. Menilai situasi dari ketinggian dengan kemampuan analitis dan intuitif." },
-    "lion": { "name": "Singa", "description": "Kamu adalah pemimpin alami. Keberanian dan karismamu menginspirasi orang lain.", "characteristics": "Pemimpin yang percaya diri dan berani. Mengejar tujuan dengan kemauan kuat dan gairah." },
-    "dragon": { "name": "Naga", "description": "Kamu memiliki kekuatan dan mistisisme luar biasa. Pengaruh dan visimu bisa mengubah dunia.", "characteristics": "Kuat, misterius, dan karismatik. Bermimpi besar dan berjuang untuk hal-hal luar biasa." },
-    "rabbit": { "name": "Kelinci", "description": "Kamu sensitif dan perhatian. Empati dan perhatianmu memperdalam setiap hubungan.", "characteristics": "Lembut dengan emosi sensitif. Refleks cepat dan waspada, selalu mencari keamanan." },
-    "butterfly": { "name": "Kupu-kupu", "description": "Kamu mencintai keindahan dan kreativitas. Inspirasimu membuat segalanya lebih cerah dan berwarna.", "characteristics": "Merangkul perubahan dan mengejar keindahan. Mendambakan pengalaman beragam, menambahkan kreativitas." },
-    "unicorn": { "name": "Unicorn", "description": "Kamu memiliki keunikan yang magis. Keyakinan murni dan kreativitasmu membuat dunia lebih indah.", "characteristics": "Temperamen langka dan istimewa. Idealis dengan inti dalam yang kuat." }
+    "wolf": {
+      "name": "Serigala",
+      "description": "Kamu adalah jiwa yang misterius dan mandiri. Berjalan di jalanmu sendiri dan membentuk ikatan mendalam dengan sedikit orang.",
+      "characteristics": "Temperamen mandiri dan misterius. Lebih suka jalannya sendiri, membentuk koneksi mendalam dengan sahabat setia."
+    },
+    "bear": {
+      "name": "Beruang",
+      "description": "Kamu dapat diandalkan dan dipercaya. Kehadiranmu yang stabil memberi kenyamanan.",
+      "characteristics": "Sifat yang andal dan protektif. Bergerak pelan tapi pasti, dengan insting melindungi."
+    },
+    "fox": {
+      "name": "Rubah",
+      "description": "Kamu cerdik dan kreatif. Pemikiranmu yang fleksibel menemukan solusi unik.",
+      "characteristics": "Cerdik dan kreatif. Melanggar konvensi dan menyelesaikan masalah dengan caranya sendiri."
+    },
+    "dolphin": {
+      "name": "Lumba-lumba",
+      "description": "Kamu punya hati yang hangat dan empati yang dalam. Kebaikanmu menerangi sekelilingmu.",
+      "characteristics": "Baik hati dan peka secara emosional. Mudah memahami perasaan orang lain, mencari harmoni dan kedamaian."
+    },
+    "cat": {
+      "name": "Kucing",
+      "description": "Kamu jiwa yang elegan dan mandiri. Hidup dengan iramamu, menunjukkan emosi mendalam saat penting.",
+      "characteristics": "Mandiri namun bernuansa emosional. Bertindak sesuai keinginannya, menunjukkan perasaan sejati di momen krusial."
+    },
+    "owl": {
+      "name": "Burung Hantu",
+      "description": "Kamu memiliki kebijaksanaan dan wawasan yang dalam. Pengamatan dan nasihatmu sangat berharga.",
+      "characteristics": "Bijaksana, menyukai pemikiran mendalam. Mengamati diam-diam tapi memberikan bimbingan berwawasan."
+    },
+    "eagle": {
+      "name": "Elang",
+      "description": "Kamu adalah ahli strategi dengan visi luar biasa. Melihat gambaran besar dan bertindak presisi.",
+      "characteristics": "Perseptif dan berorientasi tujuan. Menilai situasi dari ketinggian dengan kemampuan analitis dan intuitif."
+    },
+    "lion": {
+      "name": "Singa",
+      "description": "Kamu adalah pemimpin alami. Keberanian dan karismamu menginspirasi orang lain.",
+      "characteristics": "Pemimpin yang percaya diri dan berani. Mengejar tujuan dengan kemauan kuat dan gairah."
+    },
+    "dragon": {
+      "name": "Naga",
+      "description": "Kamu memiliki kekuatan dan mistisisme luar biasa. Pengaruh dan visimu bisa mengubah dunia.",
+      "characteristics": "Kuat, misterius, dan karismatik. Bermimpi besar dan berjuang untuk hal-hal luar biasa."
+    },
+    "rabbit": {
+      "name": "Kelinci",
+      "description": "Kamu sensitif dan perhatian. Empati dan perhatianmu memperdalam setiap hubungan.",
+      "characteristics": "Lembut dengan emosi sensitif. Refleks cepat dan waspada, selalu mencari keamanan."
+    },
+    "butterfly": {
+      "name": "Kupu-kupu",
+      "description": "Kamu mencintai keindahan dan kreativitas. Inspirasimu membuat segalanya lebih cerah dan berwarna.",
+      "characteristics": "Merangkul perubahan dan mengejar keindahan. Mendambakan pengalaman beragam, menambahkan kreativitas."
+    },
+    "unicorn": {
+      "name": "Unicorn",
+      "description": "Kamu memiliki keunikan yang magis. Keyakinan murni dan kreativitasmu membuat dunia lebih indah.",
+      "characteristics": "Temperamen langka dan istimewa. Idealis dengan inti dalam yang kuat."
+    }
   },
   "result": {
     "wilderness_spoken": "Alam liar telah berbicara...",
     "characteristics": "Karakteristik",
     "your_pack": "Kawananmu",
-    "your_rival": "Rivalmu"
+    "your_rival": "Rivalmu",
+    "moreTests": "Jelajahi tes lainnya",
+    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang merupakan tipe hewan ini"
   },
   "rec": {
     "title": "Tes seru lainnya",
-    "brain_type": "Tipe Otak", "mbti_love": "MBTI Cinta", "dream_fortune": "Mimpi/Keberuntungan",
-    "color_personality": "Warna Kepribadian", "emotion_temp": "Suhu Emosi", "hsp_test": "Tes HSP"
+    "brain_type": "Tipe Otak",
+    "mbti_love": "MBTI Cinta",
+    "dream_fortune": "Mimpi/Keberuntungan",
+    "color_personality": "Warna Kepribadian",
+    "emotion_temp": "Suhu Emosi",
+    "hsp_test": "Tes HSP"
   },
   "share": {
     "copied": "Tautan disalin!",
@@ -113,5 +297,13 @@
     "twitter_text": "Hewan jiwaku adalah {animal}! Punyamu apa?",
     "native_text": "Hewan jiwaku adalah {animal}!"
   },
-  "accessibility": { "skipMain": "Langsung ke konten" }
+  "accessibility": {
+    "skipMain": "Langsung ke konten"
+  },
+  "related": {
+    "sleepAnimal": "Hewan Tidur",
+    "colorPersonality": "Kepribadian Warna",
+    "brainType": "Tipe Otak",
+    "mbtiLove": "MBTI Cinta"
+  }
 }

@@ -41,36 +41,132 @@
   },
   "scenarios": {
     "forest": {
-      "0": { "text": "Night falls suddenly.", "a": "Build a shelter", "b": "Keep moving by moonlight" },
-      "1": { "text": "You hear a growl nearby.", "a": "Stand your ground", "b": "Climb a tree" },
-      "2": { "text": "You find a stream.", "a": "Follow it downstream", "b": "Stay and set up camp" },
-      "3": { "text": "Another creature approaches.", "a": "Observe silently", "b": "Make yourself known" },
-      "4": { "text": "A storm is coming.", "a": "Find a cave", "b": "Build a canopy from branches" },
-      "5": { "text": "You spot food high up.", "a": "Climb for it", "b": "Search the ground instead" }
+      "0": {
+        "text": "Night falls suddenly.",
+        "a": "Build a shelter",
+        "b": "Keep moving by moonlight"
+      },
+      "1": {
+        "text": "You hear a growl nearby.",
+        "a": "Stand your ground",
+        "b": "Climb a tree"
+      },
+      "2": {
+        "text": "You find a stream.",
+        "a": "Follow it downstream",
+        "b": "Stay and set up camp"
+      },
+      "3": {
+        "text": "Another creature approaches.",
+        "a": "Observe silently",
+        "b": "Make yourself known"
+      },
+      "4": {
+        "text": "A storm is coming.",
+        "a": "Find a cave",
+        "b": "Build a canopy from branches"
+      },
+      "5": {
+        "text": "You spot food high up.",
+        "a": "Climb for it",
+        "b": "Search the ground instead"
+      }
     },
     "ocean": {
-      "0": { "text": "The waves are getting stronger.", "a": "Ride them", "b": "Seek calm waters" },
-      "1": { "text": "You spot a school of fish.", "a": "Dive in", "b": "Wait patiently on the surface" },
-      "2": { "text": "An island appears in the distance.", "a": "Swim for it", "b": "Stay in open water" },
-      "3": { "text": "The current pulls you.", "a": "Go with the flow", "b": "Fight against it" },
-      "4": { "text": "Night falls on the water.", "a": "Float and rest", "b": "Keep swimming" },
-      "5": { "text": "Another creature surfaces.", "a": "Approach curiously", "b": "Keep your distance" }
+      "0": {
+        "text": "The waves are getting stronger.",
+        "a": "Ride them",
+        "b": "Seek calm waters"
+      },
+      "1": {
+        "text": "You spot a school of fish.",
+        "a": "Dive in",
+        "b": "Wait patiently on the surface"
+      },
+      "2": {
+        "text": "An island appears in the distance.",
+        "a": "Swim for it",
+        "b": "Stay in open water"
+      },
+      "3": {
+        "text": "The current pulls you.",
+        "a": "Go with the flow",
+        "b": "Fight against it"
+      },
+      "4": {
+        "text": "Night falls on the water.",
+        "a": "Float and rest",
+        "b": "Keep swimming"
+      },
+      "5": {
+        "text": "Another creature surfaces.",
+        "a": "Approach curiously",
+        "b": "Keep your distance"
+      }
     },
     "mountain": {
-      "0": { "text": "The path splits.", "a": "Take the steep shortcut", "b": "Follow the long safe trail" },
-      "1": { "text": "Temperature drops sharply.", "a": "Keep climbing", "b": "Find shelter and wait" },
-      "2": { "text": "An eagle circles above.", "a": "Follow it", "b": "Chart your own course" },
-      "3": { "text": "You stand at a cliff edge.", "a": "Look down", "b": "Focus on the summit" },
-      "4": { "text": "Fog rolls in.", "a": "Trust your instincts", "b": "Wait for it to clear" },
-      "5": { "text": "You reach a plateau.", "a": "Rest and survey", "b": "Push for the peak" }
+      "0": {
+        "text": "The path splits.",
+        "a": "Take the steep shortcut",
+        "b": "Follow the long safe trail"
+      },
+      "1": {
+        "text": "Temperature drops sharply.",
+        "a": "Keep climbing",
+        "b": "Find shelter and wait"
+      },
+      "2": {
+        "text": "An eagle circles above.",
+        "a": "Follow it",
+        "b": "Chart your own course"
+      },
+      "3": {
+        "text": "You stand at a cliff edge.",
+        "a": "Look down",
+        "b": "Focus on the summit"
+      },
+      "4": {
+        "text": "Fog rolls in.",
+        "a": "Trust your instincts",
+        "b": "Wait for it to clear"
+      },
+      "5": {
+        "text": "You reach a plateau.",
+        "a": "Rest and survey",
+        "b": "Push for the peak"
+      }
     },
     "desert": {
-      "0": { "text": "The sun is blazing.", "a": "Travel by night", "b": "Push through the heat" },
-      "1": { "text": "You find an oasis.", "a": "Drink deeply", "b": "Ration carefully" },
-      "2": { "text": "A sandstorm approaches.", "a": "Dig in and wait", "b": "Find rock shelter" },
-      "3": { "text": "You see tracks in the sand.", "a": "Follow them", "b": "Make your own path" },
-      "4": { "text": "Stars come out.", "a": "Navigate by them", "b": "Camp for the night" },
-      "5": { "text": "Mirage or real?", "a": "Investigate", "b": "Trust your senses" }
+      "0": {
+        "text": "The sun is blazing.",
+        "a": "Travel by night",
+        "b": "Push through the heat"
+      },
+      "1": {
+        "text": "You find an oasis.",
+        "a": "Drink deeply",
+        "b": "Ration carefully"
+      },
+      "2": {
+        "text": "A sandstorm approaches.",
+        "a": "Dig in and wait",
+        "b": "Find rock shelter"
+      },
+      "3": {
+        "text": "You see tracks in the sand.",
+        "a": "Follow them",
+        "b": "Make your own path"
+      },
+      "4": {
+        "text": "Stars come out.",
+        "a": "Navigate by them",
+        "b": "Camp for the night"
+      },
+      "5": {
+        "text": "Mirage or real?",
+        "a": "Investigate",
+        "b": "Trust your senses"
+      }
     }
   },
   "traits": {
@@ -182,7 +278,9 @@
     "wilderness_spoken": "The wilderness has spoken...",
     "characteristics": "Characteristics",
     "your_pack": "Your Pack",
-    "your_rival": "Your Rival"
+    "your_rival": "Your Rival",
+    "moreTests": "Explore More Tests",
+    "percentileStat": "Only <strong>{percent}%</strong> of participants are this animal type"
   },
   "rec": {
     "title": "Other Fun Tests",
@@ -201,5 +299,11 @@
   },
   "accessibility": {
     "skipMain": "Skip to content"
+  },
+  "related": {
+    "sleepAnimal": "Sleep Animal",
+    "colorPersonality": "Color Personality",
+    "brainType": "Brain Type",
+    "mbtiLove": "MBTI Love"
   }
 }

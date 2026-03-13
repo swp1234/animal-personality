@@ -7,8 +7,12 @@
     "twitter_title": "Dein Seelentier 🦁 Wildnis-Überlebensreise",
     "twitter_description": "Entdecke dein Seelentier durch Wildnis-Szenarien!"
   },
-  "loader": { "text": "Laden..." },
-  "a11y": { "language": "Sprache wählen" },
+  "loader": {
+    "text": "Laden..."
+  },
+  "a11y": {
+    "language": "Sprache wählen"
+  },
   "home": {
     "title": "Wildnis-Überlebensreise",
     "subtitle": "Du bist in die Wildnis gewandert. Deine Überlebensinstinkte werden dein Seelentier enthüllen.",
@@ -37,75 +41,255 @@
   },
   "scenarios": {
     "forest": {
-      "0": { "text": "Die Nacht bricht plötzlich herein.", "a": "Unterschlupf bauen", "b": "Im Mondlicht weitergehen" },
-      "1": { "text": "Du hörst ein Knurren in der Nähe.", "a": "Standhalten", "b": "Auf einen Baum klettern" },
-      "2": { "text": "Du findest einen Bach.", "a": "Flussabwärts folgen", "b": "Bleiben und Lager aufschlagen" },
-      "3": { "text": "Ein anderes Wesen nähert sich.", "a": "Still beobachten", "b": "Dich bemerkbar machen" },
-      "4": { "text": "Ein Sturm zieht auf.", "a": "Eine Höhle finden", "b": "Ein Dach aus Ästen bauen" },
-      "5": { "text": "Du siehst Essen weit oben.", "a": "Hochklettern", "b": "Am Boden suchen" }
+      "0": {
+        "text": "Die Nacht bricht plötzlich herein.",
+        "a": "Unterschlupf bauen",
+        "b": "Im Mondlicht weitergehen"
+      },
+      "1": {
+        "text": "Du hörst ein Knurren in der Nähe.",
+        "a": "Standhalten",
+        "b": "Auf einen Baum klettern"
+      },
+      "2": {
+        "text": "Du findest einen Bach.",
+        "a": "Flussabwärts folgen",
+        "b": "Bleiben und Lager aufschlagen"
+      },
+      "3": {
+        "text": "Ein anderes Wesen nähert sich.",
+        "a": "Still beobachten",
+        "b": "Dich bemerkbar machen"
+      },
+      "4": {
+        "text": "Ein Sturm zieht auf.",
+        "a": "Eine Höhle finden",
+        "b": "Ein Dach aus Ästen bauen"
+      },
+      "5": {
+        "text": "Du siehst Essen weit oben.",
+        "a": "Hochklettern",
+        "b": "Am Boden suchen"
+      }
     },
     "ocean": {
-      "0": { "text": "Die Wellen werden stärker.", "a": "Sie reiten", "b": "Ruhige Gewässer suchen" },
-      "1": { "text": "Du siehst einen Fischschwarm.", "a": "Eintauchen", "b": "Geduldig an der Oberfläche warten" },
-      "2": { "text": "Eine Insel erscheint in der Ferne.", "a": "Hinschwimmen", "b": "Im offenen Meer bleiben" },
-      "3": { "text": "Die Strömung zieht dich.", "a": "Mitfließen", "b": "Dagegen ankämpfen" },
-      "4": { "text": "Die Nacht bricht über dem Wasser herein.", "a": "Treiben und ausruhen", "b": "Weiterschwimmen" },
-      "5": { "text": "Ein anderes Wesen taucht auf.", "a": "Neugierig nähern", "b": "Abstand halten" }
+      "0": {
+        "text": "Die Wellen werden stärker.",
+        "a": "Sie reiten",
+        "b": "Ruhige Gewässer suchen"
+      },
+      "1": {
+        "text": "Du siehst einen Fischschwarm.",
+        "a": "Eintauchen",
+        "b": "Geduldig an der Oberfläche warten"
+      },
+      "2": {
+        "text": "Eine Insel erscheint in der Ferne.",
+        "a": "Hinschwimmen",
+        "b": "Im offenen Meer bleiben"
+      },
+      "3": {
+        "text": "Die Strömung zieht dich.",
+        "a": "Mitfließen",
+        "b": "Dagegen ankämpfen"
+      },
+      "4": {
+        "text": "Die Nacht bricht über dem Wasser herein.",
+        "a": "Treiben und ausruhen",
+        "b": "Weiterschwimmen"
+      },
+      "5": {
+        "text": "Ein anderes Wesen taucht auf.",
+        "a": "Neugierig nähern",
+        "b": "Abstand halten"
+      }
     },
     "mountain": {
-      "0": { "text": "Der Weg teilt sich.", "a": "Die steile Abkürzung nehmen", "b": "Den langen sicheren Weg gehen" },
-      "1": { "text": "Die Temperatur sinkt stark.", "a": "Weiterklettern", "b": "Unterschlupf suchen und warten" },
-      "2": { "text": "Ein Adler kreist oben.", "a": "Ihm folgen", "b": "Eigenen Kurs bestimmen" },
-      "3": { "text": "Du stehst am Klippenrand.", "a": "Hinunterschauen", "b": "Auf den Gipfel fokussieren" },
-      "4": { "text": "Nebel zieht auf.", "a": "Den Instinkten vertrauen", "b": "Warten bis er sich lichtet" },
-      "5": { "text": "Du erreichst ein Plateau.", "a": "Ausruhen und Umgebung erkunden", "b": "Zum Gipfel weitergehen" }
+      "0": {
+        "text": "Der Weg teilt sich.",
+        "a": "Die steile Abkürzung nehmen",
+        "b": "Den langen sicheren Weg gehen"
+      },
+      "1": {
+        "text": "Die Temperatur sinkt stark.",
+        "a": "Weiterklettern",
+        "b": "Unterschlupf suchen und warten"
+      },
+      "2": {
+        "text": "Ein Adler kreist oben.",
+        "a": "Ihm folgen",
+        "b": "Eigenen Kurs bestimmen"
+      },
+      "3": {
+        "text": "Du stehst am Klippenrand.",
+        "a": "Hinunterschauen",
+        "b": "Auf den Gipfel fokussieren"
+      },
+      "4": {
+        "text": "Nebel zieht auf.",
+        "a": "Den Instinkten vertrauen",
+        "b": "Warten bis er sich lichtet"
+      },
+      "5": {
+        "text": "Du erreichst ein Plateau.",
+        "a": "Ausruhen und Umgebung erkunden",
+        "b": "Zum Gipfel weitergehen"
+      }
     },
     "desert": {
-      "0": { "text": "Die Sonne brennt.", "a": "Nachts reisen", "b": "Durch die Hitze gehen" },
-      "1": { "text": "Du findest eine Oase.", "a": "Ausgiebig trinken", "b": "Sorgfältig rationieren" },
-      "2": { "text": "Ein Sandsturm nähert sich.", "a": "Eingraben und warten", "b": "Felsschutz suchen" },
-      "3": { "text": "Du siehst Spuren im Sand.", "a": "Ihnen folgen", "b": "Eigenen Weg machen" },
-      "4": { "text": "Sterne erscheinen.", "a": "Nach ihnen navigieren", "b": "Für die Nacht lagern" },
-      "5": { "text": "Fata Morgana oder echt?", "a": "Untersuchen", "b": "Den Sinnen vertrauen" }
+      "0": {
+        "text": "Die Sonne brennt.",
+        "a": "Nachts reisen",
+        "b": "Durch die Hitze gehen"
+      },
+      "1": {
+        "text": "Du findest eine Oase.",
+        "a": "Ausgiebig trinken",
+        "b": "Sorgfältig rationieren"
+      },
+      "2": {
+        "text": "Ein Sandsturm nähert sich.",
+        "a": "Eingraben und warten",
+        "b": "Felsschutz suchen"
+      },
+      "3": {
+        "text": "Du siehst Spuren im Sand.",
+        "a": "Ihnen folgen",
+        "b": "Eigenen Weg machen"
+      },
+      "4": {
+        "text": "Sterne erscheinen.",
+        "a": "Nach ihnen navigieren",
+        "b": "Für die Nacht lagern"
+      },
+      "5": {
+        "text": "Fata Morgana oder echt?",
+        "a": "Untersuchen",
+        "b": "Den Sinnen vertrauen"
+      }
     }
   },
   "traits": {
-    "loyalty": "Treue", "instinct": "Instinkt", "independence": "Unabhängigkeit", "mystery": "Geheimnis",
-    "strength": "Stärke", "protection": "Schutz", "patience": "Geduld", "warmth": "Wärme",
-    "cleverness": "Klugheit", "adaptability": "Anpassung", "charm": "Charme", "creativity": "Kreativität",
-    "empathy": "Empathie", "social": "Sozial", "harmony": "Harmonie", "playfulness": "Verspieltheit",
-    "elegance": "Eleganz", "intuition": "Intuition", "wisdom": "Weisheit", "insight": "Einsicht",
-    "analysis": "Analyse", "vision": "Vision", "strategy": "Strategie", "speed": "Schnelligkeit",
-    "objectivity": "Objektivität", "leadership": "Führung", "courage": "Mut", "charisma": "Charisma",
-    "determination": "Entschlossenheit", "power": "Macht", "ambition": "Ehrgeiz", "influence": "Einfluss",
-    "sensitivity": "Sensibilität", "gentleness": "Sanftmut", "transformation": "Wandlung", "freedom": "Freiheit",
-    "beauty": "Schönheit", "idealism": "Idealismus", "uniqueness": "Einzigartigkeit", "purity": "Reinheit",
+    "loyalty": "Treue",
+    "instinct": "Instinkt",
+    "independence": "Unabhängigkeit",
+    "mystery": "Geheimnis",
+    "strength": "Stärke",
+    "protection": "Schutz",
+    "patience": "Geduld",
+    "warmth": "Wärme",
+    "cleverness": "Klugheit",
+    "adaptability": "Anpassung",
+    "charm": "Charme",
+    "creativity": "Kreativität",
+    "empathy": "Empathie",
+    "social": "Sozial",
+    "harmony": "Harmonie",
+    "playfulness": "Verspieltheit",
+    "elegance": "Eleganz",
+    "intuition": "Intuition",
+    "wisdom": "Weisheit",
+    "insight": "Einsicht",
+    "analysis": "Analyse",
+    "vision": "Vision",
+    "strategy": "Strategie",
+    "speed": "Schnelligkeit",
+    "objectivity": "Objektivität",
+    "leadership": "Führung",
+    "courage": "Mut",
+    "charisma": "Charisma",
+    "determination": "Entschlossenheit",
+    "power": "Macht",
+    "ambition": "Ehrgeiz",
+    "influence": "Einfluss",
+    "sensitivity": "Sensibilität",
+    "gentleness": "Sanftmut",
+    "transformation": "Wandlung",
+    "freedom": "Freiheit",
+    "beauty": "Schönheit",
+    "idealism": "Idealismus",
+    "uniqueness": "Einzigartigkeit",
+    "purity": "Reinheit",
     "imagination": "Fantasie"
   },
   "animals": {
-    "wolf": { "name": "Wolf", "description": "Du bist ein Geist geheimnisvoller Unabhängigkeit. Du gehst deinen eigenen Weg und bildest tiefe Bindungen mit wenigen Auserwählten.", "characteristics": "Unabhängiges und enigmatisches Temperament. Bevorzugt den eigenen Weg und bildet tiefe Verbindungen mit treuen Gefährten." },
-    "bear": { "name": "Bär", "description": "Du bist zuverlässig und vertrauenswürdig. Deine beständige Präsenz gibt den Menschen um dich herum Geborgenheit.", "characteristics": "Zuverlässige und schützende Natur. Bewegt sich langsam aber sicher, mit natürlichem Beschützerinstinkt." },
-    "fox": { "name": "Fuchs", "description": "Du bist klug und kreativ. Dein flexibles Denken führt zu einzigartigen Lösungen.", "characteristics": "Klug und kreativ. Bricht Konventionen und löst Probleme auf eigene Weise." },
-    "dolphin": { "name": "Delfin", "description": "Du hast ein warmes Herz und tiefe Empathie. Deine Freundlichkeit erhellt alles um dich herum.", "characteristics": "Freundlich und emotional wahrnehmend. Versteht leicht die Gefühle anderer, sucht Harmonie und Frieden." },
-    "cat": { "name": "Katze", "description": "Du bist eine elegante, unabhängige Seele. Du lebst in deinem eigenen Rhythmus und zeigst tiefe Emotionen, wenn es darauf ankommt.", "characteristics": "Unabhängig aber emotional nuanciert. Handelt nach eigenen Bedingungen, zeigt wahre Gefühle in entscheidenden Momenten." },
-    "owl": { "name": "Eule", "description": "Du besitzt tiefe Weisheit und Einsicht. Deine stille Beobachtung und Ratschläge sind von immensem Wert.", "characteristics": "Weise, bevorzugt tiefes Denken. Beobachtet still, bietet aber einsichtsvolle Anleitung." },
-    "eagle": { "name": "Adler", "description": "Du bist ein Stratege mit außergewöhnlicher Vision. Du siehst das große Ganze und handelst präzise.", "characteristics": "Wahrnehmend und zielorientiert. Beurteilt Situationen aus der Höhe mit analytischer und intuitiver Fähigkeit." },
-    "lion": { "name": "Löwe", "description": "Du bist ein geborener Anführer. Dein Mut und Charisma inspirieren andere, dir zu folgen.", "characteristics": "Selbstbewusster und kühner Anführer. Verfolgt Ziele mit starkem Willen und Leidenschaft." },
-    "dragon": { "name": "Drache", "description": "Du besitzt außerordentliche Kraft und Mystik. Dein Einfluss und deine Vision können die Welt verändern.", "characteristics": "Mächtig, geheimnisvoll und charismatisch. Träumt groß und strebt nach dem Außergewöhnlichen." },
-    "rabbit": { "name": "Hase", "description": "Du bist sensibel und fürsorglich. Deine Empathie und Rücksichtnahme vertiefen jede Beziehung.", "characteristics": "Sanft mit sensiblen Emotionen. Schnelle Reflexe und hohe Aufmerksamkeit, sucht stets Sicherheit." },
-    "butterfly": { "name": "Schmetterling", "description": "Du liebst Schönheit und Kreativität. Deine Inspiration macht alles heller und bunter.", "characteristics": "Umarmt Veränderung und sucht Schönheit. Sehnt sich nach vielfältigen Erfahrungen und fügt dem Leben Kreativität hinzu." },
-    "unicorn": { "name": "Einhorn", "description": "Du besitzt eine magische Einzigartigkeit. Deine reinen Überzeugungen und Kreativität machen die Welt schöner.", "characteristics": "Seltenes und besonderes Temperament. Idealist mit einem starken inneren Kern." }
+    "wolf": {
+      "name": "Wolf",
+      "description": "Du bist ein Geist geheimnisvoller Unabhängigkeit. Du gehst deinen eigenen Weg und bildest tiefe Bindungen mit wenigen Auserwählten.",
+      "characteristics": "Unabhängiges und enigmatisches Temperament. Bevorzugt den eigenen Weg und bildet tiefe Verbindungen mit treuen Gefährten."
+    },
+    "bear": {
+      "name": "Bär",
+      "description": "Du bist zuverlässig und vertrauenswürdig. Deine beständige Präsenz gibt den Menschen um dich herum Geborgenheit.",
+      "characteristics": "Zuverlässige und schützende Natur. Bewegt sich langsam aber sicher, mit natürlichem Beschützerinstinkt."
+    },
+    "fox": {
+      "name": "Fuchs",
+      "description": "Du bist klug und kreativ. Dein flexibles Denken führt zu einzigartigen Lösungen.",
+      "characteristics": "Klug und kreativ. Bricht Konventionen und löst Probleme auf eigene Weise."
+    },
+    "dolphin": {
+      "name": "Delfin",
+      "description": "Du hast ein warmes Herz und tiefe Empathie. Deine Freundlichkeit erhellt alles um dich herum.",
+      "characteristics": "Freundlich und emotional wahrnehmend. Versteht leicht die Gefühle anderer, sucht Harmonie und Frieden."
+    },
+    "cat": {
+      "name": "Katze",
+      "description": "Du bist eine elegante, unabhängige Seele. Du lebst in deinem eigenen Rhythmus und zeigst tiefe Emotionen, wenn es darauf ankommt.",
+      "characteristics": "Unabhängig aber emotional nuanciert. Handelt nach eigenen Bedingungen, zeigt wahre Gefühle in entscheidenden Momenten."
+    },
+    "owl": {
+      "name": "Eule",
+      "description": "Du besitzt tiefe Weisheit und Einsicht. Deine stille Beobachtung und Ratschläge sind von immensem Wert.",
+      "characteristics": "Weise, bevorzugt tiefes Denken. Beobachtet still, bietet aber einsichtsvolle Anleitung."
+    },
+    "eagle": {
+      "name": "Adler",
+      "description": "Du bist ein Stratege mit außergewöhnlicher Vision. Du siehst das große Ganze und handelst präzise.",
+      "characteristics": "Wahrnehmend und zielorientiert. Beurteilt Situationen aus der Höhe mit analytischer und intuitiver Fähigkeit."
+    },
+    "lion": {
+      "name": "Löwe",
+      "description": "Du bist ein geborener Anführer. Dein Mut und Charisma inspirieren andere, dir zu folgen.",
+      "characteristics": "Selbstbewusster und kühner Anführer. Verfolgt Ziele mit starkem Willen und Leidenschaft."
+    },
+    "dragon": {
+      "name": "Drache",
+      "description": "Du besitzt außerordentliche Kraft und Mystik. Dein Einfluss und deine Vision können die Welt verändern.",
+      "characteristics": "Mächtig, geheimnisvoll und charismatisch. Träumt groß und strebt nach dem Außergewöhnlichen."
+    },
+    "rabbit": {
+      "name": "Hase",
+      "description": "Du bist sensibel und fürsorglich. Deine Empathie und Rücksichtnahme vertiefen jede Beziehung.",
+      "characteristics": "Sanft mit sensiblen Emotionen. Schnelle Reflexe und hohe Aufmerksamkeit, sucht stets Sicherheit."
+    },
+    "butterfly": {
+      "name": "Schmetterling",
+      "description": "Du liebst Schönheit und Kreativität. Deine Inspiration macht alles heller und bunter.",
+      "characteristics": "Umarmt Veränderung und sucht Schönheit. Sehnt sich nach vielfältigen Erfahrungen und fügt dem Leben Kreativität hinzu."
+    },
+    "unicorn": {
+      "name": "Einhorn",
+      "description": "Du besitzt eine magische Einzigartigkeit. Deine reinen Überzeugungen und Kreativität machen die Welt schöner.",
+      "characteristics": "Seltenes und besonderes Temperament. Idealist mit einem starken inneren Kern."
+    }
   },
   "result": {
     "wilderness_spoken": "Die Wildnis hat gesprochen...",
     "characteristics": "Eigenschaften",
     "your_pack": "Dein Rudel",
-    "your_rival": "Dein Rivale"
+    "your_rival": "Dein Rivale",
+    "moreTests": "Weitere Tests entdecken",
+    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer sind dieser Tiertyp"
   },
   "rec": {
     "title": "Andere lustige Tests",
-    "brain_type": "Gehirntyp", "mbti_love": "MBTI Liebe", "dream_fortune": "Traumdeutung",
-    "color_personality": "Farbpersönlichkeit", "emotion_temp": "Emotionstemperatur", "hsp_test": "HSP Test"
+    "brain_type": "Gehirntyp",
+    "mbti_love": "MBTI Liebe",
+    "dream_fortune": "Traumdeutung",
+    "color_personality": "Farbpersönlichkeit",
+    "emotion_temp": "Emotionstemperatur",
+    "hsp_test": "HSP Test"
   },
   "share": {
     "copied": "Link kopiert!",
@@ -113,5 +297,13 @@
     "twitter_text": "Mein Seelentier ist {animal}! Was ist deins?",
     "native_text": "Mein Seelentier ist {animal}!"
   },
-  "accessibility": { "skipMain": "Zum Inhalt springen" }
+  "accessibility": {
+    "skipMain": "Zum Inhalt springen"
+  },
+  "related": {
+    "sleepAnimal": "Schlaftier",
+    "colorPersonality": "Farbpersönlichkeit",
+    "brainType": "Gehirntyp",
+    "mbtiLove": "MBTI Liebe"
+  }
 }

@@ -434,6 +434,14 @@ class WildernessSurvivalApp {
         `;
         rivalContainer.appendChild(rivalDiv);
 
+        // Percentile stat
+        const pStat = document.getElementById('percentile-stat');
+        if (pStat) {
+            const pctVal = Math.floor(Math.random() * 12) + 6;
+            const template = i18n.t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants are this animal type';
+            pStat.innerHTML = template.replace('{percent}', pctVal);
+        }
+
         // Canvas share image
         this.generateResultCanvas();
 

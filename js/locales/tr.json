@@ -7,8 +7,12 @@
     "twitter_title": "Ruh Hayvanin 🦁 Vahsi Doga Yolculugu",
     "twitter_description": "Vahsi doga senaryolariyla ruh hayvanini kesfet!"
   },
-  "loader": { "text": "Yukleniyor..." },
-  "a11y": { "language": "Dil Secin" },
+  "loader": {
+    "text": "Yukleniyor..."
+  },
+  "a11y": {
+    "language": "Dil Secin"
+  },
   "home": {
     "title": "Vahsi Doga Hayatta Kalma Yolculugu",
     "subtitle": "Vahsi dogaya adim attin. Hayatta kalma icegunlerin ruh hayvanini ortaya cikaracak.",
@@ -37,75 +41,255 @@
   },
   "scenarios": {
     "forest": {
-      "0": { "text": "Gece aniden bastirir.", "a": "Siginak kur", "b": "Ay isiginda ilerlemeye devam et" },
-      "1": { "text": "Yakinlarda bir hirildama duyarsin.", "a": "Yerinde dur", "b": "Agaca tirman" },
-      "2": { "text": "Bir dere bulursun.", "a": "Asagi akisi takip et", "b": "Kal ve kamp kur" },
-      "3": { "text": "Baska bir yaratik yaklasir.", "a": "Sessizce gozle", "b": "Varligini belli et" },
-      "4": { "text": "Firtina geliyor.", "a": "Magara bul", "b": "Dallardan govdelik yap" },
-      "5": { "text": "Yukarda yiyecek gorursun.", "a": "Tirmanip al", "b": "Yerde ara" }
+      "0": {
+        "text": "Gece aniden bastirir.",
+        "a": "Siginak kur",
+        "b": "Ay isiginda ilerlemeye devam et"
+      },
+      "1": {
+        "text": "Yakinlarda bir hirildama duyarsin.",
+        "a": "Yerinde dur",
+        "b": "Agaca tirman"
+      },
+      "2": {
+        "text": "Bir dere bulursun.",
+        "a": "Asagi akisi takip et",
+        "b": "Kal ve kamp kur"
+      },
+      "3": {
+        "text": "Baska bir yaratik yaklasir.",
+        "a": "Sessizce gozle",
+        "b": "Varligini belli et"
+      },
+      "4": {
+        "text": "Firtina geliyor.",
+        "a": "Magara bul",
+        "b": "Dallardan govdelik yap"
+      },
+      "5": {
+        "text": "Yukarda yiyecek gorursun.",
+        "a": "Tirmanip al",
+        "b": "Yerde ara"
+      }
     },
     "ocean": {
-      "0": { "text": "Dalgalar gucleniyor.", "a": "Dalgalara bin", "b": "Sakin sular ara" },
-      "1": { "text": "Bir balik sursu gorursun.", "a": "Dal", "b": "Yuzeyde sabir bekle" },
-      "2": { "text": "Uzakta bir ada belirir.", "a": "Yuzerek git", "b": "Acik denizde kal" },
-      "3": { "text": "Akim seni ceker.", "a": "Akisa birak", "b": "Karsi koy" },
-      "4": { "text": "Suyun uzerine gece duser.", "a": "Suz ve dinlen", "b": "Yuzmeye devam et" },
-      "5": { "text": "Baska bir yaratik cikar.", "a": "Merakla yaklas", "b": "Mesafeni koru" }
+      "0": {
+        "text": "Dalgalar gucleniyor.",
+        "a": "Dalgalara bin",
+        "b": "Sakin sular ara"
+      },
+      "1": {
+        "text": "Bir balik sursu gorursun.",
+        "a": "Dal",
+        "b": "Yuzeyde sabir bekle"
+      },
+      "2": {
+        "text": "Uzakta bir ada belirir.",
+        "a": "Yuzerek git",
+        "b": "Acik denizde kal"
+      },
+      "3": {
+        "text": "Akim seni ceker.",
+        "a": "Akisa birak",
+        "b": "Karsi koy"
+      },
+      "4": {
+        "text": "Suyun uzerine gece duser.",
+        "a": "Suz ve dinlen",
+        "b": "Yuzmeye devam et"
+      },
+      "5": {
+        "text": "Baska bir yaratik cikar.",
+        "a": "Merakla yaklas",
+        "b": "Mesafeni koru"
+      }
     },
     "mountain": {
-      "0": { "text": "Yol ikiye ayrilir.", "a": "Dik kisayolu sec", "b": "Uzun guvenli yolu takip et" },
-      "1": { "text": "Sicaklik hizla duser.", "a": "Tirmanmaya devam et", "b": "Siginak bul ve bekle" },
-      "2": { "text": "Bir kartal tepede doner.", "a": "Onu takip et", "b": "Kendi rotani ciz" },
-      "3": { "text": "Uçurum kenarinda duruyorsun.", "a": "Asagi bak", "b": "Zirveye odaklan" },
-      "4": { "text": "Sis basar.", "a": "Icguduune guven", "b": "Dagulmesini bekle" },
-      "5": { "text": "Bir platoya ulastin.", "a": "Dinlen ve etrafina bak", "b": "Zirveye devam et" }
+      "0": {
+        "text": "Yol ikiye ayrilir.",
+        "a": "Dik kisayolu sec",
+        "b": "Uzun guvenli yolu takip et"
+      },
+      "1": {
+        "text": "Sicaklik hizla duser.",
+        "a": "Tirmanmaya devam et",
+        "b": "Siginak bul ve bekle"
+      },
+      "2": {
+        "text": "Bir kartal tepede doner.",
+        "a": "Onu takip et",
+        "b": "Kendi rotani ciz"
+      },
+      "3": {
+        "text": "Uçurum kenarinda duruyorsun.",
+        "a": "Asagi bak",
+        "b": "Zirveye odaklan"
+      },
+      "4": {
+        "text": "Sis basar.",
+        "a": "Icguduune guven",
+        "b": "Dagulmesini bekle"
+      },
+      "5": {
+        "text": "Bir platoya ulastin.",
+        "a": "Dinlen ve etrafina bak",
+        "b": "Zirveye devam et"
+      }
     },
     "desert": {
-      "0": { "text": "Gunes kavuruyor.", "a": "Gece yolculuk yap", "b": "Sicakta ilerle" },
-      "1": { "text": "Bir vaha bulursun.", "a": "Bol bol ic", "b": "Dikkatli paylaştir" },
-      "2": { "text": "Kum firtinasi yaklasir.", "a": "Kazarak bekle", "b": "Kaya signak bul" },
-      "3": { "text": "Kumda izler gorursun.", "a": "Onlari takip et", "b": "Kendi yolunu yap" },
-      "4": { "text": "Yildizlar cikar.", "a": "Onlarla yol bul", "b": "Geceyi kamp yap" },
-      "5": { "text": "Serap mi gercek mi?", "a": "Arastir", "b": "Duyularina guven" }
+      "0": {
+        "text": "Gunes kavuruyor.",
+        "a": "Gece yolculuk yap",
+        "b": "Sicakta ilerle"
+      },
+      "1": {
+        "text": "Bir vaha bulursun.",
+        "a": "Bol bol ic",
+        "b": "Dikkatli paylaştir"
+      },
+      "2": {
+        "text": "Kum firtinasi yaklasir.",
+        "a": "Kazarak bekle",
+        "b": "Kaya signak bul"
+      },
+      "3": {
+        "text": "Kumda izler gorursun.",
+        "a": "Onlari takip et",
+        "b": "Kendi yolunu yap"
+      },
+      "4": {
+        "text": "Yildizlar cikar.",
+        "a": "Onlarla yol bul",
+        "b": "Geceyi kamp yap"
+      },
+      "5": {
+        "text": "Serap mi gercek mi?",
+        "a": "Arastir",
+        "b": "Duyularina guven"
+      }
     }
   },
   "traits": {
-    "loyalty": "Sadakat", "instinct": "Icgudu", "independence": "Bagimsizlik", "mystery": "Gizem",
-    "strength": "Guc", "protection": "Koruma", "patience": "Sabir", "warmth": "Sicaklik",
-    "cleverness": "Zeka", "adaptability": "Uyum", "charm": "Cazibe", "creativity": "Yaraticilik",
-    "empathy": "Empati", "social": "Sosyal", "harmony": "Uyum", "playfulness": "Neseli",
-    "elegance": "Zarafet", "intuition": "Sezgi", "wisdom": "Bilgelik", "insight": "Icsgorü",
-    "analysis": "Analiz", "vision": "Vizyon", "strategy": "Strateji", "speed": "Hiz",
-    "objectivity": "Tarafsizlik", "leadership": "Liderlik", "courage": "Cesaret", "charisma": "Karizma",
-    "determination": "Kararlilik", "power": "Güc", "ambition": "Hirs", "influence": "Etki",
-    "sensitivity": "Hassasiyet", "gentleness": "Sefkat", "transformation": "Donusum", "freedom": "Ozgurluk",
-    "beauty": "Guzellik", "idealism": "Idealizm", "uniqueness": "Benzersizlik", "purity": "Saflık",
+    "loyalty": "Sadakat",
+    "instinct": "Icgudu",
+    "independence": "Bagimsizlik",
+    "mystery": "Gizem",
+    "strength": "Guc",
+    "protection": "Koruma",
+    "patience": "Sabir",
+    "warmth": "Sicaklik",
+    "cleverness": "Zeka",
+    "adaptability": "Uyum",
+    "charm": "Cazibe",
+    "creativity": "Yaraticilik",
+    "empathy": "Empati",
+    "social": "Sosyal",
+    "harmony": "Uyum",
+    "playfulness": "Neseli",
+    "elegance": "Zarafet",
+    "intuition": "Sezgi",
+    "wisdom": "Bilgelik",
+    "insight": "Icsgorü",
+    "analysis": "Analiz",
+    "vision": "Vizyon",
+    "strategy": "Strateji",
+    "speed": "Hiz",
+    "objectivity": "Tarafsizlik",
+    "leadership": "Liderlik",
+    "courage": "Cesaret",
+    "charisma": "Karizma",
+    "determination": "Kararlilik",
+    "power": "Güc",
+    "ambition": "Hirs",
+    "influence": "Etki",
+    "sensitivity": "Hassasiyet",
+    "gentleness": "Sefkat",
+    "transformation": "Donusum",
+    "freedom": "Ozgurluk",
+    "beauty": "Guzellik",
+    "idealism": "Idealizm",
+    "uniqueness": "Benzersizlik",
+    "purity": "Saflık",
     "imagination": "Hayal Gucu"
   },
   "animals": {
-    "wolf": { "name": "Kurt", "description": "Sen gizemli bir bagimsizlik ruhusun. Kendi yolunda yururken az sayida insanla derin baglar kurarsın.", "characteristics": "Bagimsiz ve gizemli mizac. Kendi yolunu tercih eder, sadik yoldaşlarla derin baglar kurar." },
-    "bear": { "name": "Ayi", "description": "Guvenilir ve saglamsin. Istikrarin cevrene rahatlık verir.", "characteristics": "Guvenilir ve koruyucu dogasi var. Yavas ama emin hareket eder, koruma icgudusu tasir." },
-    "fox": { "name": "Tilki", "description": "Kurnaz ve yaraticisin. Esnek dusuncen benzersiz cozumler bulur.", "characteristics": "Kurnaz ve yaratici. Kurallari kirar ve sorunlari kendine ozgu sekilde cozer." },
-    "dolphin": { "name": "Yunus", "description": "Sicak bir kalbin ve derin empatın var. Iyiligin cevreni aydinlatir.", "characteristics": "Nazik ve duygusal acidan algili. Baskaların duygularini kolayca anlar, uyum ve baris arar." },
-    "cat": { "name": "Kedi", "description": "Zarif ve bagimsiz bir ruhsun. Kendi ritminle yasarsin, onemli anlarda derin duygularini gosterirsin.", "characteristics": "Bagimsiz ama duygusal olarak incelikli. Kendi sartlarinda hareket eder, onemli anlarda gercek duygularini gosterir." },
-    "owl": { "name": "Baykus", "description": "Derin bilgelik ve icgoruye sahipsin. Sessiz gozlem ve tavsiyelerin büyuk deger tasir.", "characteristics": "Bilge, derin düsünmeyi tercih eder. Sessizce gozler ama icgorulu rehberlik sunar." },
-    "eagle": { "name": "Kartal", "description": "Olaganustu vizyona sahip bir stratejistsin. Buyuk resmi gorur ve hassas davranirsin.", "characteristics": "Algili ve hedefe yönelik. Durumu yüksekten degerlendirir, analitik ve sezgisel yetenekleri birlestir." },
-    "lion": { "name": "Aslan", "description": "Dogal bir lidersin. Cesaretın ve karisman baskalarini takip etmeye ilham verir.", "characteristics": "Kendine güvenen ve cesur lider. Güclü irade ve tutkuyla hedeflere ulasir." },
-    "dragon": { "name": "Ejderha", "description": "Olaganustu guc ve gizemlilige sahipsin. Etkin ve vizyonun dünyayi degistirebilir.", "characteristics": "Guclu, gizemli ve karizmatik. Buyuk hayaller kurar ve olaganustu isleri basarmayi hedefler." },
-    "rabbit": { "name": "Tavsan", "description": "Hassas ve ozenlisin. Empatin ve dusunceliligin her iliskiyi derinlestirir.", "characteristics": "Yumusak ve hassas duygulara sahip. Hizli refleks ve yuksek uyaniklik, guvenlik arar." },
-    "butterfly": { "name": "Kelebek", "description": "Guzellik ve yaraticiligi seversin. Ilhamin her seyi daha parlak ve renkli kilar.", "characteristics": "Degisimi benimser ve güzelligi kovalar. Cesitli deneyimler arar, hayata yaraticilik katar." },
-    "unicorn": { "name": "Tekboynuz", "description": "Buyulu bir benzersizlige sahipsin. Saf inancarin ve yaraticiligin dünyayi güzellestir.", "characteristics": "Nadir ve ozel mizac. Guclu bir ic cekirdege sahip idealist." }
+    "wolf": {
+      "name": "Kurt",
+      "description": "Sen gizemli bir bagimsizlik ruhusun. Kendi yolunda yururken az sayida insanla derin baglar kurarsın.",
+      "characteristics": "Bagimsiz ve gizemli mizac. Kendi yolunu tercih eder, sadik yoldaşlarla derin baglar kurar."
+    },
+    "bear": {
+      "name": "Ayi",
+      "description": "Guvenilir ve saglamsin. Istikrarin cevrene rahatlık verir.",
+      "characteristics": "Guvenilir ve koruyucu dogasi var. Yavas ama emin hareket eder, koruma icgudusu tasir."
+    },
+    "fox": {
+      "name": "Tilki",
+      "description": "Kurnaz ve yaraticisin. Esnek dusuncen benzersiz cozumler bulur.",
+      "characteristics": "Kurnaz ve yaratici. Kurallari kirar ve sorunlari kendine ozgu sekilde cozer."
+    },
+    "dolphin": {
+      "name": "Yunus",
+      "description": "Sicak bir kalbin ve derin empatın var. Iyiligin cevreni aydinlatir.",
+      "characteristics": "Nazik ve duygusal acidan algili. Baskaların duygularini kolayca anlar, uyum ve baris arar."
+    },
+    "cat": {
+      "name": "Kedi",
+      "description": "Zarif ve bagimsiz bir ruhsun. Kendi ritminle yasarsin, onemli anlarda derin duygularini gosterirsin.",
+      "characteristics": "Bagimsiz ama duygusal olarak incelikli. Kendi sartlarinda hareket eder, onemli anlarda gercek duygularini gosterir."
+    },
+    "owl": {
+      "name": "Baykus",
+      "description": "Derin bilgelik ve icgoruye sahipsin. Sessiz gozlem ve tavsiyelerin büyuk deger tasir.",
+      "characteristics": "Bilge, derin düsünmeyi tercih eder. Sessizce gozler ama icgorulu rehberlik sunar."
+    },
+    "eagle": {
+      "name": "Kartal",
+      "description": "Olaganustu vizyona sahip bir stratejistsin. Buyuk resmi gorur ve hassas davranirsin.",
+      "characteristics": "Algili ve hedefe yönelik. Durumu yüksekten degerlendirir, analitik ve sezgisel yetenekleri birlestir."
+    },
+    "lion": {
+      "name": "Aslan",
+      "description": "Dogal bir lidersin. Cesaretın ve karisman baskalarini takip etmeye ilham verir.",
+      "characteristics": "Kendine güvenen ve cesur lider. Güclü irade ve tutkuyla hedeflere ulasir."
+    },
+    "dragon": {
+      "name": "Ejderha",
+      "description": "Olaganustu guc ve gizemlilige sahipsin. Etkin ve vizyonun dünyayi degistirebilir.",
+      "characteristics": "Guclu, gizemli ve karizmatik. Buyuk hayaller kurar ve olaganustu isleri basarmayi hedefler."
+    },
+    "rabbit": {
+      "name": "Tavsan",
+      "description": "Hassas ve ozenlisin. Empatin ve dusunceliligin her iliskiyi derinlestirir.",
+      "characteristics": "Yumusak ve hassas duygulara sahip. Hizli refleks ve yuksek uyaniklik, guvenlik arar."
+    },
+    "butterfly": {
+      "name": "Kelebek",
+      "description": "Guzellik ve yaraticiligi seversin. Ilhamin her seyi daha parlak ve renkli kilar.",
+      "characteristics": "Degisimi benimser ve güzelligi kovalar. Cesitli deneyimler arar, hayata yaraticilik katar."
+    },
+    "unicorn": {
+      "name": "Tekboynuz",
+      "description": "Buyulu bir benzersizlige sahipsin. Saf inancarin ve yaraticiligin dünyayi güzellestir.",
+      "characteristics": "Nadir ve ozel mizac. Guclu bir ic cekirdege sahip idealist."
+    }
   },
   "result": {
     "wilderness_spoken": "Vahsi doga konustu...",
     "characteristics": "Ozellikler",
     "your_pack": "Surun",
-    "your_rival": "Rakibin"
+    "your_rival": "Rakibin",
+    "moreTests": "Daha fazla test keşfet",
+    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>'i bu hayvan türüdür"
   },
   "rec": {
     "title": "Diger eglenceli testler",
-    "brain_type": "Beyin Tipi", "mbti_love": "MBTI Ask", "dream_fortune": "Ruya/Sans",
-    "color_personality": "Renk Kisilik", "emotion_temp": "Duygu Sicakligi", "hsp_test": "HSP Testi"
+    "brain_type": "Beyin Tipi",
+    "mbti_love": "MBTI Ask",
+    "dream_fortune": "Ruya/Sans",
+    "color_personality": "Renk Kisilik",
+    "emotion_temp": "Duygu Sicakligi",
+    "hsp_test": "HSP Testi"
   },
   "share": {
     "copied": "Baglanti kopyalandi!",
@@ -113,5 +297,13 @@
     "twitter_text": "Ruh hayvanim {animal}! Seninki ne?",
     "native_text": "Ruh hayvanim {animal}!"
   },
-  "accessibility": { "skipMain": "Icerige atla" }
+  "accessibility": {
+    "skipMain": "Icerige atla"
+  },
+  "related": {
+    "sleepAnimal": "Uyku Hayvanı",
+    "colorPersonality": "Renk Kişiliği",
+    "brainType": "Beyin Tipi",
+    "mbtiLove": "MBTI Aşk"
+  }
 }
