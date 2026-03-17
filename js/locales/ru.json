@@ -313,6 +313,7 @@
     "colorPersonality": "Цветовая личность",
     "brainType": "Тип мозга",
     "mbtiLove": "MBTI Любовь",
-    "burnoutTest": "Тест на выгорание"
+    "burnoutTest": "Тест на выгорание",
+    "stressResponse": "Стресс-реакция"
   }
 }

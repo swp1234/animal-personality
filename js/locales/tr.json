@@ -313,6 +313,7 @@
     "colorPersonality": "Renk Kişiliği",
     "brainType": "Beyin Tipi",
     "mbtiLove": "MBTI Aşk",
-    "burnoutTest": "Tükenmişlik Testi"
+    "burnoutTest": "Tükenmişlik Testi",
+    "stressResponse": "Stres Tepkisi"
   }
 }

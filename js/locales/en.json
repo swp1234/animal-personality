@@ -313,6 +313,7 @@
     "colorPersonality": "Color Personality",
     "brainType": "Brain Type",
     "mbtiLove": "MBTI Love",
-    "burnoutTest": "Burnout Test"
+    "burnoutTest": "Burnout Test",
+    "stressResponse": "Stress Response"
   }
 }

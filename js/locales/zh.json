@@ -313,6 +313,7 @@
     "colorPersonality": "色彩性格",
     "brainType": "大脑类型",
     "mbtiLove": "MBTI恋爱",
-    "burnoutTest": "职业倦怠测试"
+    "burnoutTest": "职业倦怠测试",
+    "stressResponse": "压力反应"
   }
 }
