@@ -312,6 +312,7 @@
     "sleepAnimal": "Животное сна",
     "colorPersonality": "Цветовая личность",
     "brainType": "Тип мозга",
-    "mbtiLove": "MBTI Любовь"
+    "mbtiLove": "MBTI Любовь",
+    "burnoutTest": "Тест на выгорание"
   }
 }

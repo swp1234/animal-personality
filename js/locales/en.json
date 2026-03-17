@@ -312,6 +312,7 @@
     "sleepAnimal": "Sleep Animal",
     "colorPersonality": "Color Personality",
     "brainType": "Brain Type",
-    "mbtiLove": "MBTI Love"
+    "mbtiLove": "MBTI Love",
+    "burnoutTest": "Burnout Test"
   }
 }
