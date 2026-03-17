@@ -314,6 +314,7 @@
     "brainType": "Gehirntyp",
     "mbtiLove": "MBTI Liebe",
     "burnoutTest": "Burnout-Test",
-    "stressResponse": "Stressreaktion"
+    "stressResponse": "Stressreaktion",
+    "anxietyType": "Angsttyp"
   }
 }

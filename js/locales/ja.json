@@ -314,6 +314,7 @@
     "brainType": "脳タイプ",
     "mbtiLove": "MBTI恋愛",
     "burnoutTest": "バーンアウトテスト",
-    "stressResponse": "ストレス反応"
+    "stressResponse": "ストレス反応",
+    "anxietyType": "不安タイプ"
   }
 }

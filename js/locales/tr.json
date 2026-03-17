@@ -314,6 +314,7 @@
     "brainType": "Beyin Tipi",
     "mbtiLove": "MBTI Aşk",
     "burnoutTest": "Tükenmişlik Testi",
-    "stressResponse": "Stres Tepkisi"
+    "stressResponse": "Stres Tepkisi",
+    "anxietyType": "Kaygı Tipi"
   }
 }

@@ -314,6 +314,7 @@
     "brainType": "Tipe Otak",
     "mbtiLove": "MBTI Cinta",
     "burnoutTest": "Tes Burnout",
-    "stressResponse": "Respons Stres"
+    "stressResponse": "Respons Stres",
+    "anxietyType": "Tipe Kecemasan"
   }
 }

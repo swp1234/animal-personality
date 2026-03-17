@@ -314,6 +314,7 @@
     "brainType": "Тип мозга",
     "mbtiLove": "MBTI Любовь",
     "burnoutTest": "Тест на выгорание",
-    "stressResponse": "Стресс-реакция"
+    "stressResponse": "Стресс-реакция",
+    "anxietyType": "Тип тревожности"
   }
 }
