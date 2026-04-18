@@ -1,9 +1,3 @@
-/**
- * i18n (Internationalization) Module
- * 다국어 지원을 위한 표준 모듈
- * 지원 언어: 한국어(ko), English(en), 中文(zh), हिन्दी(hi), Русский(ru), 日本語(ja), Español(es), Português(pt), Indonesia(id), Türkçe(tr), Deutsch(de), Français(fr)
- */
-
 class I18n {
     constructor() {
         this.translations = {};
@@ -11,175 +5,175 @@ class I18n {
         this.currentLang = this.detectLanguage();
     }
 
-    /**
-     * 브라우저 언어 감지 및 기본값 반환
-     */
     detectLanguage() {
-        // 1. localStorage에서 저장된 언어 확인
-        const savedLang = localStorage.getItem('appLanguage');
-        if (savedLang && this.supportedLanguages.includes(savedLang)) {
-            return savedLang;
+        try {
+            const params = new URLSearchParams(window.location.search);
+            const langFromUrl = params.get('lang');
+            if (langFromUrl && this.supportedLanguages.includes(langFromUrl)) {
+                return langFromUrl;
+            }
+        } catch (error) {
+            console.warn('Language param detection failed:', error.message);
         }
 
-        // 2. 브라우저 언어 확인
-        const browserLang = navigator.language.split('-')[0].toLowerCase();
+        try {
+            const savedLang = localStorage.getItem('appLanguage');
+            if (savedLang && this.supportedLanguages.includes(savedLang)) {
+                return savedLang;
+            }
+        } catch (error) {
+            console.warn('Saved language detection failed:', error.message);
+        }
+
+        const browserLang = (navigator.language || 'ko').split('-')[0].toLowerCase();
         if (this.supportedLanguages.includes(browserLang)) {
             return browserLang;
         }
 
-        // 3. 기본값: 한국어
         return 'ko';
     }
 
-    /**
-     * 특정 언어의 번역 JSON 파일 로드
-     */
     async loadTranslations(lang) {
         if (!this.supportedLanguages.includes(lang)) {
-            console.warn(`Unsupported language: ${lang}`);
-            return;
+            throw new Error(`Unsupported language: ${lang}`);
         }
 
-        try {
-            const response = await fetch(`js/locales/${lang}.json`);
-            if (!response.ok) {
-                throw new Error(`Failed to load ${lang}.json`);
-            }
-            this.translations[lang] = await response.json();
-        } catch (error) {
-            console.error(`Error loading translations for ${lang}:`, error);
-            // Fallback to English
-            if (lang !== 'en') {
-                await this.loadTranslations('en');
-            }
+        if (this.translations[lang]) {
+            return this.translations[lang];
         }
+
+        const response = await fetch(`js/locales/${lang}.json`);
+        if (!response.ok) {
+            throw new Error(`Failed to load ${lang}.json`);
+        }
+
+        this.translations[lang] = await response.json();
+        return this.translations[lang];
     }
 
-    /**
-     * 번역 키를 기반으로 텍스트 반환 (dot notation 지원)
-     * 예: 'home.title', 'button.start'
-     */
     t(key) {
         const keys = key.split('.');
         let value = this.translations[this.currentLang];
 
-        for (const k of keys) {
-            if (value && typeof value === 'object' && k in value) {
-                value = value[k];
+        for (const item of keys) {
+            if (value && typeof value === 'object' && item in value) {
+                value = value[item];
             } else {
-                return key; // 번역이 없으면 키를 반환
+                return key;
             }
         }
 
-        return value || key;
+        return value ?? key;
     }
 
-    /**
-     * 언어 변경
-     */
+    getSeoHref(lang) {
+        if (!lang || lang === 'x-default') {
+            return 'https://dopabrain.com/animal-personality/';
+        }
+
+        return `https://dopabrain.com/animal-personality/?lang=${lang}`;
+    }
+
+    syncSeoState(lang, updateHistory = false) {
+        const canonicalHref = this.getSeoHref(lang);
+        const canonicalEl = document.querySelector('link[rel="canonical"]');
+        if (canonicalEl) canonicalEl.href = canonicalHref;
+
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.content = canonicalHref;
+
+        const twitterUrl = document.querySelector('meta[name="twitter:url"]');
+        if (twitterUrl) twitterUrl.content = canonicalHref;
+
+        document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => {
+            const hreflang = link.getAttribute('hreflang');
+            link.href = this.getSeoHref(hreflang === 'x-default' ? 'x-default' : hreflang);
+        });
+
+        if (updateHistory) {
+            window.history.replaceState({}, '', canonicalHref);
+        }
+    }
+
     async setLanguage(lang) {
         if (!this.supportedLanguages.includes(lang)) {
-            console.warn(`Unsupported language: ${lang}`);
-            return;
+            return false;
         }
 
-        if (!(lang in this.translations)) {
-            await this.loadTranslations(lang);
-        }
-
+        await this.loadTranslations(lang);
         this.currentLang = lang;
         localStorage.setItem('appLanguage', lang);
         this.updateUI();
+        this.syncSeoState(lang, true);
+        return true;
     }
 
-    /**
-     * UI 요소의 data-i18n 속성을 기반으로 텍스트 업데이트
-     */
     updateUI() {
-        // data-i18n 속성이 있는 모든 요소를 찾아 번역 적용
-        const elements = document.querySelectorAll('[data-i18n]');
-        elements.forEach(element => {
+        document.documentElement.lang = this.currentLang;
+
+        document.querySelectorAll('[data-i18n]').forEach((element) => {
             const key = element.getAttribute('data-i18n');
             const translation = this.t(key);
 
-            // input, textarea 등의 placeholder 처리
+            if (translation === key) return;
+
+            if (element.tagName === 'META') {
+                element.setAttribute('content', translation);
+                return;
+            }
+
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                element.placeholder = translation;
-            } else {
-                // 일반 텍스트 요소
-                element.textContent = translation;
+                element.setAttribute('placeholder', translation);
+                return;
             }
+
+            element.textContent = translation;
         });
 
-        // 언어 선택기 활성 상태 업데이트
-        const langOptions = document.querySelectorAll('.lang-option');
-        langOptions.forEach(option => {
-            if (option.getAttribute('data-lang') === this.currentLang) {
-                option.classList.add('active');
-            } else {
-                option.classList.remove('active');
-            }
+        const title = this.t('meta.title') !== 'meta.title'
+            ? this.t('meta.title')
+            : `${this.t('home.title')} | DopaBrain`;
+        document.title = title;
+
+        document.querySelectorAll('.lang-option').forEach((option) => {
+            option.classList.toggle('active', option.getAttribute('data-lang') === this.currentLang);
         });
-
-        // 페이지 언어 속성 업데이트
-        document.documentElement.lang = this.currentLang;
     }
 
-    /**
-     * 초기화 - 언어 로드 및 UI 업데이트
-     */
-    async init() {
-        // 기본 언어 및 모든 지원 언어 로드
-        await this.loadTranslations(this.currentLang);
-
-        // 나머지 언어도 백그라운드에서 로드
-        for (const lang of this.supportedLanguages) {
-            if (lang !== this.currentLang) {
-                this.loadTranslations(lang).catch(() => {
-                    // 각 언어 로드 실패는 무시
-                });
-            }
-        }
-
-        // UI 업데이트
-        this.updateUI();
-    }
-
-    /**
-     * 현재 설정된 언어 반환
-     */
     getCurrentLanguage() {
         return this.currentLang;
     }
 
-    /**
-     * 언어 코드를 바탕으로 언어명 반환
-     */
-    getLanguageName(lang) {
-        const names = {
-            ko: '한국어',
-            en: 'English',
-            zh: '中文',
-            hi: 'हिन्दी',
-            ru: 'Русский',
-            ja: '日本語',
-            es: 'Español',
-            pt: 'Português',
-            id: 'Bahasa Indonesia',
-            tr: 'Türkçe',
-            de: 'Deutsch',
-            fr: 'Français'
-        };
-        return names[lang] || lang;
-    }
+    async init() {
+        try {
+            await this.loadTranslations(this.currentLang);
+        } catch (error) {
+            console.warn('Primary locale failed, falling back to English:', error.message);
+            this.currentLang = 'en';
+            await this.loadTranslations('en');
+        }
 
-    /**
-     * 지원 언어 목록 반환
-     */
-    getSupportedLanguages() {
-        return this.supportedLanguages;
+        this.updateUI();
+        this.syncSeoState(this.currentLang);
     }
 }
 
-// 전역 i18n 인스턴스 생성
 const i18n = new I18n();
+
+(async () => {
+    try {
+        await i18n.init();
+    } catch (error) {
+        console.error('i18n bootstrap failed:', error);
+        window.i18n = {
+            t: (key) => key,
+            setLanguage: async () => true,
+            loadTranslations: async () => ({}),
+            getCurrentLanguage: () => 'en',
+            getSeoHref: (lang) => `https://dopabrain.com/animal-personality/${lang && lang !== 'x-default' ? `?lang=${lang}` : ''}`
+        };
+        return;
+    }
+
+    window.i18n = i18n;
+})();

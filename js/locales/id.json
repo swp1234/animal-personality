@@ -288,7 +288,11 @@
     "your_pack": "Kawananmu",
     "your_rival": "Rivalmu",
     "moreTests": "Jelajahi tes lainnya",
-    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang merupakan tipe hewan ini"
+    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang merupakan tipe hewan ini",
+    "nextStepLabel": "Langkah terbaik berikutnya",
+    "nextStepDesc": "Buka tes lanjutan yang paling cocok dengan hasil spirit animal-mu.",
+    "nextStepCta": "Buka tes lanjutan",
+    "jumpToMore": "Lihat lebih banyak rekomendasi"
   },
   "rec": {
     "title": "Tes seru lainnya",
@@ -315,6 +319,7 @@
     "mbtiLove": "MBTI Cinta",
     "burnoutTest": "Tes Burnout",
     "stressResponse": "Respons Stres",
-    "anxietyType": "Tipe Kecemasan"
+    "anxietyType": "Tipe Kecemasan",
+    "dopamineType": "Tipe Dopamin"
   }
 }

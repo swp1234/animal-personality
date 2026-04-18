@@ -288,7 +288,11 @@
     "your_pack": "Dein Rudel",
     "your_rival": "Dein Rivale",
     "moreTests": "Weitere Tests entdecken",
-    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer sind dieser Tiertyp"
+    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer sind dieser Tiertyp",
+    "nextStepLabel": "Bester n?chster Schritt",
+    "nextStepDesc": "?ffne den Folgetest, der am besten zu deinem Seelentier-Ergebnis passt.",
+    "nextStepCta": "Folgetest ?ffnen",
+    "jumpToMore": "Mehr Empfehlungen ansehen"
   },
   "rec": {
     "title": "Andere lustige Tests",
@@ -315,6 +319,7 @@
     "mbtiLove": "MBTI Liebe",
     "burnoutTest": "Burnout-Test",
     "stressResponse": "Stressreaktion",
-    "anxietyType": "Angsttyp"
+    "anxietyType": "Angsttyp",
+    "dopamineType": "Dopamin-Typ"
   }
 }

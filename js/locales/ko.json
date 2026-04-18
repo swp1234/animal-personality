@@ -288,7 +288,11 @@
     "your_pack": "당신의 무리",
     "your_rival": "당신의 라이벌",
     "moreTests": "더 많은 테스트",
-    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 이 동물 유형입니다"
+    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 이 동물 유형입니다",
+    "nextStepLabel": "?? ?? ? ?? ?? ??",
+    "nextStepDesc": "?? ?? ?? ??? ?? ? ?? ?? ???? ?? ?????.",
+    "nextStepCta": "?? ??? ??",
+    "jumpToMore": "?? ? ??"
   },
   "rec": {
     "title": "다른 재미있는 테스트",
@@ -315,6 +319,7 @@
     "mbtiLove": "MBTI 연애",
     "burnoutTest": "번아웃 테스트",
     "stressResponse": "스트레스 반응",
-    "anxietyType": "불안 유형"
+    "anxietyType": "불안 유형",
+    "dopamineType": "??? ??"
   }
 }

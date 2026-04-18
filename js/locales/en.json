@@ -288,7 +288,11 @@
     "your_pack": "Your Pack",
     "your_rival": "Your Rival",
     "moreTests": "Explore More Tests",
-    "percentileStat": "Only <strong>{percent}%</strong> of participants are this animal type"
+    "percentileStat": "Only <strong>{percent}%</strong> of participants are this animal type",
+    "nextStepLabel": "Best Next Step",
+    "nextStepDesc": "Open the follow-up test that best matches your spirit animal result.",
+    "nextStepCta": "Open Follow-up",
+    "jumpToMore": "See More Follow-ups"
   },
   "rec": {
     "title": "Other Fun Tests",
@@ -315,6 +319,7 @@
     "mbtiLove": "MBTI Love",
     "burnoutTest": "Burnout Test",
     "stressResponse": "Stress Response",
-    "anxietyType": "Anxiety Type"
+    "anxietyType": "Anxiety Type",
+    "dopamineType": "Dopamine Type"
   }
 }

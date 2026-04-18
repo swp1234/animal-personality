@@ -288,7 +288,11 @@
     "your_pack": "你的伙伴",
     "your_rival": "你的对手",
     "moreTests": "探索更多测试",
-    "percentileStat": "只有<strong>{percent}%</strong>的参与者是这种动物类型"
+    "percentileStat": "只有<strong>{percent}%</strong>的参与者是这种动物类型",
+    "nextStepLabel": "????????",
+    "nextStepDesc": "????????????????????",
+    "nextStepCta": "??????",
+    "jumpToMore": "??????"
   },
   "rec": {
     "title": "其他有趣的测试",
@@ -315,6 +319,7 @@
     "mbtiLove": "MBTI恋爱",
     "burnoutTest": "职业倦怠测试",
     "stressResponse": "压力反应",
-    "anxietyType": "焦虑类型"
+    "anxietyType": "焦虑类型",
+    "dopamineType": "?????"
   }
 }

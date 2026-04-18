@@ -288,7 +288,11 @@
     "your_pack": "Tu Manada",
     "your_rival": "Tu Rival",
     "moreTests": "Explorar más tests",
-    "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes son este tipo de animal"
+    "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes son este tipo de animal",
+    "nextStepLabel": "Siguiente paso ideal",
+    "nextStepDesc": "Abre la prueba de seguimiento que mejor encaja con el resultado de tu animal espiritual.",
+    "nextStepCta": "Abrir prueba recomendada",
+    "jumpToMore": "Ver m?s recomendaciones"
   },
   "rec": {
     "title": "Otros tests divertidos",
@@ -315,6 +319,7 @@
     "mbtiLove": "MBTI Amor",
     "burnoutTest": "Test de Burnout",
     "stressResponse": "Respuesta al Estrés",
-    "anxietyType": "Tipo de Ansiedad"
+    "anxietyType": "Tipo de Ansiedad",
+    "dopamineType": "Tipo de dopamina"
   }
 }

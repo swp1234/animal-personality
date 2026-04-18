@@ -288,7 +288,11 @@
     "your_pack": "Surun",
     "your_rival": "Rakibin",
     "moreTests": "Daha fazla test keşfet",
-    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>'i bu hayvan türüdür"
+    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>'i bu hayvan türüdür",
+    "nextStepLabel": "Senin i?in en iyi sonraki ad?m",
+    "nextStepDesc": "Ruh hayvan? sonucuna en uygun takip testini a?.",
+    "nextStepCta": "Takip testini a?",
+    "jumpToMore": "Daha fazla ?neri g?r"
   },
   "rec": {
     "title": "Diger eglenceli testler",
@@ -315,6 +319,7 @@
     "mbtiLove": "MBTI Aşk",
     "burnoutTest": "Tükenmişlik Testi",
     "stressResponse": "Stres Tepkisi",
-    "anxietyType": "Kaygı Tipi"
+    "anxietyType": "Kaygı Tipi",
+    "dopamineType": "Dopamin tipi"
   }
 }

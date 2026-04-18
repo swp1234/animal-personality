@@ -288,7 +288,11 @@
     "your_pack": "Sua Matilha",
     "your_rival": "Seu Rival",
     "moreTests": "Explorar mais testes",
-    "percentileStat": "Apenas <strong>{percent}%</strong> dos participantes são este tipo de animal"
+    "percentileStat": "Apenas <strong>{percent}%</strong> dos participantes são este tipo de animal",
+    "nextStepLabel": "Pr?ximo passo ideal",
+    "nextStepDesc": "Abra o teste complementar que mais combina com o resultado do seu animal espiritual.",
+    "nextStepCta": "Abrir teste recomendado",
+    "jumpToMore": "Ver mais recomenda??es"
   },
   "rec": {
     "title": "Outros testes divertidos",
@@ -315,6 +319,7 @@
     "mbtiLove": "MBTI Amor",
     "burnoutTest": "Teste de Burnout",
     "stressResponse": "Resposta ao Estresse",
-    "anxietyType": "Tipo de Ansiedade"
+    "anxietyType": "Tipo de Ansiedade",
+    "dopamineType": "Tipo de dopamina"
   }
 }

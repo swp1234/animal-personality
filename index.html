@@ -27,23 +27,24 @@
     <meta property="og:locale:alternate" content="hi_IN">
     <meta property="og:locale:alternate" content="ru_RU">
     <!-- hreflang for multilingual SEO -->
-    <link rel="alternate" hreflang="ko" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="en" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="zh" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="hi" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="ru" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="ja" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="es" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="pt" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="id" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="tr" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="de" href="https://dopabrain.com/animal-personality/">
-    <link rel="alternate" hreflang="fr" href="https://dopabrain.com/animal-personality/">
+    <link rel="alternate" hreflang="ko" href="https://dopabrain.com/animal-personality/?lang=ko">
+    <link rel="alternate" hreflang="en" href="https://dopabrain.com/animal-personality/?lang=en">
+    <link rel="alternate" hreflang="zh" href="https://dopabrain.com/animal-personality/?lang=zh">
+    <link rel="alternate" hreflang="hi" href="https://dopabrain.com/animal-personality/?lang=hi">
+    <link rel="alternate" hreflang="ru" href="https://dopabrain.com/animal-personality/?lang=ru">
+    <link rel="alternate" hreflang="ja" href="https://dopabrain.com/animal-personality/?lang=ja">
+    <link rel="alternate" hreflang="es" href="https://dopabrain.com/animal-personality/?lang=es">
+    <link rel="alternate" hreflang="pt" href="https://dopabrain.com/animal-personality/?lang=pt">
+    <link rel="alternate" hreflang="id" href="https://dopabrain.com/animal-personality/?lang=id">
+    <link rel="alternate" hreflang="tr" href="https://dopabrain.com/animal-personality/?lang=tr">
+    <link rel="alternate" hreflang="de" href="https://dopabrain.com/animal-personality/?lang=de">
+    <link rel="alternate" hreflang="fr" href="https://dopabrain.com/animal-personality/?lang=fr">
     <link rel="alternate" hreflang="x-default" href="https://dopabrain.com/animal-personality/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Spirit Animal Test - Free Personality Quiz" data-i18n="meta.twitter_title">
     <meta name="twitter:description" content="Find your spirit animal through wild survival scenarios. Try free!" data-i18n="meta.twitter_description">
     <meta name="twitter:image" content="https://dopabrain.com/portal/img/og/animal-personality.png">
+    <meta name="twitter:url" content="https://dopabrain.com/animal-personality/">
     <meta name="twitter:site" content="@dopabrain">
     <link rel="canonical" href="https://dopabrain.com/animal-personality/">
     <title>Spirit Animal Test - Free Personality Quiz | DopaBrain</title>
@@ -358,6 +359,20 @@
                     <canvas id="resultCanvas" width="400" height="600"></canvas>
                 </div>
 
+                <section class="next-step-card" id="next-step-card">
+                    <p class="next-step-label" data-i18n="result.nextStepLabel">Best Next Step</p>
+                    <div class="next-step-head">
+                        <span class="next-step-icon" id="primary-related-emoji">🧠</span>
+                        <div class="next-step-copy">
+                            <h3 class="next-step-title" id="primary-related-title">Brain Type</h3>
+                            <p class="next-step-desc" id="primary-related-desc" data-i18n="result.nextStepDesc">Open the follow-up test that best matches your spirit animal result.</p>
+                        </div>
+                    </div>
+                    <a href="/brain-type/" class="next-step-cta" id="primary-related-cta" data-related-key="brain-type" data-related-rank="1">
+                        <span id="primary-related-cta-text" data-i18n="result.nextStepCta">Open Follow-up</span>
+                    </a>
+                </section>
+
                 <div class="share-buttons">
                     <button id="downloadBtn" class="btn btn-secondary" data-i18n="btn.download">이미지 다운로드</button>
                     <button id="shareKakaoBtn" class="btn btn-share" data-i18n="btn.share_kakao">카카오톡</button>
@@ -368,49 +383,49 @@
                 <button id="retakeBtn" class="btn btn-primary" data-i18n="btn.retake">다시 하기</button>
 
                 <!-- In-article ad between result actions and recommendations -->
-                <div class="ad-container" style="margin: 24px auto; text-align: center; min-height: 100px;">
+                <div class="result-inline-ad" id="result-inline-ad">
                   <ins class="adsbygoogle"
                        style="display:block"
                        data-ad-client="ca-pub-3600813755953882"
                        data-ad-slot="auto"
                        data-ad-format="auto"
                        data-full-width-responsive="true"></ins>
-                  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                 </div>
 
                 <p class="percentile-stat" id="percentile-stat"></p>
                 <div class="related-tests">
                     <h3 data-i18n="result.moreTests">Explore More Tests</h3>
-                    <div class="related-grid">
-                        <a href="/sleep-animal/" class="related-card" style="--card-color: #3498db">
+                    <button class="related-jump-btn" id="related-jump-btn" type="button" data-i18n="result.jumpToMore">See More Follow-ups</button>
+                    <div class="related-grid" id="related-grid">
+                        <a href="/sleep-animal/" class="related-card" data-related-key="sleep-animal" style="--card-color: #3498db">
                             <span class="related-emoji">😴</span>
                             <span class="related-name" data-i18n="related.sleepAnimal">Sleep Animal</span>
                         </a>
-                        <a href="/color-personality/" class="related-card" style="--card-color: #e91e63">
+                        <a href="/color-personality/" class="related-card" data-related-key="color-personality" style="--card-color: #e91e63">
                             <span class="related-emoji">🎨</span>
                             <span class="related-name" data-i18n="related.colorPersonality">Color Personality</span>
                         </a>
-                        <a href="/brain-type/" class="related-card" style="--card-color: #9b59b6">
+                        <a href="/brain-type/" class="related-card" data-related-key="brain-type" style="--card-color: #9b59b6">
                             <span class="related-emoji">🧠</span>
                             <span class="related-name" data-i18n="related.brainType">Brain Type</span>
                         </a>
-                        <a href="/mbti-love/" class="related-card" style="--card-color: #ff6b9d">
+                        <a href="/mbti-love/" class="related-card" data-related-key="mbti-love" style="--card-color: #ff6b9d">
                             <span class="related-emoji">💑</span>
                             <span class="related-name" data-i18n="related.mbtiLove">MBTI Love</span>
                         </a>
-                        <a href="/dopamine-type/" class="related-card" style="--card-color: #f59e0b">
+                        <a href="/dopamine-type/" class="related-card" data-related-key="dopamine-type" style="--card-color: #f59e0b">
                             <span class="related-emoji">&#9889;</span>
-                            <span class="related-name">Dopamine Type</span>
+                            <span class="related-name" data-i18n="related.dopamineType">Dopamine Type</span>
                         </a>
-                        <a href="/burnout-test/" class="related-card" style="--card-color: #ef4444">
+                        <a href="/burnout-test/" class="related-card" data-related-key="burnout-test" style="--card-color: #ef4444">
                             <span class="related-emoji">&#128293;</span>
                             <span class="related-name" data-i18n="related.burnoutTest">Burnout Test</span>
                         </a>
-                <a href="/stress-response/" class="related-card" style="--card-color: #6366f1">
+                <a href="/stress-response/" class="related-card" data-related-key="stress-response" style="--card-color: #6366f1">
                   <span class="related-emoji">&#9889;</span>
                   <span class="related-name" data-i18n="related.stressResponse">Stress Response</span>
                 </a>
-                <a href="/anxiety-type/" class="related-card" style="--card-color: #10b981">
+                <a href="/anxiety-type/" class="related-card" data-related-key="anxiety-type" style="--card-color: #10b981">
                   <span class="related-emoji">&#127744;</span>
                   <span class="related-name" data-i18n="related.anxietyType">Anxiety Type</span>
                 </a>

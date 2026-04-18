@@ -83,14 +83,29 @@ class WildernessSurvivalApp {
         this.currentScenario = 0;
         this.scores = {};
         this.result = null;
-        this.shareUrl = window.location.href;
+        this.resultInlineAdLoaded = false;
+        this.resultShareUrl = '';
+        this.recommendationPriority = {
+            wolf: ['stress-response', 'brain-type', 'anxiety-type', 'dopamine-type', 'burnout-test', 'sleep-animal', 'mbti-love', 'color-personality'],
+            bear: ['burnout-test', 'stress-response', 'brain-type', 'sleep-animal', 'anxiety-type', 'dopamine-type', 'color-personality', 'mbti-love'],
+            fox: ['brain-type', 'dopamine-type', 'color-personality', 'stress-response', 'mbti-love', 'anxiety-type', 'sleep-animal', 'burnout-test'],
+            dolphin: ['mbti-love', 'sleep-animal', 'color-personality', 'anxiety-type', 'stress-response', 'brain-type', 'dopamine-type', 'burnout-test'],
+            cat: ['sleep-animal', 'anxiety-type', 'mbti-love', 'brain-type', 'color-personality', 'stress-response', 'dopamine-type', 'burnout-test'],
+            owl: ['brain-type', 'sleep-animal', 'stress-response', 'anxiety-type', 'dopamine-type', 'color-personality', 'mbti-love', 'burnout-test'],
+            eagle: ['brain-type', 'dopamine-type', 'stress-response', 'mbti-love', 'burnout-test', 'color-personality', 'anxiety-type', 'sleep-animal'],
+            lion: ['dopamine-type', 'brain-type', 'mbti-love', 'burnout-test', 'stress-response', 'color-personality', 'anxiety-type', 'sleep-animal'],
+            dragon: ['dopamine-type', 'burnout-test', 'brain-type', 'stress-response', 'mbti-love', 'color-personality', 'anxiety-type', 'sleep-animal'],
+            rabbit: ['mbti-love', 'sleep-animal', 'anxiety-type', 'color-personality', 'stress-response', 'brain-type', 'dopamine-type', 'burnout-test'],
+            butterfly: ['color-personality', 'mbti-love', 'sleep-animal', 'brain-type', 'anxiety-type', 'stress-response', 'dopamine-type', 'burnout-test'],
+            unicorn: ['mbti-love', 'color-personality', 'brain-type', 'sleep-animal', 'anxiety-type', 'stress-response', 'dopamine-type', 'burnout-test']
+        };
         this.init();
     }
 
     async init() {
         try {
             try {
-                await i18n.loadTranslations(i18n.currentLang);
+                await i18n.loadTranslations(i18n.getCurrentLanguage());
                 i18n.updateUI();
             } catch (e) {
                 console.warn('i18n init failed:', e);
@@ -136,6 +151,81 @@ class WildernessSurvivalApp {
         }
     }
 
+    trackEvent(name, params = {}) {
+        if (typeof gtag !== 'function') return;
+        gtag('event', name, params);
+    }
+
+    getCurrentLang() {
+        return i18n?.getCurrentLanguage?.() || document.documentElement.lang || 'ko';
+    }
+
+    getShareUrl() {
+        const lang = this.getCurrentLang();
+        if (typeof i18n?.getSeoHref === 'function') {
+            return i18n.getSeoHref(lang);
+        }
+
+        return lang ? `https://dopabrain.com/animal-personality/?lang=${lang}` : 'https://dopabrain.com/animal-personality/';
+    }
+
+    prioritizeRelatedCards() {
+        if (!this.relatedGrid || !this.relatedCards?.length || !this.result) return;
+
+        const priority = this.recommendationPriority[this.result.key] || [];
+        const rankMap = new Map(priority.map((key, index) => [key, index]));
+        const orderedCards = [...this.relatedCards].sort((a, b) => {
+            const aRank = rankMap.get(a.dataset.relatedKey) ?? Number.MAX_SAFE_INTEGER;
+            const bRank = rankMap.get(b.dataset.relatedKey) ?? Number.MAX_SAFE_INTEGER;
+            return aRank - bRank;
+        });
+
+        orderedCards.forEach((card, index) => {
+            card.dataset.relatedRank = String(index + 1);
+            card.classList.toggle('is-featured', index === 0);
+            this.relatedGrid.appendChild(card);
+        });
+    }
+
+    updatePrimaryRecommendation() {
+        if (!this.primaryRelatedCta || !this.relatedGrid) return;
+
+        const featuredCard = this.relatedGrid.querySelector('.related-card.is-featured') || this.relatedGrid.querySelector('.related-card');
+        if (!featuredCard) return;
+
+        const emojiEl = featuredCard.querySelector('.related-emoji');
+        const titleEl = featuredCard.querySelector('.related-name');
+
+        this.primaryRelatedCta.href = featuredCard.href;
+        this.primaryRelatedCta.dataset.relatedKey = featuredCard.dataset.relatedKey || '';
+        this.primaryRelatedCta.dataset.relatedRank = featuredCard.dataset.relatedRank || '1';
+
+        if (emojiEl && this.primaryRelatedEmoji) this.primaryRelatedEmoji.textContent = emojiEl.textContent;
+        if (titleEl && this.primaryRelatedTitle) this.primaryRelatedTitle.textContent = titleEl.textContent;
+        if (this.primaryRelatedDesc) {
+            this.primaryRelatedDesc.textContent = i18n.t('result.nextStepDesc');
+        }
+        if (this.primaryRelatedCtaText) {
+            this.primaryRelatedCtaText.textContent = i18n.t('result.nextStepCta');
+        }
+    }
+
+    ensureResultAdLoaded() {
+        if (this.resultInlineAdLoaded || !this.resultInlineAd || typeof window.adsbygoogle === 'undefined') return;
+
+        try {
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
+            this.resultInlineAdLoaded = true;
+            this.trackEvent('animal_result_ad_impression', {
+                app_name: 'animal-personality',
+                ad_surface: 'result_inline',
+                result_key: this.result?.key || ''
+            });
+        } catch (error) {
+            console.warn('Result ad init failed:', error.message);
+        }
+    }
+
     setupTheme() {
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
@@ -176,6 +266,15 @@ class WildernessSurvivalApp {
         this.scenarioChoices = document.getElementById('scenarioChoices');
         this.resultCanvas = document.getElementById('resultCanvas');
         this.recGrid = document.getElementById('recGrid');
+        this.relatedGrid = document.getElementById('related-grid');
+        this.relatedCards = Array.from(document.querySelectorAll('.related-card'));
+        this.primaryRelatedEmoji = document.getElementById('primary-related-emoji');
+        this.primaryRelatedTitle = document.getElementById('primary-related-title');
+        this.primaryRelatedDesc = document.getElementById('primary-related-desc');
+        this.primaryRelatedCta = document.getElementById('primary-related-cta');
+        this.primaryRelatedCtaText = document.getElementById('primary-related-cta-text');
+        this.relatedJumpBtn = document.getElementById('related-jump-btn');
+        this.resultInlineAd = document.getElementById('result-inline-ad');
     }
 
     attachEventListeners() {
@@ -185,6 +284,31 @@ class WildernessSurvivalApp {
         this.shareKakaoBtn.addEventListener('click', () => this.shareKakao());
         this.shareTwitterBtn.addEventListener('click', () => this.shareTwitter());
         this.shareUrlBtn.addEventListener('click', () => this.shareUrl());
+        this.primaryRelatedCta?.addEventListener('click', () => {
+            this.trackEvent('animal_primary_cta_click', {
+                app_name: 'animal-personality',
+                result_key: this.result?.key || '',
+                related_key: this.primaryRelatedCta.dataset.relatedKey || '',
+                related_rank: Number(this.primaryRelatedCta.dataset.relatedRank || 1)
+            });
+        });
+        this.relatedJumpBtn?.addEventListener('click', () => {
+            this.relatedGrid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            this.trackEvent('animal_related_jump_click', {
+                app_name: 'animal-personality',
+                result_key: this.result?.key || ''
+            });
+        });
+        this.relatedCards.forEach((card) => {
+            card.addEventListener('click', () => {
+                this.trackEvent('animal_related_click', {
+                    app_name: 'animal-personality',
+                    result_key: this.result?.key || '',
+                    related_key: card.dataset.relatedKey || '',
+                    related_rank: Number(card.dataset.relatedRank || 0)
+                });
+            });
+        });
         this.langToggle.addEventListener('click', () => this.toggleLanguageMenu());
         this.langOptions.forEach(option => {
             option.addEventListener('click', (e) => this.changeLanguage(e.target.dataset.lang));
@@ -198,9 +322,8 @@ class WildernessSurvivalApp {
 
     // =========== PHASE 0: START ===========
     startJourney() {
-        if (typeof gtag === 'function') {
-            gtag('event', 'test_start', { app_name: 'animal-personality', content_type: 'wilderness_survival' });
-        }
+        this.trackEvent('quiz_start', { app_name: 'animal-personality', content_type: 'wilderness_survival' });
+        this.trackEvent('test_start', { app_name: 'animal-personality', content_type: 'wilderness_survival' });
         this.trackEngagement('test_start');
         this.switchScreen(this.homeScreen, this.biomeScreen);
     }
@@ -232,9 +355,8 @@ class WildernessSurvivalApp {
         const biomeAnimals = Object.keys(ANIMALS).filter(a => ANIMALS[a].biome === biome);
         biomeAnimals.forEach(a => { this.scores[a] = 0; });
 
-        if (typeof gtag === 'function') {
-            gtag('event', 'biome_selected', { app_name: 'animal-personality', biome: biome });
-        }
+        this.trackEvent('animal_biome_select', { app_name: 'animal-personality', biome });
+        this.trackEvent('biome_selected', { app_name: 'animal-personality', biome });
 
         // Set biome background
         this.scenarioBg.className = 'scenario-bg ' + biome;
@@ -286,6 +408,12 @@ class WildernessSurvivalApp {
 
     makeChoice(choice, scenario) {
         const scoring = choice === 'A' ? scenario.choiceA : scenario.choiceB;
+        this.trackEvent('animal_choice_select', {
+            app_name: 'animal-personality',
+            biome: this.selectedBiome,
+            scenario_index: this.currentScenario + 1,
+            choice
+        });
 
         // Add scores
         for (const animal in scoring) {
@@ -337,13 +465,21 @@ class WildernessSurvivalApp {
         const adTop = document.getElementById('ad-top');
         if (adTop) adTop.style.display = '';
 
-        if (typeof gtag === 'function') {
-            gtag('event', 'test_complete', {
-                app_name: 'animal-personality',
-                result_type: this.result.key,
-                biome: this.selectedBiome
-            });
-        }
+        this.trackEvent('result_view', {
+            app_name: 'animal-personality',
+            result_key: this.result.key,
+            biome: this.selectedBiome
+        });
+        this.trackEvent('quiz_complete', {
+            app_name: 'animal-personality',
+            result_key: this.result.key,
+            biome: this.selectedBiome
+        });
+        this.trackEvent('test_complete', {
+            app_name: 'animal-personality',
+            result_type: this.result.key,
+            biome: this.selectedBiome
+        });
     }
 
     calculateResult() {
@@ -366,6 +502,7 @@ class WildernessSurvivalApp {
     displayResult() {
         const animal = this.result.data;
         const key = this.result.key;
+        this.resultShareUrl = this.getShareUrl();
 
         // Set biome background
         const resultBg = document.getElementById('resultBg');
@@ -445,11 +582,9 @@ class WildernessSurvivalApp {
 
         // Canvas share image
         this.generateResultCanvas();
-
-        // Google Ads refresh
-        if (window.adsbygoogle) {
-            try { adsbygoogle.push({}); } catch (e) { /* Ad error */ }
-        }
+        this.prioritizeRelatedCards();
+        this.updatePrimaryRecommendation();
+        this.ensureResultAdLoaded();
     }
 
     generateResultCanvas() {
@@ -544,9 +679,8 @@ class WildernessSurvivalApp {
         link.download = `spirit-animal-${this.result.key}.png`;
         link.click();
 
-        if (typeof gtag === 'function') {
-            gtag('event', 'save_image', { app_name: 'animal-personality', content_type: 'test_result' });
-        }
+        this.trackEvent('save_image', { app_name: 'animal-personality', content_type: 'test_result' });
+        this.trackEvent('animal_save_click', { app_name: 'animal-personality', result_key: this.result?.key || '' });
 
         const btn = this.downloadBtn;
         const originalText = btn.textContent;
@@ -557,45 +691,55 @@ class WildernessSurvivalApp {
     shareKakao() {
         if (!window.Kakao) return;
         const key = this.result.key;
-        if (typeof gtag === 'function') {
-            gtag('event', 'share', { method: 'kakao', app_name: 'animal-personality', content_type: 'test_result' });
-        }
+        this.trackEvent('animal_share_open', { app_name: 'animal-personality', method: 'kakao', result_key: key });
+        this.trackEvent('share', { method: 'kakao', app_name: 'animal-personality', content_type: 'test_result' });
+        this.trackEvent('animal_share_click', { app_name: 'animal-personality', method: 'kakao', result_key: key });
         Kakao.Share.sendDefault({
             objectType: 'feed',
             content: {
                 title: i18n.t('animals.' + key + '.name') + ' ' + ANIMALS[key].emoji,
                 description: i18n.t('animals.' + key + '.description'),
                 imageUrl: window.location.origin + '/animal-personality/icon-512.svg',
-                link: { webUrl: this.shareUrl, mobileWebUrl: this.shareUrl }
+                link: { webUrl: this.resultShareUrl || this.getShareUrl(), mobileWebUrl: this.resultShareUrl || this.getShareUrl() }
             }
         });
     }
 
     shareTwitter() {
         const key = this.result.key;
-        if (typeof gtag === 'function') {
-            gtag('event', 'share', { method: 'twitter', app_name: 'animal-personality', content_type: 'test_result' });
-        }
+        this.trackEvent('animal_share_open', { app_name: 'animal-personality', method: 'twitter', result_key: key });
+        this.trackEvent('share', { method: 'twitter', app_name: 'animal-personality', content_type: 'test_result' });
+        this.trackEvent('animal_share_click', { app_name: 'animal-personality', method: 'twitter', result_key: key });
         const name = i18n.t('animals.' + key + '.name');
         const text = i18n.t('share.twitter_text').replace('{animal}', name + ' ' + ANIMALS[key].emoji);
-        const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(this.shareUrl)}`;
+        const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(this.getShareUrl())}`;
         window.open(url, '_blank');
     }
 
     shareUrl() {
         const key = this.result.key;
-        if (typeof gtag === 'function') {
-            gtag('event', 'share', { method: navigator.share ? 'native' : 'clipboard', app_name: 'animal-personality', content_type: 'test_result' });
-        }
+        const shareUrl = this.getShareUrl();
+        this.trackEvent('animal_share_open', {
+            app_name: 'animal-personality',
+            method: navigator.share ? 'native' : 'clipboard',
+            result_key: key
+        });
+        this.trackEvent('share', {
+            method: navigator.share ? 'native' : 'clipboard',
+            app_name: 'animal-personality',
+            content_type: 'test_result'
+        });
         const name = i18n.t('animals.' + key + '.name');
         if (navigator.share) {
+            this.trackEvent('animal_share_click', { app_name: 'animal-personality', method: 'native', result_key: key });
             navigator.share({
                 title: i18n.t('home.title'),
                 text: i18n.t('share.native_text').replace('{animal}', name),
-                url: this.shareUrl
+                url: shareUrl
             });
         } else {
-            navigator.clipboard.writeText(this.shareUrl).then(() => {
+            navigator.clipboard.writeText(shareUrl).then(() => {
+                this.trackEvent('animal_share_click', { app_name: 'animal-personality', method: 'clipboard', result_key: key });
                 const btn = this.shareUrlBtn;
                 const originalText = btn.textContent;
                 btn.textContent = i18n.t('share.copied');
@@ -614,6 +758,10 @@ class WildernessSurvivalApp {
     resetJourney() {
         this.resultScreen.classList.remove('active');
         this.homeScreen.classList.add('active');
+        this.trackEvent('animal_retry_click', {
+            app_name: 'animal-personality',
+            result_key: this.result?.key || ''
+        });
         this.selectedBiome = null;
         this.currentScenario = 0;
         this.scores = {};
