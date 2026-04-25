@@ -85,6 +85,7 @@ class WildernessSurvivalApp {
         this.result = null;
         this.resultInlineAdLoaded = false;
         this.resultShareUrl = '';
+        this.introCtaViewed = false;
         this.recommendationPriority = {
             wolf: ['stress-response', 'brain-type', 'anxiety-type', 'dopamine-type', 'burnout-test', 'sleep-animal', 'mbti-love', 'color-personality'],
             bear: ['burnout-test', 'stress-response', 'brain-type', 'sleep-animal', 'anxiety-type', 'dopamine-type', 'color-personality', 'mbti-love'],
@@ -117,6 +118,8 @@ class WildernessSurvivalApp {
             this.setupTheme();
             this.renderBiomeCards();
             this.startResultCarousel();
+            this.trackIntroView();
+            this.trackIntroCtaView();
         } catch (e) {
             console.error('App init error:', e);
         } finally {
@@ -154,6 +157,42 @@ class WildernessSurvivalApp {
     trackEvent(name, params = {}) {
         if (typeof gtag !== 'function') return;
         gtag('event', name, params);
+    }
+
+    trackIntroView() {
+        this.trackEvent('animal_intro_view', {
+            app_name: 'animal-personality',
+            surface: 'home',
+            lang: this.getCurrentLang()
+        });
+    }
+
+    trackIntroCtaView() {
+        if (!this.startBtn || this.introCtaViewed) return;
+
+        const sendView = () => {
+            if (this.introCtaViewed) return;
+            this.introCtaViewed = true;
+            this.trackEvent('animal_intro_cta_view', {
+                app_name: 'animal-personality',
+                surface: 'home_start',
+                lang: this.getCurrentLang()
+            });
+        };
+
+        if (!('IntersectionObserver' in window)) {
+            sendView();
+            return;
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            if (entries.some(entry => entry.isIntersecting)) {
+                sendView();
+                observer.disconnect();
+            }
+        }, { threshold: 0.6 });
+
+        observer.observe(this.startBtn);
     }
 
     getCurrentLang() {
@@ -322,6 +361,11 @@ class WildernessSurvivalApp {
 
     // =========== PHASE 0: START ===========
     startJourney() {
+        this.trackEvent('animal_intro_start_click', {
+            app_name: 'animal-personality',
+            surface: 'home_start',
+            lang: this.getCurrentLang()
+        });
         this.trackEvent('quiz_start', { app_name: 'animal-personality', content_type: 'wilderness_survival' });
         this.trackEvent('test_start', { app_name: 'animal-personality', content_type: 'wilderness_survival' });
         this.trackEngagement('test_start');

@@ -406,6 +406,31 @@ body {
     text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
 }
 
+.quick-start-strip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: min(100%, 360px);
+    min-height: 36px;
+    padding: 8px 14px;
+    border: 1px solid rgba(181, 110, 219, 0.32);
+    border-radius: 999px;
+    background: rgba(142, 68, 173, 0.16);
+    color: var(--primary-light);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 22px rgba(10, 14, 30, 0.18);
+}
+
+[data-theme="light"] .quick-start-strip {
+    background: rgba(142, 68, 173, 0.08);
+    color: var(--primary-color);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
 .home-description {
     font-size: 14px;
     line-height: 1.8;
