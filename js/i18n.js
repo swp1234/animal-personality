@@ -75,7 +75,9 @@ class I18n {
     }
 
     syncSeoState(lang, updateHistory = false) {
-        const canonicalHref = this.getSeoHref(lang);
+        const currentUrl = new URL(window.location.href);
+        const currentHasLangParam = currentUrl.searchParams.has('lang');
+        const canonicalHref = this.getSeoHref(updateHistory || currentHasLangParam ? lang : 'x-default');
         const canonicalEl = document.querySelector('link[rel="canonical"]');
         if (canonicalEl) canonicalEl.href = canonicalHref;
 
@@ -91,7 +93,11 @@ class I18n {
         });
 
         if (updateHistory) {
-            window.history.replaceState({}, '', canonicalHref);
+            const nextUrl = new URL(canonicalHref);
+            nextUrl.hash = currentUrl.hash;
+            if (currentUrl.pathname !== nextUrl.pathname || currentUrl.search !== nextUrl.search || currentUrl.hash !== nextUrl.hash) {
+                window.history.replaceState({}, '', nextUrl.pathname + nextUrl.search + nextUrl.hash);
+            }
         }
     }
 
