@@ -201,11 +201,96 @@ class WildernessSurvivalApp {
 
     getShareUrl() {
         const lang = this.getCurrentLang();
+        const resultKey = this.result?.key || 'unknown';
+        const biome = this.selectedBiome || this.result?.data?.biome || '';
+        const baseHref = typeof i18n?.getSeoHref === 'function'
+            ? i18n.getSeoHref(lang)
+            : (lang ? `https://dopabrain.com/animal-personality/?lang=${lang}` : 'https://dopabrain.com/animal-personality/');
+
+        try {
+            const url = new URL(baseHref);
+            url.searchParams.set('utm_source', 'share');
+            url.searchParams.set('utm_medium', 'animal_result');
+            url.searchParams.set('utm_campaign', 'animal_mx');
+            url.searchParams.set('utm_content', resultKey);
+            if (resultKey !== 'unknown') url.searchParams.set('animal_result', resultKey);
+            if (biome) url.searchParams.set('animal_biome', biome);
+            return url.toString();
+        } catch (error) {
+            console.warn('Share URL build failed:', error.message);
+        }
+
         if (typeof i18n?.getSeoHref === 'function') {
             return i18n.getSeoHref(lang);
         }
 
         return lang ? `https://dopabrain.com/animal-personality/?lang=${lang}` : 'https://dopabrain.com/animal-personality/';
+    }
+
+    getShareEventParams(method, extra = {}) {
+        const resultKey = this.result?.key || 'unknown';
+
+        return {
+            app_name: 'animal-personality',
+            content_type: 'test_result',
+            surface: 'result_actions',
+            method,
+            result_key: resultKey,
+            biome: this.selectedBiome || this.result?.data?.biome || '',
+            lang: this.getCurrentLang(),
+            utm_source: 'share',
+            utm_medium: 'animal_result',
+            utm_campaign: 'animal_mx',
+            utm_content: resultKey,
+            ...extra
+        };
+    }
+
+    showTemporaryButtonText(button, textKey, duration = 2000) {
+        if (!button) return;
+        const originalText = button.textContent;
+        button.textContent = i18n.t(textKey);
+        setTimeout(() => { button.textContent = originalText; }, duration);
+    }
+
+    copyShareUrl(shareUrl, method = 'clipboard', button = this.shareUrlBtn) {
+        const params = this.getShareEventParams(method, { share_url: shareUrl });
+        const onSuccess = () => {
+            this.trackEvent('animal_copy_link', params);
+            this.showTemporaryButtonText(button, 'share.copied');
+        };
+
+        if (navigator.clipboard?.writeText) {
+            navigator.clipboard.writeText(shareUrl)
+                .then(onSuccess)
+                .catch((error) => {
+                    this.trackEvent('animal_copy_link_error', {
+                        ...params,
+                        error_name: error?.name || 'clipboard_error'
+                    });
+                });
+            return;
+        }
+
+        const textarea = document.createElement('textarea');
+        textarea.value = shareUrl;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+
+        try {
+            document.execCommand('copy');
+            onSuccess();
+        } catch (error) {
+            this.trackEvent('animal_copy_link_error', {
+                ...params,
+                error_name: error?.name || 'exec_copy_error'
+            });
+        } finally {
+            textarea.remove();
+        }
     }
 
     prioritizeRelatedCards() {
@@ -723,73 +808,55 @@ class WildernessSurvivalApp {
         link.download = `spirit-animal-${this.result.key}.png`;
         link.click();
 
-        this.trackEvent('save_image', { app_name: 'animal-personality', content_type: 'test_result' });
-        this.trackEvent('animal_save_click', { app_name: 'animal-personality', result_key: this.result?.key || '' });
+        const params = this.getShareEventParams('download', { save_surface: 'result_canvas' });
+        this.trackEvent('save_image', params);
+        this.trackEvent('animal_save_click', params);
 
-        const btn = this.downloadBtn;
-        const originalText = btn.textContent;
-        btn.textContent = i18n.t('share.download_success');
-        setTimeout(() => { btn.textContent = originalText; }, 2000);
+        this.showTemporaryButtonText(this.downloadBtn, 'share.download_success');
     }
 
     shareKakao() {
-        if (!window.Kakao) return;
         const key = this.result.key;
-        this.trackEvent('animal_share_open', { app_name: 'animal-personality', method: 'kakao', result_key: key });
-        this.trackEvent('share', { method: 'kakao', app_name: 'animal-personality', content_type: 'test_result' });
-        this.trackEvent('animal_share_click', { app_name: 'animal-personality', method: 'kakao', result_key: key });
+        const shareUrl = this.resultShareUrl || this.getShareUrl();
+        const params = this.getShareEventParams('kakao', { share_url: shareUrl });
+        this.trackEvent('animal_share_open', params);
+
+        if (!window.Kakao) {
+            this.copyShareUrl(shareUrl, 'kakao_fallback', this.shareKakaoBtn);
+            return;
+        }
+
+        this.trackEvent('share', { ...params, method: 'kakao' });
+        this.trackEvent('animal_share_click', params);
         Kakao.Share.sendDefault({
             objectType: 'feed',
             content: {
                 title: i18n.t('animals.' + key + '.name') + ' ' + ANIMALS[key].emoji,
                 description: i18n.t('animals.' + key + '.description'),
                 imageUrl: window.location.origin + '/animal-personality/icon-512.svg',
-                link: { webUrl: this.resultShareUrl || this.getShareUrl(), mobileWebUrl: this.resultShareUrl || this.getShareUrl() }
+                link: { webUrl: shareUrl, mobileWebUrl: shareUrl }
             }
         });
     }
 
     shareTwitter() {
         const key = this.result.key;
-        this.trackEvent('animal_share_open', { app_name: 'animal-personality', method: 'twitter', result_key: key });
-        this.trackEvent('share', { method: 'twitter', app_name: 'animal-personality', content_type: 'test_result' });
-        this.trackEvent('animal_share_click', { app_name: 'animal-personality', method: 'twitter', result_key: key });
+        const shareUrl = this.resultShareUrl || this.getShareUrl();
+        const params = this.getShareEventParams('twitter', { share_url: shareUrl });
+        this.trackEvent('animal_share_open', params);
+        this.trackEvent('share', { ...params, method: 'twitter' });
+        this.trackEvent('animal_share_click', params);
         const name = i18n.t('animals.' + key + '.name');
         const text = i18n.t('share.twitter_text').replace('{animal}', name + ' ' + ANIMALS[key].emoji);
-        const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(this.getShareUrl())}`;
+        const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`;
         window.open(url, '_blank');
     }
 
     shareUrl() {
-        const key = this.result.key;
-        const shareUrl = this.getShareUrl();
-        this.trackEvent('animal_share_open', {
-            app_name: 'animal-personality',
-            method: navigator.share ? 'native' : 'clipboard',
-            result_key: key
-        });
-        this.trackEvent('share', {
-            method: navigator.share ? 'native' : 'clipboard',
-            app_name: 'animal-personality',
-            content_type: 'test_result'
-        });
-        const name = i18n.t('animals.' + key + '.name');
-        if (navigator.share) {
-            this.trackEvent('animal_share_click', { app_name: 'animal-personality', method: 'native', result_key: key });
-            navigator.share({
-                title: i18n.t('home.title'),
-                text: i18n.t('share.native_text').replace('{animal}', name),
-                url: shareUrl
-            });
-        } else {
-            navigator.clipboard.writeText(shareUrl).then(() => {
-                this.trackEvent('animal_share_click', { app_name: 'animal-personality', method: 'clipboard', result_key: key });
-                const btn = this.shareUrlBtn;
-                const originalText = btn.textContent;
-                btn.textContent = i18n.t('share.copied');
-                setTimeout(() => { btn.textContent = originalText; }, 2000);
-            });
-        }
+        const shareUrl = this.resultShareUrl || this.getShareUrl();
+        const params = this.getShareEventParams('clipboard', { share_url: shareUrl });
+        this.trackEvent('animal_copy_open', params);
+        this.copyShareUrl(shareUrl, 'clipboard', this.shareUrlBtn);
     }
 
     // =========== NAVIGATION ===========

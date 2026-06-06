@@ -290,7 +290,7 @@
     "moreTests": "Explorar más tests",
     "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes son este tipo de animal",
     "nextStepLabel": "Siguiente paso ideal",
-    "nextStepDesc": "Abre la prueba de seguimiento que mejor encaja con el resultado de tu animal espiritual.",
+    "nextStepDesc": "Segun tu resultado, abre el siguiente test para comparar tus instintos con otra parte de tu personalidad.",
     "nextStepCta": "Abrir prueba recomendada",
     "jumpToMore": "Ver m?s recomendaciones"
   },
@@ -306,8 +306,8 @@
   "share": {
     "copied": "Enlace copiado!",
     "download_success": "Imagen descargada!",
-    "twitter_text": "Mi animal espiritual es {animal}! Cual es el tuyo?",
-    "native_text": "Mi animal espiritual es {animal}!"
+    "twitter_text": "Mi resultado fue {animal}. Haz el test y dime cual te sale.",
+    "native_text": "Mi resultado fue {animal}. Haz el test y dime cual te sale."
   },
   "accessibility": {
     "skipMain": "Ir al contenido"
