@@ -335,19 +335,7 @@ class WildernessSurvivalApp {
     }
 
     ensureResultAdLoaded() {
-        if (this.resultInlineAdLoaded || !this.resultInlineAd || typeof window.adsbygoogle === 'undefined') return;
-
-        try {
-            (window.adsbygoogle = window.adsbygoogle || []).push({});
-            this.resultInlineAdLoaded = true;
-            this.trackEvent('animal_result_ad_impression', {
-                app_name: 'animal-personality',
-                ad_surface: 'result_inline',
-                result_key: this.result?.key || ''
-            });
-        } catch (error) {
-            console.warn('Result ad init failed:', error.message);
-        }
+        // Auto Ads owns placement and paid-impression measurement.
     }
 
     setupTheme() {
