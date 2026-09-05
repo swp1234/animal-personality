@@ -313,13 +313,13 @@
     "skipMain": "Перейти к содержанию"
   },
   "related": {
-    "sleepAnimal": "Животное сна",
     "colorPersonality": "Цветовая личность",
     "brainType": "Тип мозга",
     "mbtiLove": "MBTI Любовь",
     "burnoutTest": "Тест на выгорание",
     "stressResponse": "Стресс-реакция",
     "anxietyType": "Тип тревожности",
-    "dopamineType": "??? ????????"
+    "dopamineType": "??? ????????",
+    "hspTest": "HSP тест"
   }
 }

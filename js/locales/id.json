@@ -313,13 +313,13 @@
     "skipMain": "Langsung ke konten"
   },
   "related": {
-    "sleepAnimal": "Hewan Tidur",
     "colorPersonality": "Kepribadian Warna",
     "brainType": "Tipe Otak",
     "mbtiLove": "MBTI Cinta",
     "burnoutTest": "Tes Burnout",
     "stressResponse": "Respons Stres",
     "anxietyType": "Tipe Kecemasan",
-    "dopamineType": "Tipe Dopamin"
+    "dopamineType": "Tipe Dopamin",
+    "hspTest": "Tes HSP"
   }
 }

@@ -313,13 +313,13 @@
     "skipMain": "Zum Inhalt springen"
   },
   "related": {
-    "sleepAnimal": "Schlaftier",
     "colorPersonality": "Farbpersönlichkeit",
     "brainType": "Gehirntyp",
     "mbtiLove": "MBTI Liebe",
     "burnoutTest": "Burnout-Test",
     "stressResponse": "Stressreaktion",
     "anxietyType": "Angsttyp",
-    "dopamineType": "Dopamin-Typ"
+    "dopamineType": "Dopamin-Typ",
+    "hspTest": "HSP Test"
   }
 }

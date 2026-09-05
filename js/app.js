@@ -87,18 +87,18 @@ class WildernessSurvivalApp {
         this.resultShareUrl = '';
         this.introCtaViewed = false;
         this.recommendationPriority = {
-            wolf: ['stress-response', 'brain-type', 'anxiety-type', 'dopamine-type', 'burnout-test', 'sleep-animal', 'mbti-love', 'color-personality'],
-            bear: ['burnout-test', 'stress-response', 'brain-type', 'sleep-animal', 'anxiety-type', 'dopamine-type', 'color-personality', 'mbti-love'],
-            fox: ['brain-type', 'dopamine-type', 'color-personality', 'stress-response', 'mbti-love', 'anxiety-type', 'sleep-animal', 'burnout-test'],
-            dolphin: ['mbti-love', 'sleep-animal', 'color-personality', 'anxiety-type', 'stress-response', 'brain-type', 'dopamine-type', 'burnout-test'],
-            cat: ['sleep-animal', 'anxiety-type', 'mbti-love', 'brain-type', 'color-personality', 'stress-response', 'dopamine-type', 'burnout-test'],
-            owl: ['brain-type', 'sleep-animal', 'stress-response', 'anxiety-type', 'dopamine-type', 'color-personality', 'mbti-love', 'burnout-test'],
-            eagle: ['brain-type', 'dopamine-type', 'stress-response', 'mbti-love', 'burnout-test', 'color-personality', 'anxiety-type', 'sleep-animal'],
-            lion: ['dopamine-type', 'brain-type', 'mbti-love', 'burnout-test', 'stress-response', 'color-personality', 'anxiety-type', 'sleep-animal'],
-            dragon: ['dopamine-type', 'burnout-test', 'brain-type', 'stress-response', 'mbti-love', 'color-personality', 'anxiety-type', 'sleep-animal'],
-            rabbit: ['mbti-love', 'sleep-animal', 'anxiety-type', 'color-personality', 'stress-response', 'brain-type', 'dopamine-type', 'burnout-test'],
-            butterfly: ['color-personality', 'mbti-love', 'sleep-animal', 'brain-type', 'anxiety-type', 'stress-response', 'dopamine-type', 'burnout-test'],
-            unicorn: ['mbti-love', 'color-personality', 'brain-type', 'sleep-animal', 'anxiety-type', 'stress-response', 'dopamine-type', 'burnout-test']
+            wolf: ['stress-response', 'brain-type', 'anxiety-type', 'dopamine-type', 'burnout-test', 'hsp-test', 'mbti-love', 'color-personality'],
+            bear: ['burnout-test', 'stress-response', 'brain-type', 'hsp-test', 'anxiety-type', 'dopamine-type', 'color-personality', 'mbti-love'],
+            fox: ['brain-type', 'dopamine-type', 'color-personality', 'stress-response', 'mbti-love', 'anxiety-type', 'hsp-test', 'burnout-test'],
+            dolphin: ['mbti-love', 'hsp-test', 'color-personality', 'anxiety-type', 'stress-response', 'brain-type', 'dopamine-type', 'burnout-test'],
+            cat: ['hsp-test', 'anxiety-type', 'mbti-love', 'brain-type', 'color-personality', 'stress-response', 'dopamine-type', 'burnout-test'],
+            owl: ['brain-type', 'hsp-test', 'stress-response', 'anxiety-type', 'dopamine-type', 'color-personality', 'mbti-love', 'burnout-test'],
+            eagle: ['brain-type', 'dopamine-type', 'stress-response', 'mbti-love', 'burnout-test', 'color-personality', 'anxiety-type', 'hsp-test'],
+            lion: ['dopamine-type', 'brain-type', 'mbti-love', 'burnout-test', 'stress-response', 'color-personality', 'anxiety-type', 'hsp-test'],
+            dragon: ['dopamine-type', 'burnout-test', 'brain-type', 'stress-response', 'mbti-love', 'color-personality', 'anxiety-type', 'hsp-test'],
+            rabbit: ['mbti-love', 'hsp-test', 'anxiety-type', 'color-personality', 'stress-response', 'brain-type', 'dopamine-type', 'burnout-test'],
+            butterfly: ['color-personality', 'mbti-love', 'hsp-test', 'brain-type', 'anxiety-type', 'stress-response', 'dopamine-type', 'burnout-test'],
+            unicorn: ['mbti-love', 'color-personality', 'brain-type', 'hsp-test', 'anxiety-type', 'stress-response', 'dopamine-type', 'burnout-test']
         };
         this.init();
     }

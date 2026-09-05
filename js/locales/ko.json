@@ -313,13 +313,13 @@
     "skipMain": "본문으로 건너뛰기"
   },
   "related": {
-    "sleepAnimal": "수면 동물",
     "colorPersonality": "색상 성격",
     "brainType": "두뇌 유형",
     "mbtiLove": "MBTI 연애",
     "burnoutTest": "번아웃 테스트",
     "stressResponse": "스트레스 반응",
     "anxietyType": "불안 유형",
-    "dopamineType": "??? ??"
+    "dopamineType": "??? ??",
+    "hspTest": "HSP 검사"
   }
 }
