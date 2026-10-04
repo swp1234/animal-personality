@@ -386,7 +386,6 @@ class WildernessSurvivalApp {
         this.primaryRelatedCta = document.getElementById('primary-related-cta');
         this.primaryRelatedCtaText = document.getElementById('primary-related-cta-text');
         this.relatedJumpBtn = document.getElementById('related-jump-btn');
-        this.resultInlineAd = document.getElementById('result-inline-ad');
     }
 
     attachEventListeners() {
@@ -578,10 +577,6 @@ class WildernessSurvivalApp {
         this.switchScreen(this.scenarioScreen, this.resultScreen);
         this.displayResult();
 
-        // Show ad
-        const adTop = document.getElementById('ad-top');
-        if (adTop) adTop.style.display = '';
-
         this.trackEvent('result_view', {
             app_name: 'animal-personality',
             result_key: this.result.key,
@@ -688,14 +683,6 @@ class WildernessSurvivalApp {
             <span data-i18n="animals.${rivalKey}.name">${i18n.t('animals.' + rivalKey + '.name')}</span>
         `;
         rivalContainer.appendChild(rivalDiv);
-
-        // Percentile stat
-        const pStat = document.getElementById('percentile-stat');
-        if (pStat) {
-            const pctVal = Math.floor(Math.random() * 12) + 6;
-            const template = i18n.t('result.percentileStat') || 'Only <strong>{percent}%</strong> of participants are this animal type';
-            pStat.innerHTML = template.replace('{percent}', pctVal);
-        }
 
         // Canvas share image
         this.generateResultCanvas();
@@ -865,8 +852,6 @@ class WildernessSurvivalApp {
         this.currentScenario = 0;
         this.scores = {};
         this.result = null;
-        const adTop = document.getElementById('ad-top');
-        if (adTop) adTop.style.display = 'none';
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 

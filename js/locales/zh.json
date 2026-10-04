@@ -17,9 +17,8 @@
     "title": "荒野生存之旅",
     "subtitle": "你踏入了荒野。你的生存本能将揭示你的灵魂动物。",
     "description": "在4个生态环境中体验6个生存场景，发现你的灵魂动物。跟随直觉选择——荒野会告诉你答案。",
-    "socialStats": "⏱ 约2分钟 | 🐾 12种动物类型 | 👥 2,100+人参与",
-    "proofText": "2,350人评分4.6分",
-    "resultTease": "🦁 大多数人的结果是..."
+    "resultTease": "🦁 大多数人的结果是...",
+    "quickStrip": "⏱ 约2分钟 · 🐾 12种动物原型 · 🌲 4大生态环境"
   },
   "carousel": {
     "fox": "狐狸 — 创意 & 独立",
@@ -288,11 +287,10 @@
     "your_pack": "你的伙伴",
     "your_rival": "你的对手",
     "moreTests": "探索更多测试",
-    "percentileStat": "只有<strong>{percent}%</strong>的参与者是这种动物类型",
-    "nextStepLabel": "????????",
-    "nextStepDesc": "????????????????????",
-    "nextStepCta": "??????",
-    "jumpToMore": "??????"
+    "nextStepLabel": "推荐下一步",
+    "nextStepDesc": "探索与你的动物性格结果最契合的后续测试。",
+    "nextStepCta": "开启后续测试",
+    "jumpToMore": "查看更多推荐"
   },
   "rec": {
     "title": "其他有趣的测试",
@@ -319,7 +317,35 @@
     "burnoutTest": "职业倦怠测试",
     "stressResponse": "压力反应",
     "anxietyType": "焦虑类型",
-    "dopamineType": "?????",
+    "dopamineType": "多巴胺类型",
     "hspTest": "HSP测试"
+  },
+  "guide": {
+    "summaryTitle": "📖 动物性格原型与行为科学指南",
+    "frameworkTitle": "行为生态学与进化人格理论",
+    "frameworkText": "演化生物学与比较心理学研究（Wilson, 1975; Buss, 1991; Gosling & John, 1999）表明，动物的行为表型可聚类为独特的生存策略：大胆与审慎、探索与利用、群体协作与独立自主。本测试通过模拟野外生存决策，将本能应对模式映射为12种经典动物原型。",
+    "biomesTitle": "4大生态系统与12种生存原型",
+    "forestTitle": "🌲 森林 (Forest) — 适应力与直觉",
+    "forestDesc": "狼（忠诚·本能）、熊（守护·力量）、狐狸（机敏·灵巧）",
+    "oceanTitle": "🌊 海洋 (Ocean) — 共情与社会和谐",
+    "oceanDesc": "海豚（同理心·玩乐）、猫（独立·直觉）、猫头鹰（洞察·沉着分析）",
+    "mountainTitle": "🏔️ 山岳 (Mountain) — 远见与果敢决断",
+    "mountainDesc": "鹰（战略明晰）、狮子（勇气·领导力）、龙（雄心·掌控力）",
+    "desertTitle": "🏜️ 沙漠 (Desert) — 韧性与蜕变",
+    "desertDesc": "兔（警觉·迅捷）、蝴蝶（蜕变·创造力）、独角兽（理想·独特性）",
+    "faqTitle": "常见问题 (FAQ)",
+    "faq1Q": "Q: 灵性动物性格测试是如何运作的？",
+    "faq1A": "A: 选择四大生境之一，在6个野外生存情境中凭直觉做出选择。系统会根据本能决策权重匹配12种动物原型中最契合的一种。",
+    "faq2Q": "Q: 本测试是临床心理诊断吗？",
+    "faq2A": "A: 不是。本测试旨在启发自我觉察与趣味探索，不具备医疗或临床诊断效力。",
+    "faq3Q": "Q: 本测试与MBTI或大五人格有何不同？",
+    "faq3A": "A: 相比抽象的问卷量表，本测试通过具象化的野外危机情境，以动物图腾直观展现冒险意愿、社会合作与环境警觉性。",
+    "faq4Q": "Q: 我的测试选择会被上传或存储吗？",
+    "faq4A": "A: 不会。所有交互和计算完全在您的本地浏览器中完成，不会向服务器上传任何个人答卷或分数。",
+    "faq5Q": "Q: 随着时间推移，测试结果会发生改变吗？",
+    "faq5A": "A: 会的。随着成长经历、压力水平与生存环境的演变，个体的本能应对模式和共鸣原型也会随之调整。",
+    "referencesTitle": "学术参考文献",
+    "reviewDate": "编辑审校: 2026年10月",
+    "reviewTeam": "DopaBrain 行为科学团队"
   }
 }

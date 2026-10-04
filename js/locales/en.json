@@ -17,9 +17,8 @@
     "title": "Wilderness Survival Journey",
     "subtitle": "You've wandered into the wilderness. Your survival instincts will reveal your spirit animal.",
     "description": "Experience 6 survival scenarios across 4 biomes to discover your spirit animal. Follow your instincts — the wilderness will reveal the answer.",
-    "socialStats": "⏱ About 2 min | 🐾 12 Animal Types | 👥 2,100+ Tested",
-    "proofText": "4.6 stars from 2,350 ratings",
-    "resultTease": "🦁 Most people get..."
+    "resultTease": "🦁 Most people get...",
+    "quickStrip": "⏱ ~2 min · 🐾 12 Animal Archetypes · 🌲 4 Biomes"
   },
   "carousel": {
     "fox": "Fox — Creative & Independent",
@@ -288,7 +287,6 @@
     "your_pack": "Your Pack",
     "your_rival": "Your Rival",
     "moreTests": "Explore More Tests",
-    "percentileStat": "Only <strong>{percent}%</strong> of participants are this animal type",
     "nextStepLabel": "Best Next Step",
     "nextStepDesc": "Open the follow-up test that best matches your spirit animal result.",
     "nextStepCta": "Open Follow-up",
@@ -321,5 +319,33 @@
     "anxietyType": "Anxiety Type",
     "dopamineType": "Dopamine Type",
     "hspTest": "HSP Test"
+  },
+  "guide": {
+    "summaryTitle": "📖 Animal Archetypes & Behavioral Science Guide",
+    "frameworkTitle": "Behavioral Ecology & Evolutionary Personality",
+    "frameworkText": "Research in evolutionary biology and comparative psychology (Wilson, 1975; Buss, 1991; Gosling & John, 1999) shows that animal behavioral phenotypes cluster into ecological survival strategies—balancing boldness vs. caution, exploration vs. exploitation, and solitary self-reliance vs. cooperative pack affiliation. This test translates simulated survival decisions into 12 intuitive archetypes.",
+    "biomesTitle": "The 4 Biomes & 12 Survival Archetypes",
+    "forestTitle": "🌲 Forest — Adaptability & Cunning",
+    "forestDesc": "Wolf (loyalty & instincts), Bear (strength & protection), Fox (cleverness & agility)",
+    "oceanTitle": "🌊 Ocean — Depth & Social Harmony",
+    "oceanDesc": "Dolphin (empathy & playfulness), Cat (independence & intuition), Owl (wisdom & quiet analysis)",
+    "mountainTitle": "🏔️ Mountain — Vision & Assertive Drive",
+    "mountainDesc": "Eagle (strategic clarity), Lion (courage & leadership), Dragon (ambitious mastery)",
+    "desertTitle": "🏜️ Desert — Resilience & Transformation",
+    "desertDesc": "Rabbit (hyper-awareness & speed), Butterfly (transformation & creativity), Unicorn (unyielding idealism)",
+    "faqTitle": "Frequently Asked Questions (FAQ)",
+    "faq1Q": "Q: How does the spirit animal personality test work?",
+    "faq1A": "A: Choose one of four biomes and navigate six survival scenarios using your instincts. Your choices match your decision patterns against 12 animal archetypes.",
+    "faq2Q": "Q: Is this test a clinical diagnosis?",
+    "faq2A": "A: No. It is an educational and self-reflection exercise inspired by comparative animal behavior and archetypal psychology. It is not a clinical assessment.",
+    "faq3Q": "Q: How does this test compare to MBTI or Big Five models?",
+    "faq3A": "A: Instead of abstract questionnaires, it uses concrete survival scenarios to explore risk tolerance, pack cooperation, and sensory vigilance through intuitive archetypes.",
+    "faq4Q": "Q: Are my answers or results saved or transmitted?",
+    "faq4A": "A: No. All responses are evaluated entirely inside your web browser. No personal answers or scores are ever transmitted to or stored on external servers.",
+    "faq5Q": "Q: Can my spirit animal change over time?",
+    "faq5A": "A: Yes. As your environment, stress levels, and life stages evolve, your instinctive coping strategies and resonant archetypes can naturally adapt.",
+    "referencesTitle": "Scientific References & Further Reading",
+    "reviewDate": "Editorial Review: October 2026",
+    "reviewTeam": "DopaBrain Behavioral Science Team"
   }
 }

@@ -17,9 +17,8 @@
     "title": "Vahsi Doga Hayatta Kalma Yolculugu",
     "subtitle": "Vahsi dogaya adim attin. Hayatta kalma icegunlerin ruh hayvanini ortaya cikaracak.",
     "description": "4 biyomda 6 hayatta kalma senaryosu deneyimleyerek ruh hayvanini kesfet. Icgudulerini takip et — vahsi doga cevabi verecek.",
-    "socialStats": "⏱ Yaklasik 2 dk | 🐾 12 hayvan turu | 👥 2.100+ test edildi",
-    "proofText": "2.350 degerlendirmeden 4,6 yildiz",
-    "resultTease": "🦁 Cogu kisinin sonucu..."
+    "resultTease": "🦁 Cogu kisinin sonucu...",
+    "quickStrip": "⏱ ~2 dk · 🐾 12 hayvan arketipi · 🌲 4 biyom"
   },
   "carousel": {
     "fox": "Tilki — Yaratici & Bagimsiz",
@@ -288,11 +287,10 @@
     "your_pack": "Surun",
     "your_rival": "Rakibin",
     "moreTests": "Daha fazla test keşfet",
-    "percentileStat": "Katılımcıların sadece <strong>{percent}%</strong>'i bu hayvan türüdür",
-    "nextStepLabel": "Senin i?in en iyi sonraki ad?m",
-    "nextStepDesc": "Ruh hayvan? sonucuna en uygun takip testini a?.",
-    "nextStepCta": "Takip testini a?",
-    "jumpToMore": "Daha fazla ?neri g?r"
+    "nextStepLabel": "Önerilen Sonraki Adım",
+    "nextStepDesc": "Ruh hayvanı sonucunuza en uygun takip testini başlatın.",
+    "nextStepCta": "Sonraki Testi Başlat",
+    "jumpToMore": "Daha Fazlasını Gör"
   },
   "rec": {
     "title": "Diger eglenceli testler",
@@ -319,7 +317,35 @@
     "burnoutTest": "Tükenmişlik Testi",
     "stressResponse": "Stres Tepkisi",
     "anxietyType": "Kaygı Tipi",
-    "dopamineType": "Dopamin tipi",
+    "dopamineType": "Dopamin Tipi",
     "hspTest": "HSP Testi"
+  },
+  "guide": {
+    "summaryTitle": "📖 Hayvan Arketipleri ve Davranış Bilimi Rehberi",
+    "frameworkTitle": "Davranışsal Ekoloji ve Evrimsel Kişilik",
+    "frameworkText": "Evrimsel biyoloji ve karşılaştırmalı psikoloji araştırmaları (Wilson, 1975; Buss, 1991; Gosling & John, 1999), hayvan davranış kalıplarının ekolojik hayatta kalma stratejileri etrafında kümelendiğini göstermektedir: cesaret ve temkinlilik, keşif ve kaynak kullanımı, sürü iş birliği ve bağımsızlık. Bu test, simüle edilmiş hayatta kalma kararlarınızı 12 sezgisel arketipe dönüştürür.",
+    "biomesTitle": "4 Biyom ve 12 Hayatta Kalma Arketipi",
+    "forestTitle": "🌲 Orman — Uyum Yeteneği & Sezgi",
+    "forestDesc": "Kurt (sadakat & içgüdü), Ayı (koruma & güç), Tilki (kurnazlık & çeviklik)",
+    "oceanTitle": "🌊 Okyanus — Derinlik & Sosyal Uyum",
+    "oceanDesc": "Yunus (empati & neşe), Kedi (bağımsızlık & sezgi), Baykuş (bilgelik & analiz)",
+    "mountainTitle": "🏔️ Dağ — Vizyon & Liderlik",
+    "mountainDesc": "Kartal (stratejik netlik), Aslan (cesaret & otorite), Ejderha (hırs & etki)",
+    "desertTitle": "🏜️ Çöl — Dayanıklılık & Dönüşüm",
+    "desertDesc": "Tavşan (duyarlılık & hız), Kelebek (değişim & yaratıcılık), Tekboynuz (saf idealizm)",
+    "faqTitle": "Sıkça Sorulan Sorular (SSS)",
+    "faq1Q": "Q: Ruh hayvanı testi nasıl çalışır?",
+    "faq1A": "A: Dört biyomdan birini seçin ve 6 hayatta kalma senaryosunda içgüdüsel kararlar verin. Tercihleriniz 12 hayvan arketipi ile eşleştirilir.",
+    "faq2Q": "Q: Bu test klinik bir teşhis midir?",
+    "faq2A": "A: Hayır. Kişisel farkındalık ve eğlence amaçlı hazırlanmış olup tıbbi veya psikolojik bir teşhis niteliği taşımaz.",
+    "faq3Q": "Q: MBTI veya Beş Faktör modellerinden farkı nedir?",
+    "faq3A": "A: Soyut anketler yerine somut hayatta kalma ikilemleri kullanarak risk toleransı ve iş birliğini hayvan sembolleriyle açıklar.",
+    "faq4Q": "Q: Cevaplarım saklanıyor veya paylaşılıyor mu?",
+    "faq4A": "A: Hayır. Tüm işlemler tarayıcınızda yerel olarak gerçekleşir; sunuculara veri aktarılmaz.",
+    "faq5Q": "Q: Zamanla ruh hayvanım değişebilir mi?",
+    "faq5A": "A: Evet. Yaşam evreleriniz, stres düzeyiniz ve deneyimleriniz geliştikçe içgüdüsel başa çıkma stratejileriniz de değişebilir.",
+    "referencesTitle": "Bilimsel Referanslar",
+    "reviewDate": "Editöryal İnceleme: Ekim 2026",
+    "reviewTeam": "DopaBrain Davranış Bilimleri Ekibi"
   }
 }

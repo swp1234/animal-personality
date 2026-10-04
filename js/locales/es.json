@@ -17,9 +17,8 @@
     "title": "Viaje de Supervivencia Salvaje",
     "subtitle": "Te has adentrado en la naturaleza. Tus instintos de supervivencia revelaran tu animal espiritual.",
     "description": "Experimenta 6 escenarios de supervivencia en 4 biomas para descubrir tu animal espiritual. Sigue tus instintos: la naturaleza te dara la respuesta.",
-    "socialStats": "⏱ Aprox. 2 min | 🐾 12 tipos de animales | 👥 2,100+ probados",
-    "proofText": "4.6 estrellas de 2,350 valoraciones",
-    "resultTease": "🦁 La mayoria obtiene..."
+    "resultTease": "🦁 La mayoria obtiene...",
+    "quickStrip": "⏱ ~2 min · 🐾 12 arquetipos animales · 🌲 4 biomas"
   },
   "carousel": {
     "fox": "Zorro — Creativo & Independiente",
@@ -288,11 +287,10 @@
     "your_pack": "Tu Manada",
     "your_rival": "Tu Rival",
     "moreTests": "Explorar más tests",
-    "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes son este tipo de animal",
-    "nextStepLabel": "Siguiente paso ideal",
-    "nextStepDesc": "Segun tu resultado, abre el siguiente test para comparar tus instintos con otra parte de tu personalidad.",
-    "nextStepCta": "Abrir prueba recomendada",
-    "jumpToMore": "Ver m?s recomendaciones"
+    "nextStepLabel": "Mejor siguiente paso",
+    "nextStepDesc": "Abre el test de seguimiento que mejor coincida con tu animal espiritual.",
+    "nextStepCta": "Iniciar siguiente test",
+    "jumpToMore": "Ver más opciones"
   },
   "rec": {
     "title": "Otros tests divertidos",
@@ -319,7 +317,35 @@
     "burnoutTest": "Test de Burnout",
     "stressResponse": "Respuesta al Estrés",
     "anxietyType": "Tipo de Ansiedad",
-    "dopamineType": "Tipo de dopamina",
+    "dopamineType": "Tipo de Dopamina",
     "hspTest": "Test HSP"
+  },
+  "guide": {
+    "summaryTitle": "📖 Guía de arquetipos animales y ciencia conductual",
+    "frameworkTitle": "Ecología conductual y personalidad evolutiva",
+    "frameworkText": "La investigación en biología evolutiva y psicología comparada (Wilson, 1975; Buss, 1991; Gosling & John, 1999) demuestra que los fenotipos de conducta se agrupan en estrategias ecológicas: audacia vs. cautela, exploración vs. explotación, y cooperación vs. independencia solitaria. Este test traduce decisiones de supervivencia en 12 arquetipos intuitivos.",
+    "biomesTitle": "Los 4 biomas y 12 arquetipos de supervivencia",
+    "forestTitle": "🌲 Bosque — Adaptabilidad e intuición",
+    "forestDesc": "Lobo (lealtad e instinto), Oso (protección y fuerza), Zorro (astucia y agilidad)",
+    "oceanTitle": "🌊 Océano — Profundidad y armonía social",
+    "oceanDesc": "Delfín (empatía y juego), Gato (independencia e intuición), Búho (sabiduría y análisis)",
+    "mountainTitle": "🏔️ Montaña — Visión y determinación",
+    "mountainDesc": "Águila (claridad estratégica), León (liderazgo y valor), Dragón (ambición y poder)",
+    "desertTitle": "🏜️ Desierto — Resiliencia y transformación",
+    "desertDesc": "Conejo (sensibilidad y rapidez), Mariposa (cambio y creatividad), Unicornio (idealismo puro)",
+    "faqTitle": "Preguntas frecuentes (FAQ)",
+    "faq1Q": "Q: ¿Cómo funciona el test de animal espiritual?",
+    "faq1A": "A: Elige uno de los cuatro biomas y responde a seis escenarios de supervivencia según tu instinto. Tus decisiones se alinean con 12 arquetipos animales.",
+    "faq2Q": "Q: ¿Este test es un diagnóstico clínico?",
+    "faq2A": "A: No. Es un ejercicio educativo y de autorreflexión basado en psicología de arquetipos y conducta animal comparada.",
+    "faq3Q": "Q: ¿Cómo se compara con el MBTI o los Cinco Grandes?",
+    "faq3A": "A: En lugar de cuestionarios abstractos, utiliza escenarios prácticos de supervivencia para explorar tolerancia al riesgo y cooperación social.",
+    "faq4Q": "Q: ¿Se almacenan o envían mis respuestas?",
+    "faq4A": "A: No. Todo el análisis se ejecuta localmente en tu navegador web. Ninguna respuesta se transmite a servidores externos.",
+    "faq5Q": "Q: ¿Puede cambiar mi animal espiritual con el tiempo?",
+    "faq5A": "A: Sí. Conforme evolucionan tus etapas de vida y niveles de estrés, tus estrategias adaptativas e instintos pueden cambiar de forma natural.",
+    "referencesTitle": "Referencias científicas",
+    "reviewDate": "Revisión editorial: Octubre 2026",
+    "reviewTeam": "Equipo de Ciencia Conductual de DopaBrain"
   }
 }

@@ -57,7 +57,7 @@
         "description": "Discover your spirit animal through wild survival scenarios. Find which of 12 animal types matches your personality!",
         "url": "https://dopabrain.com/animal-personality/",
         "image": "https://dopabrain.com/animal-personality/icon-512.svg",
-        "dateModified": "2026-08-30",
+        "dateModified": "2026-10-04",
         "applicationCategory": "HealthApplication",
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript. Modern browser (Chrome, Safari, Firefox, Edge).",
@@ -87,42 +87,42 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What animal am I? How does the spirit animal test work?",
+                "name": "How does the spirit animal personality test work?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The spirit animal personality test presents you with wild survival scenarios across different biomes. Based on your instinctive choices, the test matches you with one of 12 animal types that best reflects your personality traits, decision-making style, and social behavior."
+                    "text": "Choose one of four biomes and navigate six survival scenarios using your instincts. Your choices match your decision patterns against 12 animal archetypes."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How many animal personality types are there?",
+                "name": "Is this test a clinical diagnosis?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "This test features 12 unique animal personality types, including the Fox (creative and independent), Bear (protective and loyal), Lion (brave leader), Dolphin (empathetic and harmonious), Wolf, Eagle, Owl, Cat, Dragon, Rabbit, Butterfly, and Unicorn. Each type has distinct traits, compatible companions, and a rival animal."
+                    "text": "No. It is an educational and self-reflection exercise inspired by comparative animal behavior and archetypal psychology. It is not a clinical assessment."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is the animal personality test based on MBTI?",
+                "name": "How does this test compare to MBTI or Big Five models?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "While the animal personality test shares some psychological foundations with MBTI, it uses a unique scenario-based approach rather than self-report questions. Instead of categorizing you into 16 types, it maps your survival instincts and behavioral patterns to 12 animal archetypes for a more intuitive and engaging experience."
+                    "text": "Instead of abstract questionnaires, it uses concrete survival scenarios to explore risk tolerance, pack cooperation, and sensory vigilance through intuitive archetypes."
                 }
             },
             {
                 "@type": "Question",
-                "name": "How accurate is the animal personality test?",
+                "name": "Are my answers or results saved or transmitted?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The test is designed for entertainment and self-reflection rather than clinical diagnosis. It uses 6 carefully crafted survival scenarios to analyze your decision patterns. Many users find their results surprisingly relatable. For best accuracy, answer based on your gut instinct rather than overthinking each scenario."
+                    "text": "No. All responses are evaluated entirely inside your web browser. No personal answers or scores are ever transmitted to or stored on external servers."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Is the spirit animal personality test free?",
+                "name": "Can my spirit animal change over time?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, the spirit animal personality test is completely free with no registration required. It takes about 2 minutes to complete, and you'll receive detailed results including your animal type, personality traits, compatible companions, and a shareable result image."
+                    "text": "Yes. As your environment, stress levels, and life stages evolve, your instinctive coping strategies and resonant archetypes can naturally adapt."
                 }
             }
         ]
@@ -146,7 +146,6 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-J8GSWM40TV');
-        setTimeout(function(){gtag('event','page_engage',{event_category:'animal_personality',engagement_time_msec:5000})},5000);
     </script>
 
     <link rel="manifest" href="manifest.json">
@@ -197,10 +196,6 @@
             </div>
         </div>
 
-        <!-- Ad - hidden on intro -->
-        <div class="ad-banner ad-top" id="ad-top" style="display:none">
-            </div>
-
         <!-- Phase 0: Intro / Home Screen -->
         <section id="homeScreen" class="screen screen-home active">
             <div class="intro-atmosphere"></div>
@@ -244,7 +239,7 @@
                 <div class="home-emoji">🐾</div>
                 <h1 class="app-title" data-i18n="home.title">야생 생존 여정</h1>
                 <p class="app-subtitle" data-i18n="home.subtitle">당신은 야생에 발을 들였습니다. 당신의 생존 본능이 영혼 동물을 드러낼 것입니다.</p>
-                <div class="quick-start-strip" data-i18n="home.socialStats">⏱ 약 2분 | 🐾 12가지 동물 유형 | 👥 2,100명 참여</div>
+                <div class="quick-start-strip" data-i18n="home.quickStrip">⏱ 약 2분 · 🐾 12가지 동물 원형 · 🌲 4대 생태계</div>
 
                 <!-- Result Preview Carousel -->
                 <div class="result-carousel" id="resultCarousel" aria-live="polite">
@@ -268,18 +263,73 @@
 
                 <button id="startBtn" class="btn btn-primary btn-large" data-i18n="btn.start">나의 영혼 동물은?</button>
 
-                <!-- Social Proof Badge -->
-                <div class="social-proof-badge">
-                    <div class="star-rating" aria-label="4.6 out of 5 stars">★★★★★</div>
-                    <span class="proof-text" data-i18n="home.proofText">2,350명이 평가한 4.6점</span>
-                </div>
-
-                <!-- Result Tease -->
-                <p class="result-tease" data-i18n="home.resultTease">🦁 대부분의 사람들이 받는 결과는...</p>
-
                 <div class="home-description" data-i18n="home.description">
                     4개의 생태계에서 6가지 생존 시나리오를 겪으며 당신의 영혼 동물을 찾아보세요. 본능에 따라 선택하세요 — 야생이 답을 알려줄 것입니다.
                 </div>
+
+                <!-- Educational Trust & Science Guide -->
+                <details class="about-guide">
+                    <summary class="about-guide-summary" data-i18n="guide.summaryTitle">📖 동물 원형 &amp; 행동 과학 가이드</summary>
+                    <div class="about-guide-content">
+                        <h3 class="about-section-heading" data-i18n="guide.frameworkTitle">행동 생태학 및 진화적 성격 모델</h3>
+                        <p class="about-guide-p" data-i18n="guide.frameworkText">진화 생물학 및 비교 심리학 연구(Wilson, 1975; Buss, 1991; Gosling &amp; John, 1999)에 따르면 동물의 행동 표현형은 대담함-신중함, 탐색-활용, 무리 협력-독립성과 같은 생태적 생존 전략으로 수렴합니다. 이 가상 야생 시나리오는 직관적 선택을 통해 당신의 본능적 대처 패턴을 12가지 원형으로 시각화합니다.</p>
+
+                        <h3 class="about-section-heading" data-i18n="guide.biomesTitle">4대 생태계와 12가지 성격 원형</h3>
+                        <div class="biome-guide-list">
+                            <div class="biome-guide-item">
+                                <strong data-i18n="guide.forestTitle">🌲 숲 (Forest) — 적응력 &amp; 직관</strong>
+                                <p data-i18n="guide.forestDesc">늑대(충성·본능), 곰(보호·힘), 여우(기지·민첩성)</p>
+                            </div>
+                            <div class="biome-guide-item">
+                                <strong data-i18n="guide.oceanTitle">🌊 바다 (Ocean) — 감성 &amp; 사회적 조화</strong>
+                                <p data-i18n="guide.oceanDesc">돌고래(공감·유희), 고양이(독립·직관), 올빼미(통찰·분석)</p>
+                            </div>
+                            <div class="biome-guide-item">
+                                <strong data-i18n="guide.mountainTitle">🏔️ 산악 (Mountain) — 비전 &amp; 주도성</strong>
+                                <p data-i18n="guide.mountainDesc">독수리(전략·명료함), 사자(용기·리더십), 용(야망·영향력)</p>
+                            </div>
+                            <div class="biome-guide-item">
+                                <strong data-i18n="guide.desertTitle">🏜️ 사막 (Desert) — 회복력 &amp; 변혁</strong>
+                                <p data-i18n="guide.desertDesc">토끼(민감성·기민함), 나비(변화·창의성), 유니콘(이상·독창성)</p>
+                            </div>
+                        </div>
+
+                        <h3 class="about-section-heading" data-i18n="guide.faqTitle">자주 묻는 질문 (FAQ)</h3>
+                        <div class="about-faq-item">
+                            <strong class="about-faq-q" data-i18n="guide.faq1Q">Q: 영혼 동물 성격 테스트는 어떻게 진행되나요?</strong>
+                            <p class="about-faq-a" data-i18n="guide.faq1A">A: 4가지 생태계 중 하나를 선택하고 6가지 생존 시나리오에서 직관적인 선택을 내립니다. 선택한 생존 본능에 맞춰 12가지 동물 원형 중 가장 일치하는 유형이 도출됩니다.</p>
+                        </div>
+                        <div class="about-faq-item">
+                            <strong class="about-faq-q" data-i18n="guide.faq2Q">Q: 이 테스트는 의학적 또는 임상적 진단인가요?</strong>
+                            <p class="about-faq-a" data-i18n="guide.faq2A">A: 아닙니다. 이 테스트는 자기 성찰과 엔터테인먼트를 목적으로 고안된 도구이며, 심리학적 또는 정신건강의학적 임상 진단을 대신하지 않습니다.</p>
+                        </div>
+                        <div class="about-faq-item">
+                            <strong class="about-faq-q" data-i18n="guide.faq3Q">Q: MBTI나 Big 5 성격 모델과 어떻게 다른가요?</strong>
+                            <p class="about-faq-a" data-i18n="guide.faq3A">A: 추상적 설문 대신 구체적인 야생 생존 선택지를 통해 위험 감수, 협력, 경계심 등의 본능적 패턴을 동물 상징으로 직관적으로 이해할 수 있도록 돕습니다.</p>
+                        </div>
+                        <div class="about-faq-item">
+                            <strong class="about-faq-q" data-i18n="guide.faq4Q">Q: 나의 응답이나 결과 데이터가 저장되나요?</strong>
+                            <p class="about-faq-a" data-i18n="guide.faq4A">A: 전혀 저장되지 않습니다. 모든 선택과 분석은 이용자의 브라우저 내에서만 실행되며, 서버로 개인 응답이나 점수가 전송되지 않습니다.</p>
+                        </div>
+                        <div class="about-faq-item">
+                            <strong class="about-faq-q" data-i18n="guide.faq5Q">Q: 시간 경과나 상황에 따라 다른 동물이 나올 수 있나요?</strong>
+                            <p class="about-faq-a" data-i18n="guide.faq5A">A: 네. 스트레스 수준이나 삶의 단계에 따라 선호하는 환경과 생존 본능이 달라질 수 있으므로, 시기마다 다른 동물 원형이 나타날 수 있습니다.</p>
+                        </div>
+
+                        <h3 class="about-section-heading" data-i18n="guide.referencesTitle">학술 참고문헌</h3>
+                        <ul class="about-guide-list">
+                            <li>Wilson, E. O. (1975). <em>Sociobiology: The New Synthesis</em>. Harvard University Press.</li>
+                            <li>Jung, C. G. (1964). <em>Man and His Symbols</em>. Doubleday.</li>
+                            <li>Gosling, S. D., &amp; John, O. P. (1999). <em>Personality dimensions in nonhuman animals: A cross-species review</em>. Current Directions in Psychological Science, 8(3), 69–75.</li>
+                            <li>Buss, D. M. (1991). <em>Evolutionary personality psychology</em>. Annual Review of Psychology, 42(1), 459–491.</li>
+                        </ul>
+
+                        <div class="about-review-meta">
+                            <span data-i18n="guide.reviewDate">편집 검토: 2026년 10월</span> • 
+                            <span data-i18n="guide.reviewTeam">DopaBrain 행동과학 &amp; 웰니스 팀</span>
+                        </div>
+                    </div>
+                </details>
             </div>
         </section>
 
@@ -372,11 +422,6 @@
 
                 <button id="retakeBtn" class="btn btn-primary" data-i18n="btn.retake">다시 하기</button>
 
-                <!-- In-article ad between result actions and recommendations -->
-                <div class="result-inline-ad" id="result-inline-ad">
-                  </div>
-
-                <p class="percentile-stat" id="percentile-stat"></p>
                 <div class="related-tests">
                     <h3 data-i18n="result.moreTests">Explore More Tests</h3>
                     <button class="related-jump-btn" id="related-jump-btn" type="button" data-i18n="result.jumpToMore">See More Follow-ups</button>
@@ -423,10 +468,6 @@
             <h2 class="rec-title" data-i18n="rec.title">다른 재미있는 테스트</h2>
             <div class="rec-grid" id="recGrid"></div>
         </div>
-
-        <!-- Bottom Banner Ad -->
-        <div class="ad-banner ad-bottom">
-            </div>
     </main>
 
     <script src="js/i18n.js"></script>

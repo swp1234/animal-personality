@@ -17,9 +17,8 @@
     "title": "Voyage de Survie Sauvage",
     "subtitle": "Vous êtes entré dans la nature sauvage. Vos instincts de survie révéleront votre animal totem.",
     "description": "Vivez 6 scénarios de survie dans 4 biomes pour découvrir votre animal totem. Suivez vos instincts — la nature donnera la réponse.",
-    "socialStats": "⏱ Environ 2 min | 🐾 12 types d'animaux | 👥 2 100+ testés",
-    "proofText": "4,6 étoiles sur 2 350 avis",
-    "resultTease": "🦁 La plupart des gens obtiennent..."
+    "resultTease": "🦁 La plupart des gens obtiennent...",
+    "quickStrip": "⏱ ~2 min · 🐾 12 archétypes animaux · 🌲 4 biomes"
   },
   "carousel": {
     "fox": "Renard — Créatif & Indépendant",
@@ -288,11 +287,10 @@
     "your_pack": "Votre Meute",
     "your_rival": "Votre Rival",
     "moreTests": "Découvrir plus de tests",
-    "percentileStat": "Seulement <strong>{percent}%</strong> des participants sont ce type d'animal",
-    "nextStepLabel": "Prochaine ?tape id?ale",
-    "nextStepDesc": "Ouvre le test compl?mentaire le plus adapt? ? ton r?sultat d?animal spirituel.",
-    "nextStepCta": "Ouvrir le test conseill?",
-    "jumpToMore": "Voir plus de recommandations"
+    "nextStepLabel": "Meilleure étape suivante",
+    "nextStepDesc": "Lancez le test de suivi qui correspond le mieux à votre animal totem.",
+    "nextStepCta": "Lancer le test",
+    "jumpToMore": "Voir plus de tests"
   },
   "rec": {
     "title": "Autres tests amusants",
@@ -321,5 +319,33 @@
     "anxietyType": "Type d'Anxiété",
     "dopamineType": "Type de dopamine",
     "hspTest": "Test HSP"
+  },
+  "guide": {
+    "summaryTitle": "📖 Guide des archétypes animaux et science du comportement",
+    "frameworkTitle": "Écologie comportementale et personnalité évolutive",
+    "frameworkText": "Les recherches en biologie de l'évolution et psychologie comparée (Wilson, 1975; Buss, 1991; Gosling & John, 1999) révèlent que les phénotypes comportementaux s'articulent autour de stratégies écologiques : audace contre prudence, exploration contre exploitation, et solidarité de groupe contre indépendance solitaire. Ce test traduit ces choix de survie en 12 archétypes intuitifs.",
+    "biomesTitle": "Les 4 biomes et les 12 archétypes de survie",
+    "forestTitle": "🌲 Forêt — Adaptabilité & instinct",
+    "forestDesc": "Loup (loyauté & instinct), Ours (protection & force), Renard (ruse & agilité)",
+    "oceanTitle": "🌊 Océan — Profondeur & harmonie sociale",
+    "oceanDesc": "Dauphin (empathie & sociabilité), Chat (indépendance & intuition), Chouette (sagesse & analyse)",
+    "mountainTitle": "🏔️ Montagne — Vision & détermination",
+    "mountainDesc": "Aigle (lucidité stratégique), Lion (courage & leadership), Dragon (ambition & puissance)",
+    "desertTitle": "🏜️ Désert — Résilience & métamorphose",
+    "desertDesc": "Lapin (sensibilité & rapidité), Papillon (changement & créativité), Licorne (idéalisme unique)",
+    "faqTitle": "Foire Aux Questions (FAQ)",
+    "faq1Q": "Q: Comment fonctionne le test de l'animal totem ?",
+    "faq1A": "A: Choisissez l'un des 4 biomes et répondez instinctivement à 6 scénarios de survie pour découvrir l'animal qui résonne avec votre profil.",
+    "faq2Q": "Q: Ce test constitue-t-il un diagnostic médical ?",
+    "faq2A": "A: Non. C'est un exercice éducatif et d'introspection psychologique qui ne remplace pas une évaluation clinique.",
+    "faq3Q": "Q: Quelle est la différence avec le MBTI ou le Big Five ?",
+    "faq3A": "A: Plutôt que des concepts théoriques, il utilise des dilemmes concrets de survie pour illustrer votre tolérance au risque et votre mode relationnel.",
+    "faq4Q": "Q: Mes réponses sont-elles enregistrées ?",
+    "faq4A": "A: Non. Toutes les données sont traitées uniquement dans votre navigateur, sans transmission ni conservation externe.",
+    "faq5Q": "Q: Mon animal totem peut-il évoluer avec le temps ?",
+    "faq5A": "A: Oui. Selon votre maturité, votre niveau de stress et votre environnement, vos réflexes adaptatifs évoluent naturellement.",
+    "referencesTitle": "Références scientifiques",
+    "reviewDate": "Revue éditoriale : Octobre 2026",
+    "reviewTeam": "Équipe des Sciences du Comportement DopaBrain"
   }
 }

@@ -17,9 +17,8 @@
     "title": "Jornada de Sobrevivencia Selvagem",
     "subtitle": "Voce se aventurou na natureza selvagem. Seus instintos de sobrevivencia revelarao seu animal espiritual.",
     "description": "Experimente 6 cenarios de sobrevivencia em 4 biomas para descobrir seu animal espiritual. Siga seus instintos — a natureza dara a resposta.",
-    "socialStats": "⏱ Cerca de 2 min | 🐾 12 tipos de animais | 👥 2.100+ testados",
-    "proofText": "4,6 estrelas de 2.350 avaliacoes",
-    "resultTease": "🦁 A maioria das pessoas recebe..."
+    "resultTease": "🦁 A maioria das pessoas recebe...",
+    "quickStrip": "⏱ ~2 min · 🐾 12 arquétipos animais · 🌲 4 biomas"
   },
   "carousel": {
     "fox": "Raposa — Criativa & Independente",
@@ -288,11 +287,10 @@
     "your_pack": "Sua Matilha",
     "your_rival": "Seu Rival",
     "moreTests": "Explorar mais testes",
-    "percentileStat": "Apenas <strong>{percent}%</strong> dos participantes são este tipo de animal",
-    "nextStepLabel": "Pr?ximo passo ideal",
-    "nextStepDesc": "Abra o teste complementar que mais combina com o resultado do seu animal espiritual.",
-    "nextStepCta": "Abrir teste recomendado",
-    "jumpToMore": "Ver mais recomenda??es"
+    "nextStepLabel": "Melhor próximo passo",
+    "nextStepDesc": "Abra o teste de acompanhamento que melhor combina com seu animal espiritual.",
+    "nextStepCta": "Iniciar próximo teste",
+    "jumpToMore": "Ver mais opções"
   },
   "rec": {
     "title": "Outros testes divertidos",
@@ -319,7 +317,35 @@
     "burnoutTest": "Teste de Burnout",
     "stressResponse": "Resposta ao Estresse",
     "anxietyType": "Tipo de Ansiedade",
-    "dopamineType": "Tipo de dopamina",
+    "dopamineType": "Tipo de Dopamina",
     "hspTest": "Teste HSP"
+  },
+  "guide": {
+    "summaryTitle": "📖 Guia de arquétipos animais e ciência comportamental",
+    "frameworkTitle": "Ecologia comportamental e personalidade evolutiva",
+    "frameworkText": "Estudos em biologia evolutiva e psicologia comparativa (Wilson, 1975; Buss, 1991; Gosling & John, 1999) indicam que fenótipos comportamentais se agrupam em estratégias de sobrevivência ecológica: audácia versus cautela, exploração versus exploração de recursos e cooperação em grupo versus autonomia solitária. Este teste traduz decisões de sobrevivência em 12 arquétipos intuitivos.",
+    "biomesTitle": "Os 4 biomas e 12 arquétipos de sobrevivência",
+    "forestTitle": "🌲 Floresta — Adaptabilidade e intuição",
+    "forestDesc": "Lobo (lealdade e instinto), Urso (proteção e força), Raposa (esperteza e agilidade)",
+    "oceanTitle": "🌊 Oceano — Profundidade e harmonia social",
+    "oceanDesc": "Golfinho (empatia e brincadeira), Gato (independência e intuição), Coruja (sabedoria e análise)",
+    "mountainTitle": "🏔️ Montanha — Visão e liderança assertiva",
+    "mountainDesc": "Águia (clareza estratégica), Leão (coragem e comando), Dragão (ambição e poder)",
+    "desertTitle": "🏜️ Deserto — Resiliência e transformação",
+    "desertDesc": "Coelho (vigilância e agilidade), Borboleta (metamorfose e criatividade), Unicórnio (idealismo único)",
+    "faqTitle": "Perguntas frequentes (FAQ)",
+    "faq1Q": "Q: Como funciona o teste do animal espiritual?",
+    "faq1A": "A: Escolha um dos quatro biomas e tome decisões instintivas em seis cenários de sobrevivência selvagem. O resultado revela o arquétipo mais compatível.",
+    "faq2Q": "Q: Este teste é um diagnóstico clínico?",
+    "faq2A": "A: Não. É uma ferramenta de autoconhecimento e entretenimento reflexivo baseada em psicologia arquetípica.",
+    "faq3Q": "Q: Como se compara ao MBTI ou Big Five?",
+    "faq3A": "A: Em vez de perguntas teóricas, utiliza dilemas práticos de sobrevivência para mapear tolerância ao risco e dinâmica de grupo por meio de símbolos animais.",
+    "faq4Q": "Q: Minhas respostas são salvas ou compartilhadas?",
+    "faq4A": "A: Não. Todo o processamento ocorre no navegador local, sem armazenamento nem envio de dados a servidores.",
+    "faq5Q": "Q: Meu animal pode mudar ao longo do tempo?",
+    "faq5A": "A: Sim. Conforme sua rotina, maturidade e níveis de estresse mudam, suas estratégias instintivas também podem se transformar.",
+    "referencesTitle": "Referências científicas",
+    "reviewDate": "Revisão editorial: Outubro de 2026",
+    "reviewTeam": "Equipe de Ciência Comportamental DopaBrain"
   }
 }

@@ -17,9 +17,8 @@
     "title": "Wildnis-Überlebensreise",
     "subtitle": "Du bist in die Wildnis gewandert. Deine Überlebensinstinkte werden dein Seelentier enthüllen.",
     "description": "Erlebe 6 Überlebensszenarien in 4 Biomen und entdecke dein Seelentier. Folge deinen Instinkten — die Wildnis wird die Antwort geben.",
-    "socialStats": "⏱ Ca. 2 Min | 🐾 12 Tiertypen | 👥 2.100+ getestet",
-    "proofText": "4,6 Sterne aus 2.350 Bewertungen",
-    "resultTease": "🦁 Die meisten bekommen..."
+    "resultTease": "🦁 Die meisten bekommen...",
+    "quickStrip": "⏱ ~2 Min. · 🐾 12 Tierarchetypen · 🌲 4 Biome"
   },
   "carousel": {
     "fox": "Fuchs — Kreativ & Unabhangig",
@@ -288,11 +287,10 @@
     "your_pack": "Dein Rudel",
     "your_rival": "Dein Rivale",
     "moreTests": "Weitere Tests entdecken",
-    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer sind dieser Tiertyp",
-    "nextStepLabel": "Bester n?chster Schritt",
-    "nextStepDesc": "?ffne den Folgetest, der am besten zu deinem Seelentier-Ergebnis passt.",
-    "nextStepCta": "Folgetest ?ffnen",
-    "jumpToMore": "Mehr Empfehlungen ansehen"
+    "nextStepLabel": "Bester nächster Schritt",
+    "nextStepDesc": "Starten Sie den Folgetest, der am besten zu Ihrem Krafttier-Ergebnis passt.",
+    "nextStepCta": "Folgetest starten",
+    "jumpToMore": "Mehr Empfehlungen"
   },
   "rec": {
     "title": "Andere lustige Tests",
@@ -321,5 +319,33 @@
     "anxietyType": "Angsttyp",
     "dopamineType": "Dopamin-Typ",
     "hspTest": "HSP Test"
+  },
+  "guide": {
+    "summaryTitle": "📖 Leitfaden zu Tierarchetypen & Verhaltensforschung",
+    "frameworkTitle": "Verhaltensökologie & evolutionäre Persönlichkeit",
+    "frameworkText": "Forschungen in der Evolutionsbiologie und vergleichenden Psychologie (Wilson, 1975; Buss, 1991; Gosling & John, 1999) belegen, dass Verhaltensphänotypen ökologischen Überlebensstrategien folgen: Mut vs. Vorsicht, Erkundung vs. Ressourcennutzung und Gruppenkooperation vs. solitäre Unabhängigkeit. Dieser Test übersetzt simulierte Überlebensentscheidungen in 12 archetypische Profile.",
+    "biomesTitle": "Die 4 Biome & 12 Überlebensarchetypen",
+    "forestTitle": "🌲 Wald — Anpassung & Instinkt",
+    "forestDesc": "Wolf (Loyalität & Instinkt), Bär (Schutz & Kraft), Fuchs (Klugheit & Gewandtheit)",
+    "oceanTitle": "🌊 Ozean — Tiefe & soziale Harmonie",
+    "oceanDesc": "Delfin (Empathie & Spielfreude), Katze (Unabhängigkeit & Intuition), Eule (Weisheit & Analyse)",
+    "mountainTitle": "🏔️ Gebirge — Weitsicht & Führungsstärke",
+    "mountainDesc": "Adler (strategische Klarheit), Löwe (Mut & Charisma), Drache (Ambition & Einfluss)",
+    "desertTitle": "🏜️ Wüste — Resilienz & Wandlung",
+    "desertDesc": "Hase (Wachsamkeit & Schnelligkeit), Schmetterling (Transformation & Kreativität), Einhorn (Idealismus)",
+    "faqTitle": "Häufig gestellte Fragen (FAQ)",
+    "faq1Q": "Q: Wie funktioniert der Krafttier-Persönlichkeitstest?",
+    "faq1A": "A: Wählen Sie eines von vier Biomen und treffen Sie in 6 Überlebensszenarien instinktive Entscheidungen, um Ihren passenden Tierarchetyp zu ermitteln.",
+    "faq2Q": "Q: Handelt es sich um eine klinische Diagnose?",
+    "faq2A": "A: Nein. Es ist ein spielerisches Selbstreflexionsinstrument basierend auf Archetypenpsychologie und Tierverhaltensforschung.",
+    "faq3Q": "Q: Wie unterscheidet sich der Test von MBTI oder Big Five?",
+    "faq3A": "A: Anstelle abstrakter Fragebögen veranschaulicht er Risikobereitschaft und Kooperation anhand konkreter Überlebensentscheidungen.",
+    "faq4Q": "Q: Werden meine Antworten gespeichert?",
+    "faq4A": "A: Nein. Alle Berechnungen laufen ausschließlich lokal in Ihrem Browser ab. Keine Daten werden an Server übertragen.",
+    "faq5Q": "Q: Kann sich mein Krafttier im Laufe der Zeit ändern?",
+    "faq5A": "A: Ja. Mit veränderten Lebensphasen, Stressleveln und Erfahrungen passen sich auch instinktive Bewältigungsmuster an.",
+    "referencesTitle": "Wissenschaftliche Referenzen",
+    "reviewDate": "Redaktionelle Prüfung: Oktober 2026",
+    "reviewTeam": "DopaBrain Verhaltensforschungs-Team"
   }
 }

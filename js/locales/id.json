@@ -17,9 +17,8 @@
     "title": "Perjalanan Bertahan Hidup di Alam Liar",
     "subtitle": "Kamu telah masuk ke alam liar. Insting bertahan hidupmu akan mengungkap hewan jiwamu.",
     "description": "Alami 6 skenario bertahan hidup di 4 bioma untuk menemukan hewan jiwamu. Ikuti instingmu — alam liar akan memberikan jawaban.",
-    "socialStats": "⏱ Sekitar 2 menit | 🐾 12 tipe hewan | 👥 2.100+ diuji",
-    "proofText": "4,6 bintang dari 2.350 penilaian",
-    "resultTease": "🦁 Kebanyakan orang mendapat..."
+    "resultTease": "🦁 Kebanyakan orang mendapat...",
+    "quickStrip": "⏱ ~2 mnt · 🐾 12 arketipe hewan · 🌲 4 bioma"
   },
   "carousel": {
     "fox": "Rubah — Kreatif & Mandiri",
@@ -288,11 +287,10 @@
     "your_pack": "Kawananmu",
     "your_rival": "Rivalmu",
     "moreTests": "Jelajahi tes lainnya",
-    "percentileStat": "Hanya <strong>{percent}%</strong> peserta yang merupakan tipe hewan ini",
-    "nextStepLabel": "Langkah terbaik berikutnya",
-    "nextStepDesc": "Buka tes lanjutan yang paling cocok dengan hasil spirit animal-mu.",
-    "nextStepCta": "Buka tes lanjutan",
-    "jumpToMore": "Lihat lebih banyak rekomendasi"
+    "nextStepLabel": "Langkah Selanjutnya",
+    "nextStepDesc": "Buka tes lanjutan yang paling sesuai dengan hasil hewan roh Anda.",
+    "nextStepCta": "Mulai Tes Lanjutan",
+    "jumpToMore": "Lihat Rekomendasi Lain"
   },
   "rec": {
     "title": "Tes seru lainnya",
@@ -321,5 +319,33 @@
     "anxietyType": "Tipe Kecemasan",
     "dopamineType": "Tipe Dopamin",
     "hspTest": "Tes HSP"
+  },
+  "guide": {
+    "summaryTitle": "📖 Panduan Arketipe Hewan & Sains Perilaku",
+    "frameworkTitle": "Ekologi Perilaku & Kepribadian Evolusioner",
+    "frameworkText": "Penelitian dalam biologi evolusioner dan psikologi komparatif (Wilson, 1975; Buss, 1991; Gosling & John, 1999) menunjukkan bahwa pola perilaku hewan mengelompok ke dalam strategi bertahan hidup: keberanian vs. kehati-hatian, eksplorasi vs. eksploitasi, dan kerja sama kelompok vs. kemandirian soliter. Tes ini memetakan insting bertahan hidup Anda ke dalam 12 arketipe intuitif.",
+    "biomesTitle": "4 Bioma & 12 Arketipe Bertahan Hidup",
+    "forestTitle": "🌲 Hutan — Adaptabilitas & Insting",
+    "forestDesc": "Serigala (loyalitas & naluri), Beruang (perlindungan & kekuatan), Rubah (kecerdikan & ketangkasan)",
+    "oceanTitle": "🌊 Lautan — Kedalaman & Keharmonisan Sosial",
+    "oceanDesc": "Lumba-lumba (empati & keceriaan), Kucing (kemandirian & intuisi), Burung Hantu (kebijaksanaan & analisis)",
+    "mountainTitle": "🏔️ Pegunungan — Visi & Kepemimpinan",
+    "mountainDesc": "Elang (kejernihan strategi), Singa (keberanian & wibawa), Naga (ambisi & pengaruh)",
+    "desertTitle": "🏜️ Gurun — Ketahanan & Transformasi",
+    "desertDesc": "Kelinci (kepekaan & kelincahan), Kupu-kupu (perubahan & kreativitas), Unicorn (idealisme murni)",
+    "faqTitle": "Pertanyaan yang Sering Diajukan (FAQ)",
+    "faq1Q": "Q: Bagaimana cara kerja tes kepribadian hewan roh?",
+    "faq1A": "A: Pilih salah satu dari empat bioma dan ambil keputusan instingtif dalam 6 skenario bertahan hidup di alam liar untuk menemukan arketipe Anda.",
+    "faq2Q": "Q: Apakah tes ini diagnosis klinis?",
+    "faq2A": "A: Tidak. Ini adalah latihan refleksi diri dan edukasi psikologis, bukan diagnosis medis atau psikologis.",
+    "faq3Q": "Q: Apa perbedaannya dengan MBTI atau Big Five?",
+    "faq3A": "A: Alih-alih kuesioner abstrak, tes ini menggunakan skenario bertahan hidup nyata untuk mengeksplorasi toleransi risiko dan kerja sama secara intuitif.",
+    "faq4Q": "Q: Apakah jawaban saya disimpan?",
+    "faq4A": "A: Tidak. Seluruh pemrosesan berjalan di browser lokal Anda tanpa pengiriman data ke server.",
+    "faq5Q": "Q: Bisakah hasil hewan roh saya berubah seiring waktu?",
+    "faq5A": "A: Ya. Seiring perubahan fase kehidupan dan tingkat stres, strategi adaptif Anda dapat berkembang secara alami.",
+    "referencesTitle": "Referensi Ilmiah",
+    "reviewDate": "Tinjauan Editorial: Oktober 2026",
+    "reviewTeam": "Tim Sains Perilaku DopaBrain"
   }
 }
