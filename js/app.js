@@ -87,18 +87,18 @@ class WildernessSurvivalApp {
         this.resultShareUrl = '';
         this.introCtaViewed = false;
         this.recommendationPriority = {
-            wolf: ['stress-response', 'brain-type', 'anxiety-type', 'dopamine-type', 'burnout-test', 'hsp-test', 'mbti-love', 'color-personality'],
-            bear: ['burnout-test', 'stress-response', 'brain-type', 'hsp-test', 'anxiety-type', 'dopamine-type', 'color-personality', 'mbti-love'],
-            fox: ['brain-type', 'dopamine-type', 'color-personality', 'stress-response', 'mbti-love', 'anxiety-type', 'hsp-test', 'burnout-test'],
-            dolphin: ['mbti-love', 'hsp-test', 'color-personality', 'anxiety-type', 'stress-response', 'brain-type', 'dopamine-type', 'burnout-test'],
-            cat: ['hsp-test', 'anxiety-type', 'mbti-love', 'brain-type', 'color-personality', 'stress-response', 'dopamine-type', 'burnout-test'],
-            owl: ['brain-type', 'hsp-test', 'stress-response', 'anxiety-type', 'dopamine-type', 'color-personality', 'mbti-love', 'burnout-test'],
-            eagle: ['brain-type', 'dopamine-type', 'stress-response', 'mbti-love', 'burnout-test', 'color-personality', 'anxiety-type', 'hsp-test'],
-            lion: ['dopamine-type', 'brain-type', 'mbti-love', 'burnout-test', 'stress-response', 'color-personality', 'anxiety-type', 'hsp-test'],
-            dragon: ['dopamine-type', 'burnout-test', 'brain-type', 'stress-response', 'mbti-love', 'color-personality', 'anxiety-type', 'hsp-test'],
-            rabbit: ['mbti-love', 'hsp-test', 'anxiety-type', 'color-personality', 'stress-response', 'brain-type', 'dopamine-type', 'burnout-test'],
-            butterfly: ['color-personality', 'mbti-love', 'hsp-test', 'brain-type', 'anxiety-type', 'stress-response', 'dopamine-type', 'burnout-test'],
-            unicorn: ['mbti-love', 'color-personality', 'brain-type', 'hsp-test', 'anxiety-type', 'stress-response', 'dopamine-type', 'burnout-test']
+            wolf: ['stress-check', 'shadow-work', 'hsp-test', 'future-self', 'attachment-style', 'iq-test', 'daily-tarot', 'kpop-position'],
+            bear: ['stress-check', 'hsp-test', 'attachment-style', 'future-self', 'shadow-work', 'daily-tarot', 'iq-test', 'kpop-position'],
+            fox: ['future-self', 'iq-test', 'kpop-position', 'stress-check', 'attachment-style', 'shadow-work', 'hsp-test', 'daily-tarot'],
+            dolphin: ['attachment-style', 'hsp-test', 'kpop-position', 'future-self', 'stress-check', 'daily-tarot', 'shadow-work', 'iq-test'],
+            cat: ['hsp-test', 'shadow-work', 'attachment-style', 'future-self', 'stress-check', 'daily-tarot', 'iq-test', 'kpop-position'],
+            owl: ['iq-test', 'hsp-test', 'future-self', 'shadow-work', 'stress-check', 'daily-tarot', 'attachment-style', 'kpop-position'],
+            eagle: ['future-self', 'iq-test', 'stress-check', 'attachment-style', 'shadow-work', 'kpop-position', 'daily-tarot', 'hsp-test'],
+            lion: ['future-self', 'kpop-position', 'attachment-style', 'stress-check', 'iq-test', 'shadow-work', 'daily-tarot', 'hsp-test'],
+            dragon: ['future-self', 'shadow-work', 'iq-test', 'stress-check', 'attachment-style', 'daily-tarot', 'kpop-position', 'hsp-test'],
+            rabbit: ['hsp-test', 'attachment-style', 'stress-check', 'future-self', 'daily-tarot', 'shadow-work', 'kpop-position', 'iq-test'],
+            butterfly: ['future-self', 'kpop-position', 'attachment-style', 'hsp-test', 'daily-tarot', 'stress-check', 'shadow-work', 'iq-test'],
+            unicorn: ['future-self', 'daily-tarot', 'attachment-style', 'hsp-test', 'kpop-position', 'shadow-work', 'stress-check', 'iq-test']
         };
         this.init();
     }
@@ -857,11 +857,11 @@ class WildernessSurvivalApp {
 
     loadRecommendations() {
         const recommendations = [
-            { name: i18n.t('rec.brain_type') || '뇌유형 검사', emoji: '🧠', link: '../brain-type/' },
-            { name: i18n.t('rec.mbti_love') || 'MBTI 궁합', emoji: '💕', link: '../mbti-love/' },
+            { name: i18n.t('rec.stress_check') || '스트레스 체크', emoji: '🧱', link: '../stress-check/' },
+            { name: i18n.t('rec.attachment_style') || '애착유형 테스트', emoji: '💞', link: '../attachment-style/' },
             { name: i18n.t('rec.dream_fortune') || '꿈해몽/운세', emoji: '🔮', link: '../dream-fortune/' },
-            { name: i18n.t('rec.color_personality') || '성격 색상', emoji: '🎨', link: '../color-personality/' },
-            { name: i18n.t('rec.emotion_temp') || '감정 온도계', emoji: '🌡️', link: '../emotion-temp/' },
+            { name: i18n.t('rec.future_self') || '미래의 나', emoji: '🚀', link: '../future-self/' },
+            { name: i18n.t('rec.shadow_work') || '섀도우 워크', emoji: '🌑', link: '../shadow-work/' },
             { name: i18n.t('rec.hsp_test') || 'HSP 검사', emoji: '✨', link: '../hsp-test/' }
         ];
 

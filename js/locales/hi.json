@@ -299,7 +299,11 @@
     "dream_fortune": "स्वप्न भाग्य",
     "color_personality": "रंग व्यक्तित्व",
     "emotion_temp": "भावना तापमान",
-    "hsp_test": "HSP परीक्षण"
+    "hsp_test": "HSP परीक्षण",
+    "stress_check": "तनाव जांच",
+    "attachment_style": "लगाव शैली परीक्षण",
+    "future_self": "भविष्य का मैं",
+    "shadow_work": "शैडो वर्क टेस्ट"
   },
   "share": {
     "copied": "लिंक कॉपी हो गया!",
@@ -318,7 +322,14 @@
     "stressResponse": "तनाव प्रतिक्रिया",
     "anxietyType": "चिंता प्रकार",
     "dopamineType": "डोपामाइन प्रकार",
-    "hspTest": "HSP परीक्षण"
+    "hspTest": "HSP परीक्षण",
+    "stressCheck": "तनाव जांच",
+    "futureSelf": "भविष्य का मैं",
+    "attachmentStyle": "लगाव शैली परीक्षण",
+    "shadowWork": "शैडो वर्क टेस्ट",
+    "kpopPosition": "K-Pop पोजिशन टेस्ट",
+    "dailyTarot": "दैनिक टैरो",
+    "iqTest": "10-पहेली चुनौती"
   },
   "guide": {
     "summaryTitle": "📖 पशु पुरातत्व और व्यवहार विज्ञान गाइड",

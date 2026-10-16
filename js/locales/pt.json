@@ -299,7 +299,11 @@
     "dream_fortune": "Sonhos/Fortuna",
     "color_personality": "Cor Personalidade",
     "emotion_temp": "Temp. Emocional",
-    "hsp_test": "Teste HSP"
+    "hsp_test": "Teste HSP",
+    "stress_check": "Teste de Estresse",
+    "attachment_style": "Estilo de Apego",
+    "future_self": "Eu do Futuro",
+    "shadow_work": "Trabalho de Sombra"
   },
   "share": {
     "copied": "Link copiado!",
@@ -318,7 +322,14 @@
     "stressResponse": "Resposta ao Estresse",
     "anxietyType": "Tipo de Ansiedade",
     "dopamineType": "Tipo de Dopamina",
-    "hspTest": "Teste HSP"
+    "hspTest": "Teste HSP",
+    "stressCheck": "Teste de Estresse",
+    "futureSelf": "Eu do Futuro",
+    "attachmentStyle": "Estilo de Apego",
+    "shadowWork": "Trabalho de Sombra",
+    "kpopPosition": "Posição K-Pop",
+    "dailyTarot": "Tarot Diário",
+    "iqTest": "Desafio de 10 Puzzles"
   },
   "guide": {
     "summaryTitle": "📖 Guia de arquétipos animais e ciência comportamental",

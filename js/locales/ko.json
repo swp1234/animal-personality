@@ -299,7 +299,11 @@
     "dream_fortune": "꿈해몽/운세",
     "color_personality": "성격 색상",
     "emotion_temp": "감정 온도계",
-    "hsp_test": "HSP 검사"
+    "hsp_test": "HSP 검사",
+    "stress_check": "스트레스 체크",
+    "attachment_style": "애착유형 테스트",
+    "future_self": "미래의 나 테스트",
+    "shadow_work": "섀도우 워크 테스트"
   },
   "share": {
     "copied": "링크가 복사되었습니다!",
@@ -318,7 +322,14 @@
     "stressResponse": "스트레스 반응",
     "anxietyType": "불안 유형",
     "dopamineType": "도파민 유형",
-    "hspTest": "HSP 검사"
+    "hspTest": "HSP 검사",
+    "stressCheck": "스트레스 체크",
+    "futureSelf": "미래의 나 테스트",
+    "attachmentStyle": "애착유형 테스트",
+    "shadowWork": "섀도우 워크 테스트",
+    "kpopPosition": "K-POP 포지션 테스트",
+    "dailyTarot": "오늘의 타로",
+    "iqTest": "10문항 퍼즐 챌린지"
   },
   "guide": {
     "summaryTitle": "📖 동물 원형 & 행동 과학 가이드",

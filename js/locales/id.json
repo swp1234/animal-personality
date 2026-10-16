@@ -299,7 +299,11 @@
     "dream_fortune": "Mimpi/Keberuntungan",
     "color_personality": "Warna Kepribadian",
     "emotion_temp": "Suhu Emosi",
-    "hsp_test": "Tes HSP"
+    "hsp_test": "Tes HSP",
+    "stress_check": "Cek Stres",
+    "attachment_style": "Gaya Kelekatan",
+    "future_self": "Diri Masa Depan",
+    "shadow_work": "Tes Shadow Work"
   },
   "share": {
     "copied": "Tautan disalin!",
@@ -318,7 +322,14 @@
     "stressResponse": "Respons Stres",
     "anxietyType": "Tipe Kecemasan",
     "dopamineType": "Tipe Dopamin",
-    "hspTest": "Tes HSP"
+    "hspTest": "Tes HSP",
+    "stressCheck": "Cek Stres",
+    "futureSelf": "Diri Masa Depan",
+    "attachmentStyle": "Gaya Kelekatan",
+    "shadowWork": "Tes Shadow Work",
+    "kpopPosition": "Posisi K-Pop",
+    "dailyTarot": "Tarot Harian",
+    "iqTest": "Tantangan 10 Teka-teki"
   },
   "guide": {
     "summaryTitle": "📖 Panduan Arketipe Hewan & Sains Perilaku",

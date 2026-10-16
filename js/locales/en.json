@@ -299,7 +299,11 @@
     "dream_fortune": "Dream Fortune",
     "color_personality": "Color Personality",
     "emotion_temp": "Emotion Temp",
-    "hsp_test": "HSP Test"
+    "hsp_test": "HSP Test",
+    "stress_check": "Stress Check",
+    "attachment_style": "Attachment Style",
+    "future_self": "Future Self",
+    "shadow_work": "Shadow Work"
   },
   "share": {
     "copied": "Link copied!",
@@ -318,7 +322,14 @@
     "stressResponse": "Stress Response",
     "anxietyType": "Anxiety Type",
     "dopamineType": "Dopamine Type",
-    "hspTest": "HSP Test"
+    "hspTest": "HSP Test",
+    "stressCheck": "Stress Check",
+    "futureSelf": "Future Self",
+    "attachmentStyle": "Attachment Style",
+    "shadowWork": "Shadow Work",
+    "kpopPosition": "K-Pop Position",
+    "dailyTarot": "Daily Tarot",
+    "iqTest": "10-Puzzle Challenge"
   },
   "guide": {
     "summaryTitle": "📖 Animal Archetypes & Behavioral Science Guide",

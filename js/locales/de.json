@@ -299,7 +299,11 @@
     "dream_fortune": "Traumdeutung",
     "color_personality": "Farbpersönlichkeit",
     "emotion_temp": "Emotionstemperatur",
-    "hsp_test": "HSP Test"
+    "hsp_test": "HSP Test",
+    "stress_check": "Stress-Check",
+    "attachment_style": "Bindungsstil-Test",
+    "future_self": "Zukunfts-Ich",
+    "shadow_work": "Schattenarbeit-Test"
   },
   "share": {
     "copied": "Link kopiert!",
@@ -318,7 +322,14 @@
     "stressResponse": "Stressreaktion",
     "anxietyType": "Angsttyp",
     "dopamineType": "Dopamin-Typ",
-    "hspTest": "HSP Test"
+    "hspTest": "HSP Test",
+    "stressCheck": "Stress-Check",
+    "futureSelf": "Zukunfts-Ich",
+    "attachmentStyle": "Bindungsstil-Test",
+    "shadowWork": "Schattenarbeit-Test",
+    "kpopPosition": "K-Pop-Position",
+    "dailyTarot": "Tages-Tarot",
+    "iqTest": "10-Rätsel-Challenge"
   },
   "guide": {
     "summaryTitle": "📖 Leitfaden zu Tierarchetypen & Verhaltensforschung",

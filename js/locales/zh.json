@@ -299,7 +299,11 @@
     "dream_fortune": "解梦/运势",
     "color_personality": "性格色彩",
     "emotion_temp": "情绪温度",
-    "hsp_test": "HSP测试"
+    "hsp_test": "HSP测试",
+    "stress_check": "压力自测",
+    "attachment_style": "依恋类型测试",
+    "future_self": "未来的你测试",
+    "shadow_work": "阴影工作测试"
   },
   "share": {
     "copied": "链接已复制！",
@@ -318,7 +322,14 @@
     "stressResponse": "压力反应",
     "anxietyType": "焦虑类型",
     "dopamineType": "多巴胺类型",
-    "hspTest": "HSP测试"
+    "hspTest": "HSP测试",
+    "stressCheck": "压力自测",
+    "futureSelf": "未来的你测试",
+    "attachmentStyle": "依恋类型测试",
+    "shadowWork": "阴影工作测试",
+    "kpopPosition": "K-POP定位测试",
+    "dailyTarot": "每日塔罗",
+    "iqTest": "10题逻辑挑战"
   },
   "guide": {
     "summaryTitle": "📖 动物性格原型与行为科学指南",

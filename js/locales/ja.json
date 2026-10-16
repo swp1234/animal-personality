@@ -299,7 +299,11 @@
     "dream_fortune": "夢占い/運勢",
     "color_personality": "カラー性格",
     "emotion_temp": "感情温度計",
-    "hsp_test": "HSP検査"
+    "hsp_test": "HSP検査",
+    "stress_check": "ストレスチェック",
+    "attachment_style": "愛着スタイル診断",
+    "future_self": "未来の自分診断",
+    "shadow_work": "シャドウワーク診断"
   },
   "share": {
     "copied": "リンクをコピーしました！",
@@ -318,7 +322,14 @@
     "stressResponse": "ストレス反応",
     "anxietyType": "不安タイプ",
     "dopamineType": "ドーパミンタイプ",
-    "hspTest": "HSP検査"
+    "hspTest": "HSP検査",
+    "stressCheck": "ストレスチェック",
+    "futureSelf": "未来の自分診断",
+    "attachmentStyle": "愛着スタイル診断",
+    "shadowWork": "シャドウワーク診断",
+    "kpopPosition": "K-POPポジション診断",
+    "dailyTarot": "今日のタロット",
+    "iqTest": "10問パズル挑戦"
   },
   "guide": {
     "summaryTitle": "📖 動物アーキタイプと行動科学ガイド",

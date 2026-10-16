@@ -299,7 +299,11 @@
     "dream_fortune": "Толкование снов",
     "color_personality": "Цвет личности",
     "emotion_temp": "Эмоц. температура",
-    "hsp_test": "HSP тест"
+    "hsp_test": "HSP тест",
+    "stress_check": "Тест на стресс",
+    "attachment_style": "Тип привязанности",
+    "future_self": "Будущее Я",
+    "shadow_work": "Работа с тенью"
   },
   "share": {
     "copied": "Ссылка скопирована!",
@@ -318,7 +322,14 @@
     "stressResponse": "Стресс-реакция",
     "anxietyType": "Тип тревожности",
     "dopamineType": "Тип дофамина",
-    "hspTest": "HSP тест"
+    "hspTest": "HSP тест",
+    "stressCheck": "Тест на стресс",
+    "futureSelf": "Будущее Я",
+    "attachmentStyle": "Тип привязанности",
+    "shadowWork": "Работа с тенью",
+    "kpopPosition": "Позиция в K-Pop",
+    "dailyTarot": "Таро дня",
+    "iqTest": "10 логических задач"
   },
   "guide": {
     "summaryTitle": "📖 Руководство по архетипам животных и поведенческой науке",

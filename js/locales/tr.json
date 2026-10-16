@@ -299,7 +299,11 @@
     "dream_fortune": "Ruya/Sans",
     "color_personality": "Renk Kisilik",
     "emotion_temp": "Duygu Sicakligi",
-    "hsp_test": "HSP Testi"
+    "hsp_test": "HSP Testi",
+    "stress_check": "Stres Testi",
+    "attachment_style": "Bağlanma Stili",
+    "future_self": "Gelecekteki Ben",
+    "shadow_work": "Gölge Çalışması"
   },
   "share": {
     "copied": "Baglanti kopyalandi!",
@@ -318,7 +322,14 @@
     "stressResponse": "Stres Tepkisi",
     "anxietyType": "Kaygı Tipi",
     "dopamineType": "Dopamin Tipi",
-    "hspTest": "HSP Testi"
+    "hspTest": "HSP Testi",
+    "stressCheck": "Stres Testi",
+    "futureSelf": "Gelecekteki Ben",
+    "attachmentStyle": "Bağlanma Stili",
+    "shadowWork": "Gölge Çalışması",
+    "kpopPosition": "K-Pop Pozisyon Testi",
+    "dailyTarot": "Günlük Tarot",
+    "iqTest": "10 Bulmaca Testi"
   },
   "guide": {
     "summaryTitle": "📖 Hayvan Arketipleri ve Davranış Bilimi Rehberi",
