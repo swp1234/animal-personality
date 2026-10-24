@@ -304,9 +304,15 @@ class WildernessSurvivalApp {
             return aRank - bRank;
         });
 
+        const currentLang = this.getCurrentLang();
         orderedCards.forEach((card, index) => {
             card.dataset.relatedRank = String(index + 1);
             card.classList.toggle('is-featured', index === 0);
+            const baseHref = (card.getAttribute('data-base-href') || card.getAttribute('href') || '').split('?')[0];
+            if (baseHref && !baseHref.startsWith('http')) {
+                card.setAttribute('data-base-href', baseHref);
+                card.setAttribute('href', `${baseHref}?lang=${encodeURIComponent(currentLang)}`);
+            }
             this.relatedGrid.appendChild(card);
         });
     }
@@ -856,13 +862,12 @@ class WildernessSurvivalApp {
     }
 
     loadRecommendations() {
+        const currentLang = this.getCurrentLang();
         const recommendations = [
-            { name: i18n.t('rec.stress_check') || '스트레스 체크', emoji: '🧱', link: '../stress-check/' },
-            { name: i18n.t('rec.attachment_style') || '애착유형 테스트', emoji: '💞', link: '../attachment-style/' },
-            { name: i18n.t('rec.dream_fortune') || '꿈해몽/운세', emoji: '🔮', link: '../dream-fortune/' },
-            { name: i18n.t('rec.future_self') || '미래의 나', emoji: '🚀', link: '../future-self/' },
-            { name: i18n.t('rec.shadow_work') || '섀도우 워크', emoji: '🌑', link: '../shadow-work/' },
-            { name: i18n.t('rec.hsp_test') || 'HSP 검사', emoji: '✨', link: '../hsp-test/' }
+            { name: i18n.t('rec.stress_check') || '스트레스 체크', emoji: '🧱', link: `/stress-check/?lang=${encodeURIComponent(currentLang)}` },
+            { name: i18n.t('rec.attachment_style') || '애착유형 테스트', emoji: '💞', link: `/attachment-style/?lang=${encodeURIComponent(currentLang)}` },
+            { name: i18n.t('rec.future_self') || '미래의 나', emoji: '🚀', link: `/future-self/?lang=${encodeURIComponent(currentLang)}` },
+            { name: i18n.t('rec.hsp_test') || 'HSP 검사', emoji: '✨', link: `/hsp-test/?lang=${encodeURIComponent(currentLang)}` }
         ];
 
         this.recGrid.innerHTML = '';
