@@ -326,10 +326,9 @@
     "stressCheck": "Test de Stress",
     "futureSelf": "Moi du Futur",
     "attachmentStyle": "Style d’Attachement",
-    "shadowWork": "Travail de l’Ombre",
     "kpopPosition": "Position K-Pop",
-    "dailyTarot": "Tarot du Jour",
-    "iqTest": "Défi 10 Énigmes"
+    "iqTest": "Défi 10 Énigmes",
+    "soulAge": "Âge de l'Âme"
   },
   "guide": {
     "summaryTitle": "📖 Guide des archétypes animaux et science du comportement",

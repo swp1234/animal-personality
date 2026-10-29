@@ -87,18 +87,18 @@ class WildernessSurvivalApp {
         this.resultShareUrl = '';
         this.introCtaViewed = false;
         this.recommendationPriority = {
-            wolf: ['stress-check', 'shadow-work', 'hsp-test', 'future-self', 'attachment-style', 'iq-test', 'daily-tarot', 'kpop-position'],
-            bear: ['stress-check', 'hsp-test', 'attachment-style', 'future-self', 'shadow-work', 'daily-tarot', 'iq-test', 'kpop-position'],
-            fox: ['future-self', 'iq-test', 'kpop-position', 'stress-check', 'attachment-style', 'shadow-work', 'hsp-test', 'daily-tarot'],
-            dolphin: ['attachment-style', 'hsp-test', 'kpop-position', 'future-self', 'stress-check', 'daily-tarot', 'shadow-work', 'iq-test'],
-            cat: ['hsp-test', 'shadow-work', 'attachment-style', 'future-self', 'stress-check', 'daily-tarot', 'iq-test', 'kpop-position'],
-            owl: ['iq-test', 'hsp-test', 'future-self', 'shadow-work', 'stress-check', 'daily-tarot', 'attachment-style', 'kpop-position'],
-            eagle: ['future-self', 'iq-test', 'stress-check', 'attachment-style', 'shadow-work', 'kpop-position', 'daily-tarot', 'hsp-test'],
-            lion: ['future-self', 'kpop-position', 'attachment-style', 'stress-check', 'iq-test', 'shadow-work', 'daily-tarot', 'hsp-test'],
-            dragon: ['future-self', 'shadow-work', 'iq-test', 'stress-check', 'attachment-style', 'daily-tarot', 'kpop-position', 'hsp-test'],
-            rabbit: ['hsp-test', 'attachment-style', 'stress-check', 'future-self', 'daily-tarot', 'shadow-work', 'kpop-position', 'iq-test'],
-            butterfly: ['future-self', 'kpop-position', 'attachment-style', 'hsp-test', 'daily-tarot', 'stress-check', 'shadow-work', 'iq-test'],
-            unicorn: ['future-self', 'daily-tarot', 'attachment-style', 'hsp-test', 'kpop-position', 'shadow-work', 'stress-check', 'iq-test']
+            wolf: ['stress-check', 'brain-type', 'hsp-test', 'future-self', 'attachment-style', 'iq-test', 'soul-age', 'kpop-position'],
+            bear: ['stress-check', 'hsp-test', 'attachment-style', 'future-self', 'brain-type', 'soul-age', 'iq-test', 'kpop-position'],
+            fox: ['future-self', 'iq-test', 'kpop-position', 'stress-check', 'attachment-style', 'brain-type', 'hsp-test', 'soul-age'],
+            dolphin: ['attachment-style', 'hsp-test', 'kpop-position', 'future-self', 'stress-check', 'soul-age', 'brain-type', 'iq-test'],
+            cat: ['hsp-test', 'brain-type', 'attachment-style', 'future-self', 'stress-check', 'soul-age', 'iq-test', 'kpop-position'],
+            owl: ['iq-test', 'hsp-test', 'future-self', 'brain-type', 'stress-check', 'soul-age', 'attachment-style', 'kpop-position'],
+            eagle: ['future-self', 'iq-test', 'stress-check', 'attachment-style', 'brain-type', 'kpop-position', 'soul-age', 'hsp-test'],
+            lion: ['future-self', 'kpop-position', 'attachment-style', 'stress-check', 'iq-test', 'brain-type', 'soul-age', 'hsp-test'],
+            dragon: ['future-self', 'brain-type', 'iq-test', 'stress-check', 'attachment-style', 'soul-age', 'kpop-position', 'hsp-test'],
+            rabbit: ['hsp-test', 'attachment-style', 'stress-check', 'future-self', 'soul-age', 'brain-type', 'kpop-position', 'iq-test'],
+            butterfly: ['future-self', 'kpop-position', 'attachment-style', 'hsp-test', 'soul-age', 'stress-check', 'brain-type', 'iq-test'],
+            unicorn: ['future-self', 'soul-age', 'attachment-style', 'hsp-test', 'kpop-position', 'brain-type', 'stress-check', 'iq-test']
         };
         this.init();
     }

@@ -326,10 +326,9 @@
     "stressCheck": "ストレスチェック",
     "futureSelf": "未来の自分診断",
     "attachmentStyle": "愛着スタイル診断",
-    "shadowWork": "シャドウワーク診断",
     "kpopPosition": "K-POPポジション診断",
-    "dailyTarot": "今日のタロット",
-    "iqTest": "10問パズル挑戦"
+    "iqTest": "10問パズル挑戦",
+    "soulAge": "魂の年齢診断"
   },
   "guide": {
     "summaryTitle": "📖 動物アーキタイプと行動科学ガイド",

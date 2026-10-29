@@ -326,10 +326,9 @@
     "stressCheck": "Stress-Check",
     "futureSelf": "Zukunfts-Ich",
     "attachmentStyle": "Bindungsstil-Test",
-    "shadowWork": "Schattenarbeit-Test",
     "kpopPosition": "K-Pop-Position",
-    "dailyTarot": "Tages-Tarot",
-    "iqTest": "10-Rätsel-Challenge"
+    "iqTest": "10-Rätsel-Challenge",
+    "soulAge": "Seelenalter"
   },
   "guide": {
     "summaryTitle": "📖 Leitfaden zu Tierarchetypen & Verhaltensforschung",

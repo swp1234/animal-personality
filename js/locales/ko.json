@@ -326,10 +326,9 @@
     "stressCheck": "스트레스 체크",
     "futureSelf": "미래의 나 테스트",
     "attachmentStyle": "애착유형 테스트",
-    "shadowWork": "섀도우 워크 테스트",
     "kpopPosition": "K-POP 포지션 테스트",
-    "dailyTarot": "오늘의 타로",
-    "iqTest": "10문항 퍼즐 챌린지"
+    "iqTest": "10문항 퍼즐 챌린지",
+    "soulAge": "영혼 나이 테스트"
   },
   "guide": {
     "summaryTitle": "📖 동물 원형 & 행동 과학 가이드",

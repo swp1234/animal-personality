@@ -326,10 +326,9 @@
     "stressCheck": "压力自测",
     "futureSelf": "未来的你测试",
     "attachmentStyle": "依恋类型测试",
-    "shadowWork": "阴影工作测试",
     "kpopPosition": "K-POP定位测试",
-    "dailyTarot": "每日塔罗",
-    "iqTest": "10题逻辑挑战"
+    "iqTest": "10题逻辑挑战",
+    "soulAge": "灵魂年龄测试"
   },
   "guide": {
     "summaryTitle": "📖 动物性格原型与行为科学指南",

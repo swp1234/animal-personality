@@ -326,10 +326,9 @@
     "stressCheck": "Stress Check",
     "futureSelf": "Future Self",
     "attachmentStyle": "Attachment Style",
-    "shadowWork": "Shadow Work",
     "kpopPosition": "K-Pop Position",
-    "dailyTarot": "Daily Tarot",
-    "iqTest": "10-Puzzle Challenge"
+    "iqTest": "10-Puzzle Challenge",
+    "soulAge": "Soul Age"
   },
   "guide": {
     "summaryTitle": "📖 Animal Archetypes & Behavioral Science Guide",

@@ -326,10 +326,9 @@
     "stressCheck": "Тест на стресс",
     "futureSelf": "Будущее Я",
     "attachmentStyle": "Тип привязанности",
-    "shadowWork": "Работа с тенью",
     "kpopPosition": "Позиция в K-Pop",
-    "dailyTarot": "Таро дня",
-    "iqTest": "10 логических задач"
+    "iqTest": "10 логических задач",
+    "soulAge": "Возраст души"
   },
   "guide": {
     "summaryTitle": "📖 Руководство по архетипам животных и поведенческой науке",
