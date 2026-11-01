@@ -885,12 +885,30 @@ class WildernessSurvivalApp {
         this.recGrid.innerHTML = '';
         recommendations.forEach(rec => {
             const card = document.createElement('a');
-            card.href = rec.link;
+            try {
+                const u = new URL(rec.link, window.location.origin);
+                u.searchParams.set('source', 'animal_personality_rec');
+                card.href = u.pathname + u.search;
+            } catch (_) {
+                card.href = rec.link;
+            }
             card.className = 'rec-card';
             card.innerHTML = `
                 <div class="rec-emoji">${rec.emoji}</div>
                 <div class="rec-name">${rec.name}</div>
             `;
+            card.addEventListener('click', () => {
+                this.trackEvent('content_cta_click', {
+                    link_id: 'animal_personality_rec_' + (card.getAttribute('href').split('/')[1] || 'item'),
+                    link_text: rec.name,
+                    target_url: card.href,
+                    source_page: 'animal_personality_result',
+                    cta_surface: 'animal_personality_rec',
+                    destination: card.href,
+                    source: 'animal_personality_result',
+                    lang: currentLang
+                });
+            });
             this.recGrid.appendChild(card);
         });
     }
