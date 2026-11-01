@@ -311,7 +311,7 @@ class WildernessSurvivalApp {
             const baseHref = (card.getAttribute('data-base-href') || card.getAttribute('href') || '').split('?')[0];
             if (baseHref && !baseHref.startsWith('http')) {
                 card.setAttribute('data-base-href', baseHref);
-                card.setAttribute('href', `${baseHref}?lang=${encodeURIComponent(currentLang)}`);
+                card.setAttribute('href', `${baseHref}?lang=${encodeURIComponent(currentLang)}&source=animal_personality_result`);
             }
             this.relatedGrid.appendChild(card);
         });
@@ -408,6 +408,12 @@ class WildernessSurvivalApp {
                 related_key: this.primaryRelatedCta.dataset.relatedKey || '',
                 related_rank: Number(this.primaryRelatedCta.dataset.relatedRank || 1)
             });
+            this.trackEvent('content_cta_click', {
+                link_id: 'animal_personality_primary_' + (this.primaryRelatedCta.dataset.relatedKey || 'companion'),
+                link_text: (this.primaryRelatedCtaText?.textContent || this.primaryRelatedCta.textContent || '').trim().slice(0, 40),
+                target_url: this.primaryRelatedCta.href || '',
+                source_page: 'animal_personality_result'
+            });
         });
         this.relatedJumpBtn?.addEventListener('click', () => {
             this.relatedGrid?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -423,6 +429,12 @@ class WildernessSurvivalApp {
                     result_key: this.result?.key || '',
                     related_key: card.dataset.relatedKey || '',
                     related_rank: Number(card.dataset.relatedRank || 0)
+                });
+                this.trackEvent('content_cta_click', {
+                    link_id: 'animal_personality_related_' + (card.dataset.relatedKey || 'companion'),
+                    link_text: (card.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 40),
+                    target_url: card.href || '',
+                    source_page: 'animal_personality_result'
                 });
             });
         });
